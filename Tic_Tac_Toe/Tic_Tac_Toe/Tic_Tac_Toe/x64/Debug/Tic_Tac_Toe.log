@@ -1,0 +1,10 @@
+﻿  game_finish.c
+  game_playing.c
+Z:\研修\実習\設計\三目並べ実装\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(86,41): warning C4047: '関数': 間接参照のレベルが 'int *' と 'int [3][3]' で異なっています。
+Z:\研修\実習\設計\三目並べ実装\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(86,41): warning C4024: 'Operate_Exception': の型が 2 の仮引数および実引数と異なります。
+Z:\研修\実習\設計\三目並べ実装\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(86,73): warning C4020: 'Operate_Exception': 実引数が多すぎます。
+Z:\研修\実習\設計\三目並べ実装\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(116,5): error C2084: 関数 'int main(void)' は既に本体を持っています。
+  Z:\研修\実習\設計\三目並べ実装\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_finish.c(14,5):
+  'main' の以前の定義を確認してください
+  
+  コードを生成中...
