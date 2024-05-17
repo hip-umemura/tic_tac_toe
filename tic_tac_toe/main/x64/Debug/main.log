@@ -1,6 +1,0 @@
-﻿  board_func.c
-Z:\研修\実習\三目並べ\tic_tac_toe_coding\tic_tac_toe\tic_tac_toe\main\board_func.c(168,14): warning C4047: '関数': 間接参照のレベルが 'MARK *' と 'MARK [3][3]' で異なっています。
-Z:\研修\実習\三目並べ\tic_tac_toe_coding\tic_tac_toe\tic_tac_toe\main\board_func.c(168,14): warning C4024: 'PrintBoard': の型が 1 の仮引数および実引数と異なります。
-Z:\研修\実習\三目並べ\tic_tac_toe_coding\tic_tac_toe\tic_tac_toe\main\board_func.c(169,18): warning C4047: '関数': 間接参照のレベルが 'MARK *' と 'MARK [3][3]' で異なっています。
-Z:\研修\実習\三目並べ\tic_tac_toe_coding\tic_tac_toe\tic_tac_toe\main\board_func.c(169,18): warning C4024: 'CheckBoard': の型が 1 の仮引数および実引数と異なります。
-  main.vcxproj -> Z:\研修\実習\三目並べ\tic_tac_toe_coding\tic_tac_toe\tic_tac_toe\x64\Debug\main.exe
