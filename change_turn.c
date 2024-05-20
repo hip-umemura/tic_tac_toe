@@ -13,3 +13,4 @@ TURN change_turn(TURN now)
 //nowがFIRST_TURNならSECOND_TURNを、
 // nowがSECOND_TURNならFIRST_TURNを戻り値として返す。
 // また、交代した旨を表示する。
+qqqqqqqqqq
