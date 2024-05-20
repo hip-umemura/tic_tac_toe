@@ -5,6 +5,7 @@
 #include "basic.h"
 
 #define BOARD_SIZE (3)
+
 typedef enum
 {
 	WIN,

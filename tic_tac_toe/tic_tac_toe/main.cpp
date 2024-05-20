@@ -17,7 +17,9 @@ int retry_game(void) {
 }
 
 void game_progress(char* name1, char* name2) {
-  
+	clean_board();
+
+	print_now_board();
 }
 
 int main(void) {
