@@ -1,3 +1,4 @@
+#include <stdio.h>
 void view_tutorial(void)
 {
 	printf("チュートリアル開始！\n\n");
