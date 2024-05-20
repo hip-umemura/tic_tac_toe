@@ -2,7 +2,15 @@
 #include <ctype.h>
 
 #include "tutorial.h"
-#include "basic.h"
+#include "board.h"
+
+TURN change_turn(TURN now){
+
+}
+
+void print_result(RESULT result) {
+  
+}
 
 int retry_game(void) {
   return FALSE;

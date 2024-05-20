@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "tutorial.h"
 
 void view_tutorial(void)
 {
@@ -74,5 +75,4 @@ void view_tutorial(void)
 	printf("\x1b[36mパターン3: 入力座標が不正な場合\x1b[39m\n");
 	printf("aさん、駒を置く座標を入力してください：4 1\n");
 	printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
-	printf("\nゲーム開始！");
 }
