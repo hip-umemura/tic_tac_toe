@@ -1,4 +1,2 @@
 ﻿  main.cpp
-Z:\研修\実習\新しいフォルダー\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(6,8): warning C4101: 'name2': ローカル変数は 1 度も使われていません。
-Z:\研修\実習\新しいフォルダー\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(5,8): warning C4101: 'name1': ローカル変数は 1 度も使われていません。
   tic_tac_toe.vcxproj -> Z:\研修\実習\新しいフォルダー\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
