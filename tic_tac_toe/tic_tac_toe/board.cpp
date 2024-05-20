@@ -7,7 +7,7 @@ void print_now_board(void) {
 
 }
 
-int put_piece(int row, int column, Player player) {
+int put_piece(int row, int column, PLAYER player) {
 
 }
 
