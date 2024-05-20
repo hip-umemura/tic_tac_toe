@@ -1,20 +1,83 @@
-﻿// tic_tac_toe.cpp : このファイルには 'main' 関数が含まれています。プログラム実行の開始と終了がそこで行われます。
-//
+﻿#include <stdio.h>
+#include <ctype.h>
 
-#include <iostream>
+#include "tutorial.h"
+#include "board.h"
 
-int main()
-{
-    std::cout << "Hello World!\n";
+TURN change_turn(TURN now){
+
 }
 
-// プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
-// プログラムのデバッグ: F5 または [デバッグ] > [デバッグの開始] メニュー
+void print_result(RESULT result) {
+  
+}
 
-// 作業を開始するためのヒント: 
-//    1. ソリューション エクスプローラー ウィンドウを使用してファイルを追加/管理します 
-//   2. チーム エクスプローラー ウィンドウを使用してソース管理に接続します
-//   3. 出力ウィンドウを使用して、ビルド出力とその他のメッセージを表示します
-//   4. エラー一覧ウィンドウを使用してエラーを表示します
-//   5. [プロジェクト] > [新しい項目の追加] と移動して新しいコード ファイルを作成するか、[プロジェクト] > [既存の項目の追加] と移動して既存のコード ファイルをプロジェクトに追加します
-//   6. 後ほどこのプロジェクトを再び開く場合、[ファイル] > [開く] > [プロジェクト] と移動して .sln ファイルを選択します
+int retry_game(void) {
+  return FALSE;
+}
+
+void game_progress(char* name1, char* name2) {
+  
+}
+
+int main(void) {
+  int start_tutorial;
+  char name1[NAME_LEN];
+  char name2[NAME_LEN];
+  int name_array;
+
+  printf("チュートリアルを見ますか(YES...1 / NO...1以外)：");
+  scanf_s("%d", &start_tutorial);
+  fflush(stdin);
+
+  if (start_tutorial == TRUE) {
+	view_tutorial();
+  }
+
+  printf("ゲーム開始！");
+
+  do{
+	name_array = 0;
+
+	printf("先手のプレイヤー名を入力してください：");
+	scanf_s("%s", name1, NAME_LEN);
+
+	do {
+	  if (!islower(name1[name_array])) {
+		printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
+		break;
+	  }
+	  name_array++;
+	} while (name1[name_array] != '\0');
+
+	while (getchar() != '\n')
+	  ;
+
+  } while (name1[name_array] != '\0' || name_array == 0);
+
+  do {
+	name_array = 0;
+
+	printf("後手のプレイヤー名を入力してください：");
+	scanf_s("%s", name2, NAME_LEN);
+
+	do {
+	  if (!islower(name2[name_array])) {
+		printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
+		break;
+	  }
+	  name_array++;
+	} while (name2[name_array] != '\0');
+
+	while (getchar() != '\n')
+	  ;
+
+  } while (name2[name_array] != '\0' || name_array == 0);
+
+  do
+  {
+	game_progress(name1, name2);
+  } while (retry_game() == TRUE);
+
+  return 0;
+}
