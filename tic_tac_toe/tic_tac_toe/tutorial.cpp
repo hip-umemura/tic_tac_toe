@@ -31,7 +31,7 @@ void view_tutorial(void)
 	printf("3|   |   |   |\n");
 	printf(" -------------\n\n");
 	printf("駒を配置しました！\n");
-	printf("先手と後手を交代します\n\n");
+	printf("先手と後手のターンを交代します\n\n");
 	printf("\x1b[36m先手の行動が終わったら後手の行動です！\x1b[39m\n");
 	printf("ｂさん、駒を置く座標を入力してください：1 2\n");
 	printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
@@ -47,7 +47,7 @@ void view_tutorial(void)
 	printf("3|   |   |   |\n");
 	printf(" -------------\n");
 	printf("駒を配置しました！\n");
-	printf("先手と後手を交代します\n");
+	printf("先手と後手のターンを交代します\n");
 	printf("\x1b[36m以下、先手と後手を交代して行います！\n\n");
 	printf("パターン１：列がそろった場合\x1b[39m\n");
 	printf("aさん、駒を置く座標を入力してください：2 3\n");
