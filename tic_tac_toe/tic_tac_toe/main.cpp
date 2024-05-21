@@ -1,4 +1,5 @@
 ﻿#include <stdio.h>
+#include <stdlib.h>
 #include <ctype.h>
 
 #include "tutorial.h"
@@ -50,12 +51,14 @@ void game_progress(char* name1, char* name2) {
 	game_player2.name = name2;
 	game_player2.piece = 'X';
 
-	TURN player_game_turn = FIRST_TURN;	// プレイヤーのターン（初期値）
+	TURN player_game_turn = FIRST_TURN;					// プレイヤーのターン（初期値）
 
-	RESULT game_result = NONE;			// ゲームの結果を格納する
+	RESULT game_result = NONE;							// ゲームの結果を格納する
 
-	int game_horizontal_axis = 0;		// 盤面の横軸
-	int game_vertical_axis   = 0;		// 盤面の縦軸
+	int  game_horizontal_axis;							// 盤面の横軸（int型）
+	int  game_vertical_axis;							// 盤面の縦軸（int型）
+	char len_game_horizontal_axis[LEN_HORIZONTAL_AXIS];	// 盤面の横軸（char型）
+	char len_game_vertical_axis[LEN_VERTICAL_AXIS];		// 盤面の縦軸（char型）
 
 	clean_board();		// 盤面を初期化
 
@@ -81,12 +84,20 @@ void game_progress(char* name1, char* name2) {
 			}
 
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
-			scanf("%d ", &game_horizontal_axis);
-			scanf("%d", &game_vertical_axis);
+			scanf("%d ", len_game_horizontal_axis);
+			scanf("%d",  len_game_vertical_axis);
 			error_count++;
 
-		} while (((game_horizontal_axis < 1) && (game_horizontal_axis > 3)) ||
-			((game_vertical_axis < 1) && (game_vertical_axis > 3)));
+			if ((isdigit(len_game_horizontal_axis[LEN_HORIZONTAL_AXIS - 1]) != 0) ||
+				(isdigit(len_game_vertical_axis[LEN_VERTICAL_AXIS - 1]) != 0)) {
+				continue;
+			}
+
+			game_horizontal_axis = atoi(len_game_horizontal_axis);
+			game_vertical_axis   = atoi(len_game_vertical_axis);
+
+		} while (((game_horizontal_axis < 1) || (game_horizontal_axis > 3)) ||
+				 ((game_vertical_axis < 1) || (game_vertical_axis > 3)));
 
 		// 盤面に駒が配置出来なかった場合の処理
 		if (put_piece(game_horizontal_axis, game_vertical_axis, now_game_player) == FALSE) {
