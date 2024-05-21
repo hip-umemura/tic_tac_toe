@@ -13,7 +13,7 @@ typedef enum
 	SECOND_TURN,
 } TURN;
 
-typedef struct 
+typedef struct player
 {
 	char* name; //player–¼
 	char piece; //‹î
