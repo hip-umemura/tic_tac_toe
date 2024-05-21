@@ -3,18 +3,71 @@
 
 char board[BOARD_SIZE][BOARD_SIZE];
 
-void print_now_board(void) {
+void print_now_board(void) { // 盤面の状況をを表示
+	int column; 
+	printf("　 1   2   3\n");
+	printf(" -------------\n");
+	printf("1|");
+	for (column = 0; column < BOARD_SIZE; column++) {
+		printf(" %c |", board[0][column]);
+	}
+	printf("\n -------------\n");
+	printf("2|");
+	for (column = 0; column < BOARD_SIZE; column++) {
+		printf(" %c |", board[1][column]);
+	}
+	printf("\n -------------\n");
+	printf("3|");
+	for (column = 0; column < BOARD_SIZE; column++) {
+		printf(" %c |", board[2][column]);
+	}
+	printf("\n -------------\n\n"); 
 
 }
 
 int put_piece(int row, int column, PLAYER player) {
-
+	if (row >= 0 && row < BOARD_SIZE && column >= 0 && column < BOARD_SIZE && board[row][column] == ' ') {
+		board[row][column] = player.piece;
+		return TRUE; //駒を配置出来た場合にはTRUE(1)
+	}
+	else {
+		return FALSE;// 配置出来なかった場合（座標が不正または駒が既に配置されている）にはFALSE(0)を戻り値として返す。
+	}
 }
 
 RESULT judge_game(void) {
-
+	for (int row = 0; row < BOARD_SIZE; row++) {
+		for (int column = 0; column < BOARD_SIZE; column++) {
+			if (board[row][column] == ' ') {
+				return NONE; //スペースがあるならNONE（ゲーム続行）
+			}
+		}
+	}
+	for (int row = 0; row < BOARD_SIZE; row++) {
+		if (board[row][0] == board[row][1] && board[row][1] == board[row][2] && board[row][0] != ' ') {
+			return WIN; //　行をチェックしてOXがそろっているとき
+		}
+	}
+	for (int column = 0; column < BOARD_SIZE; column++) {
+		if (board[0][column] == board[1][column] && board[1][column] == board[2][column] && board[0][column] != ' ') {
+			return WIN; //　列をチェックしてOXがそろっているとき
+		}
+	}
+	if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != ' ') {
+		return WIN; //　右斜めがそろっているとき
+	}
+	else if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ') {
+		return WIN; // 左斜めがそろっているとき
+	}
+	else {
+		return DRAW; //引き分け
+	}
 }
 
-void clean_board(void) {
-	
+void clean_board(void) { //盤面を初期化
+	for (int row = 0; row < BOARD_SIZE; row++) {
+		for (int column = 0; column < BOARD_SIZE; column++) {
+			board[row][column] = ' ';
+		}
+	}
 }
