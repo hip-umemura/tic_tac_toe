@@ -131,5 +131,7 @@ int main(void) {
 	game_progress(name1, name2);
   } while (retry_game() == TRUE);
 
+  printf("ゲーム終了！");
+
   return 0;
 }

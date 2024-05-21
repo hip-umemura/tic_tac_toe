@@ -13,7 +13,11 @@ typedef enum
 	SECOND_TURN,
 } TURN;
 
+<<<<<<< HEAD
 typedef struct player
+=======
+typedef struct playaer
+>>>>>>> 2c948bdb7dc2d619b8721acbb517ef3abee730d8
 {
 	char* name; //player–¼
 	char piece; //‹î
