@@ -14,12 +14,12 @@ TURN change_turn(TURN now){
 	}
 }
 
-void print_result(RESULT result) {
+void print_result(RESULT result, PLAYER player) {
 	if (result == DRAW) {
 		printf("引き分け！");
 	}
 	else if (result == WIN) {
-		printf("%pさんの勝利！\n, player");
+		printf("%sさんの勝利！\n", player.name);
 	}
 }
 

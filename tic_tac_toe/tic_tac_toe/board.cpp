@@ -3,22 +3,22 @@
 
 char board[BOARD_SIZE][BOARD_SIZE];
 
-void print_now_board(void) {
+void print_now_board(void) { 
 	int column; 
 	printf("Å@ 1   2   3\n");
 	printf(" -------------\n");
 	printf("1|");
-	for (column = 0; column < 3; column++) {
+	for (column = 0; column < BOARD_SIZE; column++) {
 		printf(" %c | ", board[0][column]);
 	}
 	printf("\n -------------\n");
 	printf("2|");
-	for (column = 0; column < 3; column++) {
+	for (column = 0; column < BOARD_SIZE; column++) {
 		printf(" %c | ", board[1][column]);
 	}
 	printf("\n -------------\n");
 	printf("3|");
-	for (column = 0; column < 3; column++) {
+	for (column = 0; column < BOARD_SIZE; column++) {
 		printf(" %c | ", board[2][column]);
 	}
 	printf("\n -------------\n\n"); 
