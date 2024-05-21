@@ -25,7 +25,7 @@ void print_result(RESULT result) {
 
 int retry_game(void) {
 	char userInput;
-	printf("再プレイしま'すか(YES...1 / No...1以外):");
+	printf("再プレイしますか(YES...1 / No...1以外):");
 	scanf_s("%c", &userInput, 1);
 	if (userInput == '1') {
 		//printf("1");
@@ -37,38 +37,71 @@ int retry_game(void) {
 	}
 }
 
+// 三目並べ全体の処理
 void game_progress(char* name1, char* name2) {
 
-	PLAYER game_player_name1;				// 先攻プレイヤー名
-	PLAYER game_player_name2;				// 後攻プレイヤー名
+	PLAYER game_player1;				// 先手プレイヤー
+	PLAYER game_player2;				// 後手プレイヤー
+	PLAYER now_game_player;				// 現在のプレイヤー情報
 
-	TURN player_game_turn = FIRST_TURN;		// 先攻プレイヤーのターン（初期値）
+	game_player1.name = name1;
+	game_player1.piece = 'O';
 
-	RESULT game_result = NONE;						// ゲームの結果を格納する
+	game_player2.name = name2;
+	game_player2.piece = 'X';
 
-	// 先攻プレイヤー
-	game_player_name1.name  = name1;
-	game_player_name1.piece = 'O';
+	TURN player_game_turn = FIRST_TURN;	// プレイヤーのターン（初期値）
 
-	// 後攻プレイヤー
-	game_player_name2.name  = name2;
-	game_player_name2.piece = 'X';
+	RESULT game_result = NONE;			// ゲームの結果を格納する
 
+	int game_horizontal_axis = 0;		// 盤面の横軸
+	int game_vertical_axis   = 0;		// 盤面の縦軸
 
-	clean_board();
+	clean_board();		// 盤面を初期化
 
-	print_now_board();
+	print_now_board();	// 盤面を表示
 
-	printf("%sさん、駒を置く座標を入力してください：");
-	scanf("%d", )
-	scanf()
-	put_piece(int row, int column, PLAYER player);
+	while (game_result == NONE) {
 
-	judge_game();
+		int error_count = 0;	// 不正な入力した場合にエラー文を出させる条件変数
 
-	change_turn(TURN now);
+		// 現在のプレイヤーを代入
+		if (player_game_turn == FIRST_TURN) {
+			now_game_player = game_player1;
+		}
+		else
+		if (player_game_turn == SECOND_TURN) {
+				now_game_player = game_player2;
+		}
 
-	print_result(RESULT result, PLAYER player);
+		// 盤面の座標を入力
+		do {
+			if (error_count > 0) {
+				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
+			}
+
+			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
+			scanf("%d ", &game_horizontal_axis);
+			scanf("%d", &game_vertical_axis);
+			error_count++;
+
+		} while (((game_horizontal_axis < 1) && (game_horizontal_axis > 3)) ||
+			((game_vertical_axis < 1) && (game_vertical_axis > 3)));
+
+		// 盤面に駒が配置出来なかった場合の処理
+		if (put_piece(game_horizontal_axis, game_vertical_axis, now_game_player) == FALSE) {
+			continue;
+		}
+
+		print_now_board();						// 駒配置後、再度盤面を表示
+
+		// ゲームの結果がNONE以外の処理
+		if (judge_game() != NONE) {
+			break;
+		}
+		change_turn(player_game_turn);			//　現在のプレイヤー情報を入れ替える
+	}
+	print_result(game_result, now_game_player);	// ゲームの結果を表示する
 }
 
 int main(void) {
