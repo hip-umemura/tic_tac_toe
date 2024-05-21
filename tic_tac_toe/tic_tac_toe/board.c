@@ -9,7 +9,7 @@ void print_now_board(void) { // ”Õ–Ê‚Ìó‹µ‚ğ‚ğ•\¦
 	printf(" -------------\n");
 	printf("1|");
 	for (column = 0; column < BOARD_SIZE; column++) {
-		printf(" %c |", board[0][column]);
+		printf(" %c |", board[-1][column-1]);
 	}
 	printf("\n -------------\n");
 	printf("2|");
