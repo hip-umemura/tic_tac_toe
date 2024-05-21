@@ -5,7 +5,7 @@
 #include "board.h"
 
 TURN change_turn(TURN now){
-	printf("先手と後手のターンを交代します")
+	printf("先手と後手のターンを交代します");
 	if (now == FIRST_TURN) {
 		return SECOND_TURN;
 	}
@@ -19,7 +19,7 @@ void print_result(RESULT result) {
 		printf("引き分け！");
 	}
 	else if (result == WIN) {
-		print("%pさんの勝利！\n, player");
+		printf("%pさんの勝利！\n, player");
 	}
 }
 
@@ -54,7 +54,6 @@ void game_progress(char* name1, char* name2) {
 	game_player_name2.name  = name2;
 	game_player_name2.piece = 'X';
 
-	first_game_turn  = FIRST_TURN;
 
 	clean_board();
 

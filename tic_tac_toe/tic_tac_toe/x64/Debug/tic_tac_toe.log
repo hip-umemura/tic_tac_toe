@@ -1,2 +1,29 @@
-﻿  main.cpp
-  tic_tac_toe.vcxproj -> Z:\研修\実習\新しいフォルダー\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
+﻿  board.cpp
+  main.cpp
+  コードを生成中...
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(22,10): warning C4473: 'printf': 書式文字列として渡された引数が不足しています
+  C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(22,10):
+  プレースホルダーとそのパラメーターには 1 の可変個引数が必要ですが、0 が指定されています。
+  C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(22,10):
+  不足している可変個引数 1 が書式文字列 '%p' に必要です
+  
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(62,9): warning C4473: 'printf': 書式文字列として渡された引数が不足しています
+  C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(62,9):
+  プレースホルダーとそのパラメーターには 1 の可変個引数が必要ですが、0 が指定されています。
+  C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(62,9):
+  不足している可変個引数 1 が書式文字列 '%s' に必要です
+  
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(63,14): error C2059: 構文エラー: ')'
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(69,14): error C2275: 'TURN': 型の代わりに式が必要です
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(69,19): error C2146: 構文エラー: ')' が、識別子 'now' の前に必要です。
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(69,19): error C2146: 構文エラー: ';' が、識別子 'now' の前に必要です。
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(69,22): error C2059: 構文エラー: ')'
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(69,19): error C2065: 'now': 定義されていない識別子です。
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(71,15): error C2275: 'RESULT': 型の代わりに式が必要です
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(71,22): error C2146: 構文エラー: ')' が、識別子 'result' の前に必要です。
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(71,22): error C2146: 構文エラー: ';' が、識別子 'result' の前に必要です。
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(71,22): error C2065: 'result': 定義されていない識別子です。
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(71,30): error C2275: 'PLAYER': 型の代わりに式が必要です
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(71,37): error C2146: 構文エラー: ';' が、識別子 'player' の前に必要です。
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(71,43): error C2059: 構文エラー: ')'
+C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(71,44): warning C4091: '': 変数が何も宣言されていないときは、'player' の左辺を無視します。
