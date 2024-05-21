@@ -17,7 +17,13 @@ int retry_game(void) {
 }
 
 void game_progress(char* name1, char* name2) {
+<<<<<<< HEAD
   
+=======
+	clean_board();
+
+	print_now_board();
+>>>>>>> 2c948bdb7dc2d619b8721acbb517ef3abee730d8
 }
 
 int main(void) {
@@ -79,5 +85,10 @@ int main(void) {
 	game_progress(name1, name2);
   } while (retry_game() == TRUE);
 
+<<<<<<< HEAD
+=======
+  printf("ゲーム終了！");
+
+>>>>>>> 2c948bdb7dc2d619b8721acbb517ef3abee730d8
   return 0;
 }
