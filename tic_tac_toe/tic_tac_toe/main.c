@@ -8,10 +8,13 @@
 TURN change_turn(TURN now){
 	printf("先手と後手のターンを交代します");
 	if (now == FIRST_TURN) {
-		return SECOND_TURN;
+		now = SECOND_TURN;
+		return now;
 	}
 	else {
-		return FIRST_TURN;
+		now = SECOND_TURN;
+		now = FIRST_TURN;
+		return now;
 	}
 }
 
@@ -74,7 +77,7 @@ void game_progress(char* name1, char* name2) {
 		}
 		else
 		if (player_game_turn == SECOND_TURN) {
-				now_game_player = game_player2;
+			now_game_player = game_player2;
 		}
 
 		// 盤面の座標を入力
@@ -111,7 +114,7 @@ void game_progress(char* name1, char* name2) {
 		if (judge_game() != NONE) {
 			break;
 		}
-		change_turn(player_game_turn);			//　現在のプレイヤー情報を入れ替える
+		player_game_turn = change_turn(player_game_turn);			//　現在のプレイヤー情報を入れ替える
 	}
 	print_result(game_result, now_game_player);	// ゲームの結果を表示する
 }
