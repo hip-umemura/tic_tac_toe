@@ -1,6 +1,7 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <string.h>
 
 #include "tutorial.h"
 #include "board.h"
@@ -42,7 +43,8 @@ int retry_game(void) {
 }
 
 // 三目並べ全体の処理
-void game_progress(char* name1, char* name2) {
+void game_progress(char* name1, char* name2)
+{
 
 	PLAYER game_player1;				// 先手プレイヤー
 	PLAYER game_player2;				// 後手プレイヤー
@@ -76,16 +78,16 @@ void game_progress(char* name1, char* name2) {
 			now_game_player = game_player1;
 		}
 		else
-		if (player_game_turn == SECOND_TURN) {
-			now_game_player = game_player2;
-		}
+			if (player_game_turn == SECOND_TURN) {
+				now_game_player = game_player2;
+			}
 
 		// 盤面の座標を入力
 		do {
 			if (error_count > 0) {
 				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
 			}
-			
+
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
 			scanf_s("%s ", len_game_horizontal_axis, LEN_HORIZONTAL_AXIS + 1);
 			scanf_s("%s", len_game_vertical_axis, LEN_VERTICAL_AXIS + 1);
@@ -100,7 +102,6 @@ void game_progress(char* name1, char* name2) {
 		} while (((game_horizontal_axis < 1) || (game_horizontal_axis > 3)) ||
 			((game_vertical_axis < 1) || (game_vertical_axis > 3)));
 
-		// 
 		if (put_piece(game_horizontal_axis, game_vertical_axis, now_game_player) == TRUE) {
 
 			print_now_board();									// 駒配置後、再度盤面を表示
@@ -109,6 +110,7 @@ void game_progress(char* name1, char* name2) {
 
 			player_game_turn = change_turn(player_game_turn);	//　現在のプレイヤー情報を入れ替える
 		}
+	}
 	print_result(game_result, now_game_player);					// ゲームの結果を表示する
 }
 
@@ -126,7 +128,7 @@ int main(void) {
 		view_tutorial();
 	}
 
-	printf("ゲーム開始！");
+	printf("ゲーム開始！\n");
 
 	do {
 		name_array = 0;
