@@ -81,9 +81,9 @@ void game_progress(char* name1, char* name2) {
 		do {
 			if (error_count > 0) {
 				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
-			}
+			} 
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
-			scanf_s("%s", len_game_vertical_axis, 10);
+			scanf_s("%s", len_game_horizontal_axis, 10);
 			scanf_s("%s", len_game_vertical_axis, 10);
 			error_count++;
 
