@@ -56,7 +56,7 @@ void game_progress(char* name1, char* name2) {
 	RESULT game_result = NONE;							// ゲームの結果を格納する
 
 	int  game_horizontal_axis = 0;							// 盤面の横軸（int型）
-	int  game_vertical_axis = 0;							// 盤面の縦軸（int型）
+	int  game_vertical_axis   = 0;							// 盤面の縦軸（int型）
 	char len_game_horizontal_axis[LEN_HORIZONTAL_AXIS];	// 盤面の横軸（char型）
 	char len_game_vertical_axis[LEN_VERTICAL_AXIS];		// 盤面の縦軸（char型）
 
@@ -83,16 +83,18 @@ void game_progress(char* name1, char* name2) {
 				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
 			}
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
-			scanf_s("%s", len_game_horizontal_axis, 10);
+			scanf_s("%s", len_game_vertical_axis, 10);
 			scanf_s("%s", len_game_vertical_axis, 10);
 			error_count++;
 
 			if ((isdigit(len_game_horizontal_axis[LEN_HORIZONTAL_AXIS - 1]) == 0) ||
 				(isdigit(len_game_vertical_axis[LEN_VERTICAL_AXIS - 1]) == 0)) {
-				
+
+				continue;
 			}
 
 			game_horizontal_axis = atoi(len_game_horizontal_axis);
+			printf("%d", game_horizontal_axis);
 			game_vertical_axis   = atoi(len_game_vertical_axis);
 
 		} while (((game_horizontal_axis < 1) || (game_horizontal_axis > 3)) ||
