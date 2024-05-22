@@ -1,11 +1,2 @@
 ﻿  main.c
-<<<<<<< HEAD
   tic_tac_toe.vcxproj -> Z:\研修\実習\tic_tac_toe\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
-=======
-  tutorial.c
-  コードを生成中...
-C:\Users\r_morimoto\source\repos\hip-umemura\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.c(115,16): error C2143: 構文エラー: ';' が '{' の前にありません。
-C:\Users\r_morimoto\source\repos\hip-umemura\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.c(175,10): warning C4098: 'game_progress': 戻り値の型が 'void' で宣言された関数が、値を返しました。
-C:\Users\r_morimoto\source\repos\hip-umemura\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.c(45,46): error C1075: '{': 一致するトークンが見つかりませんでした
-C:\Users\r_morimoto\source\repos\hip-umemura\tic_tac_toe\tic_tac_toe\tic_tac_toe\tutorial.c(1,1): error C1090: PDB API の呼び出しに失敗しました。エラー コード '3': C:\Users\r_morimoto\source\repos\hip-umemura\tic_tac_toe\tic_tac_toe\tic_tac_toe\x64\Debug\vc143.pdb
->>>>>>> f06b4e96d8af5c28a9fe3050f366b7438b4038db

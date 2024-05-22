@@ -57,18 +57,21 @@ void game_progress(char* name1, char* name2) {
 
 	RESULT game_result = NONE;							// ゲームの結果を格納する
 
-	int  game_horizontal_axis = 0;						// 盤面の横軸（int型）
-	int  game_vertical_axis = 0;						// 盤面の縦軸（int型）
+	int  game_horizontal_axis;						// 盤面の横軸（int型）
+	int  game_vertical_axis;						// 盤面の縦軸（int型）
 	char len_game_horizontal_axis[LEN_HORIZONTAL_AXIS + 1];	// 盤面の横軸（char型）
 	char len_game_vertical_axis[LEN_VERTICAL_AXIS + 1];		// 盤面の縦軸（char型）
+
+	int error_count;
 
 	clean_board();		// 盤面を初期化
 
 	print_now_board();	// 盤面を表示
 
 	while (game_result == NONE) {
-
-	  int error_count = 0;	// 不正な入力した場合にエラー文を出させる条件変数
+	  game_horizontal_axis = 0;
+	  game_vertical_axis = 0;
+	  error_count = 0;	// 不正な入力した場合にエラー文を出させる条件変数
 
 	  // 現在のプレイヤーを代入
 	  if (player_game_turn == FIRST_TURN) {
@@ -90,8 +93,6 @@ void game_progress(char* name1, char* name2) {
 		scanf_s("%s", len_game_vertical_axis, LEN_VERTICAL_AXIS + 1);
 		error_count++;
 
-		len_game_horizontal_axis[1] = '\0';
-
 		if ((isdigit(len_game_horizontal_axis[LEN_HORIZONTAL_AXIS - 1]) != 0) &&
 		  (isdigit(len_game_vertical_axis[LEN_VERTICAL_AXIS - 1]) != 0)) {
 		  game_horizontal_axis = atoi(len_game_horizontal_axis);
@@ -110,8 +111,11 @@ void game_progress(char* name1, char* name2) {
 
 		player_game_turn = change_turn(player_game_turn);	//　現在のプレイヤー情報を入れ替える
 	  }
-	  print_result(game_result, now_game_player);					// ゲームの結果を表示する
+	  else {
+		printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
+	  }
 	}
+	 print_result(game_result, now_game_player);					// ゲームの結果を表示する
 }
 
 int main(void) {
