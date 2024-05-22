@@ -127,9 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="board.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="tutorial.cpp" />
+    <ClCompile Include="board.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="tutorial.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basic.h" />

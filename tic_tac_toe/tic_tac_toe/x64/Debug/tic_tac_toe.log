@@ -1,3 +1,2 @@
-﻿  main.cpp
-C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(84,4): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\tic_tac_toe\main.cpp(85,4): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  main.c
+  tic_tac_toe.vcxproj -> C:\Users\k_tasaka\Desktop\a\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
