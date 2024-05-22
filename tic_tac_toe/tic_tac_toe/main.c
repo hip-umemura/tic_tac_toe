@@ -6,7 +6,7 @@
 #include "board.h"
 
 TURN change_turn(TURN now){
-	printf("先手と後手のターンを交代します");
+	printf("先手と後手のターンを交代します\n");
 	if (now == FIRST_TURN) {
 		now = SECOND_TURN;
 		return now;
@@ -110,8 +110,10 @@ void game_progress(char* name1, char* name2) {
 
 		print_now_board();						// 駒配置後、再度盤面を表示
 
+		game_result = judge_game();
+
 		// ゲームの結果がNONE以外の処理
-		if (judge_game() != NONE) {
+		if (game_result != NONE) {
 			break;
 		}
 		player_game_turn = change_turn(player_game_turn);			//　現在のプレイヤー情報を入れ替える
