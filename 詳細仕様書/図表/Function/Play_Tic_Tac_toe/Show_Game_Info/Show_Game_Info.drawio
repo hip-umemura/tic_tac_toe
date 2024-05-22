@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-13T07:06:35.320Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="g_0W-ia104HJ3giFYOEF" version="24.4.0" type="device">
+<mxfile host="app.diagrams.net" modified="2024-05-22T07:00:28.349Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="bvW0SHx4HHG5DOZzH0mm" version="24.4.4" type="device">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="798" dy="553" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="822" dy="549" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -10,13 +10,19 @@
         <mxCell id="Hk9xaSnE0r8wSvWAPiRx-0" value="Show_GameInfo()&lt;br&gt;開始" style="ellipse;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="220" y="40" width="120" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="Hk9xaSnE0r8wSvWAPiRx-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Hk9xaSnE0r8wSvWAPiRx-1" target="Hk9xaSnE0r8wSvWAPiRx-3" edge="1">
+        <mxCell id="c2qx0M0O1r36FoxTtpvk-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Hk9xaSnE0r8wSvWAPiRx-1" target="c2qx0M0O1r36FoxTtpvk-0">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Hk9xaSnE0r8wSvWAPiRx-1" value="現在のマス目情報&lt;br&gt;ゲーム進行の&lt;div&gt;ルールを表示&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="220" y="120" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Hk9xaSnE0r8wSvWAPiRx-3" value="Show_GameInfo()&lt;br&gt;終了" style="ellipse;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="220" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c2qx0M0O1r36FoxTtpvk-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="c2qx0M0O1r36FoxTtpvk-0" target="Hk9xaSnE0r8wSvWAPiRx-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2qx0M0O1r36FoxTtpvk-0" value="ユーザー入力部に&lt;div&gt;現在の入力プレイヤーの情報を表示&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="220" y="200" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
