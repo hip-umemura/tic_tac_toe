@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-﻿  board.c
-  tic_tac_toe.vcxproj -> C:\Users\r_morimoto\Desktop\a\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
-=======
 ﻿  main.c
-  tic_tac_toe.vcxproj -> Z:\研修\実習\tic_tac_toe\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
->>>>>>> 369a6bcb56b996199a418e237e5bb0af6ca10649
+  tic_tac_toe.vcxproj -> C:\Users\r_morimoto\Desktop\a\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
