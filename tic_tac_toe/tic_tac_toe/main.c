@@ -13,7 +13,6 @@ TURN change_turn(TURN now){
 		return now;
 	}
 	else {
-		now = SECOND_TURN;
 		now = FIRST_TURN;
 		return now;
 	}
@@ -60,17 +59,23 @@ void game_progress(char* name1, char* name2)
 
 	RESULT game_result = NONE;							// ゲームの結果を格納する
 
-	int  game_horizontal_axis = 0;						// 盤面の横軸（int型）
-	int  game_vertical_axis = 0;						// 盤面の縦軸（int型）
-	char len_game_horizontal_axis[LEN_HORIZONTAL_AXIS];	// 盤面の横軸（char型）
-	char len_game_vertical_axis[LEN_VERTICAL_AXIS];		// 盤面の縦軸（char型）
+	int  game_horizontal_axis;						// 盤面の横軸（int型）
+	int  game_vertical_axis;						// 盤面の縦軸（int型）
+	char len_game_horizontal_axis[LEN_HORIZONTAL_AXIS + 1];	// 盤面の横軸（char型）
+	char len_game_vertical_axis[LEN_VERTICAL_AXIS + 1];		// 盤面の縦軸（char型）
+
+	int error_count;
 
 	clean_board();		// 盤面を初期化
 
 	print_now_board();	// 盤面を表示
 
 	while (game_result == NONE) {
+	  game_horizontal_axis = 0;
+	  game_vertical_axis = 0;
+	  error_count = 0;	// 不正な入力した場合にエラー文を出させる条件変数
 
+<<<<<<< HEAD
 		int error_count = 0;	// 不正な入力した場合にエラー文を出させる条件変数
 
 		// 現在のプレイヤーを代入
@@ -112,6 +117,51 @@ void game_progress(char* name1, char* name2)
 		}
 	}
 	print_result(game_result, now_game_player);					// ゲームの結果を表示する
+=======
+	  // 現在のプレイヤーを代入
+	  if (player_game_turn == FIRST_TURN) {
+		now_game_player = game_player1;
+	  }
+	  else
+		if (player_game_turn == SECOND_TURN) {
+		  now_game_player = game_player2;
+		}
+
+	  // 盤面の座標を入力
+	  do {
+		if (error_count > 0) {
+		  printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
+		}
+
+		printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
+		scanf_s("%s ", len_game_horizontal_axis, LEN_HORIZONTAL_AXIS + 1);
+		scanf_s("%s", len_game_vertical_axis, LEN_VERTICAL_AXIS + 1);
+		error_count++;
+
+		if ((isdigit(len_game_horizontal_axis[LEN_HORIZONTAL_AXIS - 1]) != 0) &&
+		  (isdigit(len_game_vertical_axis[LEN_VERTICAL_AXIS - 1]) != 0)) {
+		  game_horizontal_axis = atoi(len_game_horizontal_axis);
+		  game_vertical_axis = atoi(len_game_vertical_axis);
+		}
+
+	  } while (((game_horizontal_axis < 1) || (game_horizontal_axis > 3)) ||
+		((game_vertical_axis < 1) || (game_vertical_axis > 3)));
+
+	  // 
+	  if (put_piece(game_horizontal_axis, game_vertical_axis, now_game_player) == TRUE) {
+
+		print_now_board();									// 駒配置後、再度盤面を表示
+
+		game_result = judge_game();							// ゲームの結果を代入
+
+		player_game_turn = change_turn(player_game_turn);	//　現在のプレイヤー情報を入れ替える
+	  }
+	  else {
+		printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
+	  }
+	}
+	 print_result(game_result, now_game_player);					// ゲームの結果を表示する
+>>>>>>> 369a6bcb56b996199a418e237e5bb0af6ca10649
 }
 
 int main(void) {
@@ -122,7 +172,8 @@ int main(void) {
 
 	printf("チュートリアルを見ますか(YES...1 / NO...1以外)：");
 	scanf_s("%d", &start_tutorial);
-	fflush(stdin);
+	while (getchar() != '\n')
+	  ;
 
 	if (start_tutorial == TRUE) {
 		view_tutorial();
@@ -170,6 +221,8 @@ int main(void) {
 	do
 	{
 		game_progress(name1, name2);
+		while (getchar() != '\n')
+		  ;
 	} while (retry_game() == TRUE);
 
 	printf("ゲーム終了！");
