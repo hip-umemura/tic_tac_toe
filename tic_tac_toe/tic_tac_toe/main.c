@@ -5,8 +5,8 @@
 #include "tutorial.h"
 #include "board.h"
 
-TURN change_turn(TURN now) {
-	printf("先手と後手のターンを交代します");
+TURN change_turn(TURN now){
+	printf("先手と後手のターンを交代します\n");
 	if (now == FIRST_TURN) {
 		now = SECOND_TURN;
 		return now;
@@ -85,6 +85,7 @@ void game_progress(char* name1, char* name2) {
 			if (error_count > 0) {
 				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
 			}
+			
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
 			scanf_s("%s ", len_game_horizontal_axis, LEN_HORIZONTAL_AXIS + 1);
 			scanf_s("%s", len_game_vertical_axis, LEN_VERTICAL_AXIS + 1);
