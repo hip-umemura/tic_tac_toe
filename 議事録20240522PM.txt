@@ -1,0 +1,16 @@
+議事録 20240522PM
+参加者:岡本春輝 野村海斗 長島翔 宮窪勇飛 赤木亮介
+
+修正点
+4章 機能構成の列挙型の定義で、Resetが複数存在する。
+修正:機能構成の列挙型の定義にてResultのRESETをR_RESETに、PLAYER_TURNのRESETをP_RESETに変更した。
+
+5.4のエラー画面に関する処理を一つ一つ書いているので、関数で分けれるか
+修正:ファイル構成のDisplay.cにエラー表示のInputError()と重複エラー表示のSameInputErrorを追加した。
+変更に伴い、InputError()の説明を仕様書4.1.3に記述。
+SameInputErrorの説明を仕様書4.1.4に記述。
+
+スペルミスの修正(WINNER)。
+
+質問
+なし
