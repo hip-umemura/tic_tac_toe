@@ -21,13 +21,12 @@ void print_now_board(void) { // 盤面の状況をを表示
 	for (column = 0; column < BOARD_SIZE; column++) {
 		printf(" %c |", board[2][column]);
 	}
-	printf("\n -------------\n\n"); 
-
+	
 }
 
 int put_piece(int row, int column, PLAYER player) {
-	if (row >= 0 && row < BOARD_SIZE && column >= 0 && column < BOARD_SIZE && board[row][column] == ' ') {
-		board[row][column] = player.piece;
+	if (row >= 0 && row <= BOARD_SIZE && column >= 0 && column <= BOARD_SIZE && board[row][column] == ' ') {
+		board[row-1][column-1] = player.piece;
 		return TRUE; //駒を配置出来た場合にはTRUE(1)
 	}
 	else {
