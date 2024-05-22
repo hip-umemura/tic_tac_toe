@@ -142,10 +142,9 @@ int main(void) {
 			name_array++;
 		} while (name1[name_array] != '\0');
 
-		while (getchar() != '\n')
-			;
+		while (getchar() != '\n');
 
-	} while (name1[name_array] != '\0' || name_array == 0);
+	} while ((name1[name_array] != '\0' )|| (name_array == 0));
 
 	do {
 		name_array = 0;
