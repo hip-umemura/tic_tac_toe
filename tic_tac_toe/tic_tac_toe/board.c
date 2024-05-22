@@ -29,6 +29,7 @@ int put_piece(int row, int column, PLAYER player) {
 	row--; // 1から始まる入力を0から始まるインデックスに変換
 	column--; // 同上
 	if (row >= 0 && row <= BOARD_SIZE && column >= 0 && column <= BOARD_SIZE && board[row][column] == ' ') {
+		board[row][column] = player.piece;
 		return TRUE; //駒を配置出来た場合にはTRUE(1)
 	}
 	else {
