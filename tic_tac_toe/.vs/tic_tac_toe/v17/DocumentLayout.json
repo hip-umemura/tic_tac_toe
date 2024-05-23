@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "tic_tac_toe\\board.c",
               "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.c",
               "RelativeToolTip": "tic_tac_toe\\board.c",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAASAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-22T04:23:49.082Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "tic_tac_toe\\basic.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.145Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "tic_tac_toe\\board.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.145Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "tic_tac_toe\\main.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAJgAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-22T04:23:49.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.161Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "tic_tac_toe\\tutorial.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.161Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "tic_tac_toe\\tutorial.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-22T04:23:49.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.161Z"
             }
           ]
         }
