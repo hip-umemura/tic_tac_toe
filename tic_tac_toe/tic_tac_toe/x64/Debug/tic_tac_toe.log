@@ -1,11 +1,2 @@
-﻿  board.c
-  main.c
-<<<<<<< HEAD
-  tutorial.c
-  コードを生成中...
+﻿  main.c
   tic_tac_toe.vcxproj -> C:\Users\r_morimoto\Desktop\a\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
-=======
-  コードを生成中...
-LINK : warning LNK4020: '' の型レコードは破損しています。一部のシンボルおよび型は、デバッガーからはアクセスできない可能性があります。
-  tic_tac_toe.vcxproj -> C:\Users\k_tasaka\Desktop\s\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
->>>>>>> efd6722a8068c3777b1776e98dc0b7a4edc4142b

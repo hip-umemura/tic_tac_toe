@@ -82,7 +82,7 @@ void game_progress(char* name1, char* name2)
 	while (game_result == NONE) {
 		game_horizontal_axis = 0;
 		game_vertical_axis   = 0;
-		error_count          = 0;	// 不正な入力した場合にエラー文を出させる条件変数
+		error_count          = 0;
 
 		// 現在のプレイヤーを代入
 		if (player_game_turn == FIRST_TURN) {
@@ -99,7 +99,7 @@ void game_progress(char* name1, char* name2)
 			}
 
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
-			scanf_s("%s", len_game_horizontal_axis, LEN_HORIZONTAL_AXIS );
+			scanf_s("%s", len_game_horizontal_axis, LEN_HORIZONTAL_AXIS + 1);
 			scanf_s("%s", len_game_vertical_axis, LEN_VERTICAL_AXIS + 1);
 			while (getchar() != '\n');	// バッファをクリアにしている
 			error_count++;
@@ -197,8 +197,6 @@ int main(void) {
 	do
 	{
 		game_progress(name1, name2);
-		while (getchar() != '\n')
-			;
 	} while (retry_game() == TRUE);	// 再度ゲームを行うか否か
 
 	printf("ゲーム終了！");
