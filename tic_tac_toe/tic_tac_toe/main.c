@@ -99,17 +99,17 @@ void game_progress(char* name1, char* name2)
 			}
 
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
-			scanf_s("%s ", len_game_horizontal_axis, LEN_HORIZONTAL_AXIS + 1);
+			scanf_s("%s", len_game_horizontal_axis, LEN_HORIZONTAL_AXIS + 1);
 			scanf_s("%s", len_game_vertical_axis, LEN_VERTICAL_AXIS + 1);
 			while (getchar() != '\n');
 			error_count++;
 
 			// 入力された値が数字か数字以外か判断
 			if ((isdigit(len_game_horizontal_axis[LEN_HORIZONTAL_AXIS - 1]) != 0) &&
-				(isdigit(len_game_vertical_axis[LEN_VERTICAL_AXIS - 1]) != 0)) {
+				(isdigit(len_game_vertical_axis[LEN_VERTICAL_AXIS - 1]) != 0)){
+			}
 				game_horizontal_axis = atoi(len_game_horizontal_axis);
 				game_vertical_axis = atoi(len_game_vertical_axis);
-			}
 
 		} while (((game_horizontal_axis < 1) || (game_horizontal_axis > 3)) ||
 			((game_vertical_axis < 1) || (game_vertical_axis > 3)));
@@ -162,7 +162,7 @@ int main(void) {
 				break;
 			}
 			name_array++;
-		} while (name1[name_array] != '\0');
+		} while(name1[name_array] != '\0');
 
 		while (getchar() != '\n')
 		  ;
