@@ -44,7 +44,6 @@ int retry_game(void) {
 // 三目並べ全体の処理
 void game_progress(char* name1, char* name2)
 {
-
 	PLAYER game_player1;				// 先手プレイヤー
 	PLAYER game_player2;				// 後手プレイヤー
 	PLAYER now_game_player;				// 現在のプレイヤー
@@ -124,9 +123,9 @@ void game_progress(char* name1, char* name2)
 
 int main(void) {
 	int start_tutorial;
-	char name1[NAME_LEN];
-	char name2[NAME_LEN];
+	char name[PLAYERS][NAME_LEN];
 	int name_array;
+	int player_count = 0;
 
 	printf("チュートリアルを見ますか(YES...1 / NO...1以外)：");
 	scanf_s("%d", &start_tutorial);
@@ -140,48 +139,36 @@ int main(void) {
 	printf("ゲーム開始！\n");
 
 	do {
+	  do {
 		name_array = 0;
 
-		printf("先手のプレイヤー名を入力してください：");
-		scanf_s("%s", name1, NAME_LEN);
+		if (player_count == 0) {
+		  printf("先手のプレイヤー名を入力してください：");
+		}
+		else {
+		  printf("後手のプレイヤー名を入力してください：");
+		}
+		scanf_s("%s", name[player_count], NAME_LEN);
 
 		do {
-			if (((iswprint(name1[name_array])) && (!iswcntrl(name1[name_array])) &&
-			  (!iswascii(name1[name_array]))) || (iswpunct(name1[name_array]))) {
-				printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
-				break;
-			}
-			name_array++;
-		} while (name1[name_array] != '\0');
+		  if (((iswprint(name[player_count][name_array])) && (!iswcntrl(name[player_count][name_array])) &&
+			(!iswascii(name[player_count][name_array]))) || (iswpunct(name[player_count][name_array]))) {
+			printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
+			break;
+		  }
+		  name_array++;
+		} while (name[player_count][name_array] != '\0');
 
 		while (getchar() != '\n')
 		  ;
 
-	} while ((name1[name_array] != '\0' ) || (name_array == 0));
-
-	do {
-		name_array = 0;
-
-		printf("後手のプレイヤー名を入力してください：");
-		scanf_s("%s", name2, NAME_LEN);
-
-		do {
-			if (((iswprint(name2[name_array])) && (!iswcntrl(name2[name_array])) && 
-			  (!iswascii(name2[name_array]))) || (iswpunct(name2[name_array]))) {
-				printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
-				break;
-			}
-			name_array++;
-		} while (name2[name_array] != '\0');
-
-		while (getchar() != '\n')
-			;
-
-	} while (name2[name_array] != '\0' || name_array == 0);
+	  } while ((name[player_count][name_array] != '\0') || (name_array == 0));
+	  player_count++;
+	} while (player_count != PLAYERS);
 
 	do
 	{
-		game_progress(name1, name2);
+		game_progress(name[0], name[1]);
 		while (getchar() != '\n')
 		  ;
 	} while (retry_game() == TRUE);
