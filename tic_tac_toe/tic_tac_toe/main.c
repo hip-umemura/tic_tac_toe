@@ -157,7 +157,7 @@ int main(void) {
 		do {
 		  if (((iswprint(name[player_count][name_array])) && (!iswcntrl(name[player_count][name_array])) &&
 			(!iswascii(name[player_count][name_array]))) || (iswpunct(name[player_count][name_array]))) {
-			printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
+			printf("\x1b[31m半角英数字9字以内で入力してください！\x1b[39m\n");
 			break;
 		  }
 		  name_array++;

@@ -4,9 +4,12 @@
 char board[BOARD_SIZE][BOARD_SIZE];	// 盤面をグローバル変数で定義（char型）
 
 void print_now_board(void) { // 盤面の状況を表示
-		int row, column; //行、列
 
-		printf("　 1   2   3\n");
+		int row, column; //行、列
+		for (column = 0; column < BOARD_SIZE; column++) {
+			printf("   %d", column + 1);
+		}
+		printf("\n");
 		for (row = 0; row < BOARD_SIZE; row++) {
 			printf(" -------------\n");
 			printf("%d|", row + 1);
