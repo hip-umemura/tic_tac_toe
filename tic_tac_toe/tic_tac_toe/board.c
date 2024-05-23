@@ -1,34 +1,27 @@
 #include <stdio.h>
 #include "board.h"
 
-char board[BOARD_SIZE][BOARD_SIZE];
+char board[BOARD_SIZE][BOARD_SIZE];	// 盤面をグローバル変数で定義（char型）
 
-void print_now_board(void) { // 盤面の状況をを表示
-	int column; 
-	printf("　 1   2   3\n");
-	printf(" -------------\n");
-	printf("1|");
-	for (column = 0; column < BOARD_SIZE; column++) {
-		printf(" %c |", board[0][column]);
-	}
-	printf("\n -------------\n");
-	printf("2|");
-	for (column = 0; column < BOARD_SIZE; column++) {
-		printf(" %c |", board[1][column]);
-	}
-	printf("\n -------------\n");
-	printf("3|");
-	for (column = 0; column < BOARD_SIZE; column++) {
-		printf(" %c |", board[2][column]);
-	}
-	printf("\n -------------\n");
-	
+void print_now_board(void) { // 盤面の状況を表示
+		int row, column; //行、列
+
+		printf("　 1   2   3\n");
+		for (row = 0; row < BOARD_SIZE; row++) {
+			printf(" -------------\n");
+			printf("%d|", row + 1);
+			for (column = 0; column < BOARD_SIZE; column++) {
+				printf(" %c |", board[row][column]);
+			}
+			printf("\n");
+		}
+		printf(" -------------\n");
 }
 
 int put_piece(int row, int column, PLAYER player) {
 	row--; // 1から始まる入力を0から始まるインデックスに変換
 	column--;
-	if (row >= 0 && row < BOARD_SIZE && column >= 0 && column < BOARD_SIZE && board[row][column] == ' ') {
+	if (((row >= 0) && (row < BOARD_SIZE)) && ((column >= 0) && (column < BOARD_SIZE)) && (board[row][column] == ' ')) {
 		board[row][column] = player.piece;
 		return TRUE; //駒を配置出来た場合にはTRUE(1)
 	}
@@ -39,19 +32,19 @@ int put_piece(int row, int column, PLAYER player) {
 
 RESULT judge_game(void) {
 	for (int row = 0; row < BOARD_SIZE; row++) {
-		if (board[row][0] == board[row][1] && board[row][1] == board[row][2] && board[row][0] != ' ') {
+		if ((board[row][0] == board[row][1]) && (board[row][1] == board[row][2]) && (board[row][0] != ' ')) {
 			return WIN; //　行をチェックしてOXがそろっているとき
 		}
 	}
 	for (int column = 0; column < BOARD_SIZE; column++) {
-		if (board[0][column] == board[1][column] && board[1][column] == board[2][column] && board[0][column] != ' ') {
+		if ((board[0][column] == board[1][column]) && (board[1][column] == board[2][column]) && (board[0][column] != ' ')) {
 			return WIN; //　列をチェックしてOXがそろっているとき
 		}
 	}
-	if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != ' ') {
+	if ((board[0][0] == board[1][1]) && (board[1][1] == board[2][2]) && (board[0][0] != ' ')) {
 		return WIN; //　右斜めがそろっているとき
 	}
-	else if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != ' ') {
+	else if ((board[0][2] == board[1][1]) && (board[1][1] == board[2][0]) && (board[0][2] != ' ')) {
 		return WIN; // 左斜めがそろっているとき
 	}
 	for (int row = 0; row < BOARD_SIZE; row++) {
