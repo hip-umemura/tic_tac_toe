@@ -126,9 +126,9 @@ void game_progress(char* name1, char* name2)
 int main(void) {
 
 	int start_tutorial;		// チュートリアルを表示する条件変数
-	char name1[NAME_LEN];	// 先手のプレイヤー名
-	char name2[NAME_LEN];	// 後手のプレイヤー名
+	char name[PLAYERS][NAME_LEN];
 	int name_array;			// プレイヤー名の要素数
+	int player_count = 0;
 
 	printf("チュートリアルを見ますか(YES...1 / NO...1以外)：");
 	scanf_s("%d", &start_tutorial);
@@ -143,51 +143,40 @@ int main(void) {
 
 	// 先手のプレイヤー名を入力
 	do {
+	  do {
 		name_array = 0;
 
-		printf("先手のプレイヤー名を入力してください：");
-		scanf_s("%s", name1, NAME_LEN);
+		if (player_count == 0) {
+		  printf("先手のプレイヤー名を入力してください：");
+		}
+		else {
+		  printf("後手のプレイヤー名を入力してください：");
+		}
+		scanf_s("%s", name[player_count], NAME_LEN);
 
 		do {
-			if (((iswprint(name1[name_array])) && (!iswcntrl(name1[name_array])) &&
-			  (!iswascii(name1[name_array]))) || (iswpunct(name1[name_array]))) {
-				printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
-				break;
-			}
-			name_array++;
-		} while(name1[name_array] != '\0');
+		  if (((iswprint(name[player_count][name_array])) && (!iswcntrl(name[player_count][name_array])) &&
+			(!iswascii(name[player_count][name_array]))) || (iswpunct(name[player_count][name_array]))) {
+			printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
+			break;
+		  }
+		  name_array++;
+		} while (name[player_count][name_array] != '\0');
 
 		while (getchar() != '\n')
 			;
 
-	} while ((name1[name_array] != '\0') || (name_array == 0));
-
-	// 後手のプレイヤー名入力
-	do {
-		name_array = 0;
-
-		printf("後手のプレイヤー名を入力してください：");
-		scanf_s("%s", name2, NAME_LEN);
-
-		do {
-			if (((iswprint(name2[name_array])) && (!iswcntrl(name2[name_array])) && 
-			  (!iswascii(name2[name_array]))) || (iswpunct(name2[name_array]))) {
-				printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
-				break;
-			}
-			name_array++;
-		} while (name2[name_array] != '\0');
-
-		while (getchar() != '\n')
-			;
-
-	} while (name2[name_array] != '\0' || name_array == 0);
+	  } while ((name[player_count][name_array] != '\0') || (name_array == 0));
+	  player_count++;
+	} while (player_count != PLAYERS);
 
 	// プレイヤー名入力後、ゲームを行う
 	do
 	{
-		game_progress(name1, name2);
-	} while (retry_game() == TRUE);	// 再度ゲームを行うか否か
+		game_progress(name[0], name[1]);
+		while (getchar() != '\n')
+		  ;
+	} while (retry_game() == TRUE);
 
 	printf("ゲーム終了！");
 
