@@ -5,8 +5,6 @@
 #include "basic.h"
 
 #define BOARD_SIZE (3)
-#define LEN_HORIZONTAL_AXIS  (1)
-#define LEN_VERTICAL_AXIS    (1)
 
 typedef enum
 {

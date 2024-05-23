@@ -3,7 +3,7 @@
 
 char board[BOARD_SIZE][BOARD_SIZE];	// 盤面をグローバル変数で定義（char型）
 
-void print_now_board(void) { // 盤面の状況をを表示
+void print_now_board(void) {		// 盤面の状況をを表示
 
 	int column;
 
