@@ -101,7 +101,7 @@ void game_progress(char* name1, char* name2)
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
 			scanf_s("%s", len_game_horizontal_axis, LEN_HORIZONTAL_AXIS + 1);
 			scanf_s("%s", len_game_vertical_axis, LEN_VERTICAL_AXIS + 1);
-			while (getchar() != '\n');
+			while (getchar() != '\n');	// バッファをクリアにしている
 			error_count++;
 
 			// 入力された値が数字か数字以外か判断
@@ -121,35 +121,37 @@ void game_progress(char* name1, char* name2)
 
 			printf("駒を配置しました。\n");
 
-			game_result = judge_game();	// ゲームの結果を代入
+			game_result = judge_game();		// ゲームの結果を代入
 
-			if (game_result != NONE) {
-				player_game_turn = change_turn(player_game_turn);
+			if (game_result == NONE) {
+				player_game_turn = change_turn(player_game_turn);	// 現在のプレイヤーを交代する
 			}
 		} else {
 			printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
 		}
 	}
-	print_result(game_result, now_game_player);					// ゲームの結果を表示する
+	print_result(game_result, now_game_player);	// ゲームの結果を表示する
 }
 
 int main(void) {
-	int start_tutorial;
-	char name1[NAME_LEN];
-	char name2[NAME_LEN];
-	int name_array;
+
+	int start_tutorial;		// チュートリアルを表示する条件変数
+	char name1[NAME_LEN];	// 先手のプレイヤー名
+	char name2[NAME_LEN];	// 後手のプレイヤー名
+	int name_array;			// プレイヤー名の要素数
 
 	printf("チュートリアルを見ますか(YES...1 / NO...1以外)：");
 	scanf_s("%d", &start_tutorial);
-	while (getchar() != '\n')
-		;
+	while (getchar() != '\n');
 
+	// チュートリアルを表示する
 	if (start_tutorial == TRUE) {
 		view_tutorial();
 	}
 
 	printf("ゲーム開始！\n");
 
+	// 先手のプレイヤー名を入力
 	do {
 		name_array = 0;
 
@@ -166,10 +168,11 @@ int main(void) {
 		} while(name1[name_array] != '\0');
 
 		while (getchar() != '\n')
-		  ;
+			;
 
 	} while ((name1[name_array] != '\0') || (name_array == 0));
 
+	// 後手のプレイヤー名入力
 	do {
 		name_array = 0;
 
@@ -190,12 +193,13 @@ int main(void) {
 
 	} while (name2[name_array] != '\0' || name_array == 0);
 
+	// プレイヤー名入力後、ゲームを行う
 	do
 	{
 		game_progress(name1, name2);
 		while (getchar() != '\n')
 			;
-	} while (retry_game() == TRUE);
+	} while (retry_game() == TRUE);	// 再度ゲームを行うか否か
 
 	printf("ゲーム終了！");
 

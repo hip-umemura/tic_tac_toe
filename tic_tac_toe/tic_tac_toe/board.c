@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include "board.h"
 
-char board[BOARD_SIZE][BOARD_SIZE];
+char board[BOARD_SIZE][BOARD_SIZE];	// 盤面をグローバル変数で定義（char型）
 
 void print_now_board(void) { // 盤面の状況をを表示
-	int column; 
+
+	int column;
+
 	printf("　 1   2   3\n");
 	printf(" -------------\n");
 	printf("1|");

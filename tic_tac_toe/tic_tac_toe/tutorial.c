@@ -1,3 +1,4 @@
+// チュートリアルの内容が記載されたファイル
 #include <stdio.h>
 #include "tutorial.h"
 
