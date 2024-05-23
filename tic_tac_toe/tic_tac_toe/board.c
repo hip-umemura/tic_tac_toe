@@ -3,28 +3,19 @@
 
 char board[BOARD_SIZE][BOARD_SIZE];	// 盤面をグローバル変数で定義（char型）
 
-void print_now_board(void) {		// 盤面の状況をを表示
+void print_now_board(void) { // 盤面の状況を表示
+		int row, column; //行、列
 
-	int column;
-
-	printf("　 1   2   3\n");
-	printf(" -------------\n");
-	printf("1|");
-	for (column = 0; column < BOARD_SIZE; column++) {
-		printf(" %c |", board[0][column]);
-	}
-	printf("\n -------------\n");
-	printf("2|");
-	for (column = 0; column < BOARD_SIZE; column++) {
-		printf(" %c |", board[1][column]);
-	}
-	printf("\n -------------\n");
-	printf("3|");
-	for (column = 0; column < BOARD_SIZE; column++) {
-		printf(" %c |", board[2][column]);
-	}
-	printf("\n -------------\n");
-	
+		printf("　 1   2   3\n");
+		for (row = 0; row < BOARD_SIZE; row++) {
+			printf(" -------------\n");
+			printf("%d|", row + 1);
+			for (column = 0; column < BOARD_SIZE; column++) {
+				printf(" %c |", board[row][column]);
+			}
+			printf("\n");
+		}
+		printf(" -------------\n");
 }
 
 int put_piece(int row, int column, PLAYER player) {
