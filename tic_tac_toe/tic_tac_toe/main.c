@@ -1,12 +1,14 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <wchar.h>
+#include <wctype.h>
 #include <string.h>
 
 #include "tutorial.h"
 #include "board.h"
 
-TURN change_turn(TURN now){
+TURN change_turn(TURN now) {
 	printf("先手と後手のターンを交代します\n");
 	if (now == FIRST_TURN) {
 		now = SECOND_TURN;
@@ -32,11 +34,9 @@ int retry_game(void) {
 	printf("再プレイしますか(YES...1 / No...1以外):");
 	scanf_s("%c", &userInput, 1);
 	if (userInput == '1') {
-		//printf("1");
 		return TRUE;
 	}
 	else {
-		//printf("0");
 		return FALSE;
 	}
 }
@@ -79,8 +79,7 @@ void game_progress(char* name1, char* name2)
 		if (player_game_turn == FIRST_TURN) {
 			now_game_player = game_player1;
 		}
-		else
-			if (player_game_turn == SECOND_TURN) {
+		else if (player_game_turn == SECOND_TURN) {
 				now_game_player = game_player2;
 			}
 
@@ -147,16 +146,18 @@ int main(void) {
 		scanf_s("%s", name1, NAME_LEN);
 
 		do {
-			if (!islower(name1[name_array])) {
+			if (((iswprint(name1[name_array])) && (!iswcntrl(name1[name_array])) &&
+			  (!iswascii(name1[name_array]))) || (iswpunct(name1[name_array]))) {
 				printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
 				break;
 			}
 			name_array++;
 		} while(name1[name_array] != '\0');
 
-		while (getchar() != '\n');
+		while (getchar() != '\n')
+		  ;
 
-	} while ((name1[name_array] != '\0' )|| (name_array == 0));
+	} while ((name1[name_array] != '\0' ) || (name_array == 0));
 
 	do {
 		name_array = 0;
@@ -165,7 +166,8 @@ int main(void) {
 		scanf_s("%s", name2, NAME_LEN);
 
 		do {
-			if (!islower(name2[name_array])) {
+			if (((iswprint(name2[name_array])) && (!iswcntrl(name2[name_array])) && 
+			  (!iswascii(name2[name_array]))) || (iswpunct(name2[name_array]))) {
 				printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
 				break;
 			}

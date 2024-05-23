@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <ProjectOutputs>
@@ -8,4 +9,16 @@
   <ContentFiles />
   <SatelliteDlls />
   <NonRecipeFileRefs />
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>Z:\研修\実習\tic_tac_toe\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+>>>>>>> fbc438e190a003918f0b30aa10bbf670ce4b647b
 </Project>

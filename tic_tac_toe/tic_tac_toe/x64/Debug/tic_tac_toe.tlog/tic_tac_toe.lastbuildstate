@@ -1,2 +1,6 @@
 PlatformToolSet=v143:VCToolArchitecture=Native64Bit:VCToolsVersion=14.39.33519:TargetPlatformVersion=10.0.22621.0:
+<<<<<<< HEAD
 Debug|x64|C:\Users\k_tasaka\Desktop\s\tic_tac_toe\tic_tac_toe\|
+=======
+Debug|x64|Z:\研修\実習\tic_tac_toe\tic_tac_toe\tic_tac_toe\|
+>>>>>>> fbc438e190a003918f0b30aa10bbf670ce4b647b

@@ -1,2 +1,6 @@
 ﻿  main.c
+<<<<<<< HEAD
   tic_tac_toe.vcxproj -> C:\Users\k_tasaka\Desktop\s\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
+=======
+  tic_tac_toe.vcxproj -> Z:\研修\実習\tic_tac_toe\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
+>>>>>>> fbc438e190a003918f0b30aa10bbf670ce4b647b
