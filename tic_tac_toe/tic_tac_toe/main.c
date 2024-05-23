@@ -81,8 +81,8 @@ void game_progress(char* name1, char* name2)
 	// ゲームの勝敗が決するまでループする。
 	while (game_result == NONE) {
 		game_horizontal_axis = 0;
-		game_vertical_axis = 0;
-		error_count = 0;	// 不正な入力した場合にエラー文を出させる条件変数
+		game_vertical_axis   = 0;
+		error_count          = 0;	// 不正な入力した場合にエラー文を出させる条件変数
 
 		// 現在のプレイヤーを代入
 		if (player_game_turn == FIRST_TURN) {
@@ -123,6 +123,9 @@ void game_progress(char* name1, char* name2)
 
 			game_result = judge_game();	// ゲームの結果を代入
 
+			if (game_result != NONE) {
+				player_game_turn = change_turn(player_game_turn);
+			}
 		} else {
 			printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
 		}
