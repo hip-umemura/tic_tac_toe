@@ -1,6 +1,8 @@
 ﻿#include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <wchar.h>
+#include<wctype.h>
 
 #include "tutorial.h"
 #include "board.h"
@@ -142,7 +144,8 @@ int main(void) {
 		scanf_s("%s", name1, NAME_LEN);
 
 		do {
-			if (!islower(name1[name_array])) {
+			if (((iswprint(name1[name_array])) && (!iswcntrl(name1[name_array])) &&
+			  (!iswascii(name1[name_array]))) || (iswpunct(name1[name_array]))) {
 				printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
 				break;
 			}
@@ -151,7 +154,7 @@ int main(void) {
 
 		while (getchar() != '\n');
 
-	} while ((name1[name_array] != '\0' )|| (name_array == 0));
+	} while ((name1[name_array] != '\0' ) || (name_array == 0));
 
 	do {
 		name_array = 0;
@@ -160,7 +163,8 @@ int main(void) {
 		scanf_s("%s", name2, NAME_LEN);
 
 		do {
-			if (!islower(name2[name_array])) {
+			if (((iswprint(name2[name_array])) && (!iswcntrl(name2[name_array])) && 
+			  (!iswascii(name2[name_array]))) || (iswpunct(name2[name_array]))) {
 				printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
 				break;
 			}
