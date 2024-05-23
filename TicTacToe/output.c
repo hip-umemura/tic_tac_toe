@@ -25,5 +25,12 @@ void Output_Info(int tern_info, char board_info [3][3])
 		printf("\b \n");
 		printf("-----------------\n");
 	}
+}
+
+//Output_ResultŠÖ”‚ÌÀ‘•
+void Output_Result()
+{
 
 }
+
+
