@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include "tic_tac_toe.h"
+#include "define.h"
 
 //mainŠÖ”‚Ìì¬
 int main(void)
@@ -16,7 +17,7 @@ int main(void)
 
     //Output_InfoŠÖ”‚ÌŒÄ‚Ño‚µ
     Output_Info(0, a);
-
+    
     
     return 0;
 }
