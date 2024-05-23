@@ -106,10 +106,10 @@ void game_progress(char* name1, char* name2)
 
 			// 入力された値が数字か数字以外か判断
 			if ((isdigit(len_game_horizontal_axis[LEN_HORIZONTAL_AXIS - 1]) != 0) &&
-				(isdigit(len_game_vertical_axis[LEN_VERTICAL_AXIS - 1]) != 0)){
-			}
+				(isdigit(len_game_vertical_axis[LEN_VERTICAL_AXIS - 1]) != 0)) {
 				game_horizontal_axis = atoi(len_game_horizontal_axis);
 				game_vertical_axis = atoi(len_game_vertical_axis);
+			}
 
 		} while (((game_horizontal_axis < 1) || (game_horizontal_axis > 3)) ||
 			((game_vertical_axis < 1) || (game_vertical_axis > 3)));
@@ -123,9 +123,7 @@ void game_progress(char* name1, char* name2)
 
 			game_result = judge_game();	// ゲームの結果を代入
 
-			}
-		}
-		else {
+		} else {
 			printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
 		}
 	}
