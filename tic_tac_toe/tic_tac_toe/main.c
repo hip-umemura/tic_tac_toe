@@ -52,6 +52,7 @@ int retry_game(void) {
 // チュートリアルとプレイヤー名の入力終了後、ゲーム全体の進行を行う。
 void game_progress(char* name1, char* name2)
 {
+
 	PLAYER game_player1;		// 先手のプレイヤー情報
 	PLAYER game_player2;		// 後手のプレイヤー情報
 	PLAYER now_game_player;		// 現在のプレイヤー情報
@@ -133,6 +134,7 @@ void game_progress(char* name1, char* name2)
 }
 
 int main(void) {
+
 	int start_tutorial;		// チュートリアルを表示する条件変数
 	char name[PLAYERS][NAME_LEN];
 	int name_array;			// プレイヤー名の要素数
