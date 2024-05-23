@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\tutorial.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\basic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\basic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\tutorial.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\tutorial.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,23 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "board.c",
               "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.c",
               "RelativeDocumentMoniker": "tic_tac_toe\\board.c",
               "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.c",
               "RelativeToolTip": "tic_tac_toe\\board.c",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAAADkAAAA3AAAA",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-22T04:23:49.082Z"
+              "WhenOpened": "2024-05-22T04:23:49.082Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "basic.h",
               "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\basic.h",
               "RelativeDocumentMoniker": "tic_tac_toe\\basic.h",
@@ -58,7 +59,8 @@
               "RelativeToolTip": "tic_tac_toe\\basic.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.145Z"
+              "WhenOpened": "2024-05-22T04:23:49.145Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,26 +70,27 @@
               "RelativeDocumentMoniker": "tic_tac_toe\\board.h",
               "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.h",
               "RelativeToolTip": "tic_tac_toe\\board.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.145Z"
+              "WhenOpened": "2024-05-22T04:23:49.145Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "main.c",
               "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\main.c",
               "RelativeDocumentMoniker": "tic_tac_toe\\main.c",
               "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\main.c",
               "RelativeToolTip": "tic_tac_toe\\main.c",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAAAAUAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJgAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-22T04:23:49.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "tutorial.h",
               "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.h",
               "RelativeDocumentMoniker": "tic_tac_toe\\tutorial.h",
@@ -95,11 +98,12 @@
               "RelativeToolTip": "tic_tac_toe\\tutorial.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.161Z"
+              "WhenOpened": "2024-05-22T04:23:49.161Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "tutorial.c",
               "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.c",
               "RelativeDocumentMoniker": "tic_tac_toe\\tutorial.c",
@@ -107,7 +111,8 @@
               "RelativeToolTip": "tic_tac_toe\\tutorial.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-22T04:23:49.161Z"
+              "WhenOpened": "2024-05-22T04:23:49.161Z",
+              "EditorCaption": ""
             }
           ]
         }

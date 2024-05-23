@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <wchar.h>
-#include<wctype.h>
+#include <wctype.h>
 #include <string.h>
 
 #include "tutorial.h"
 #include "board.h"
 
-TURN change_turn(TURN now){
+TURN change_turn(TURN now) {
 	printf("先手と後手のターンを交代します\n");
 	if (now == FIRST_TURN) {
 		now = SECOND_TURN;
@@ -34,11 +34,9 @@ int retry_game(void) {
 	printf("再プレイしますか(YES...1 / No...1以外):");
 	scanf_s("%c", &userInput, 1);
 	if (userInput == '1') {
-		//printf("1");
 		return TRUE;
 	}
 	else {
-		//printf("0");
 		return FALSE;
 	}
 }
@@ -81,8 +79,7 @@ void game_progress(char* name1, char* name2)
 		if (player_game_turn == FIRST_TURN) {
 			now_game_player = game_player1;
 		}
-		else
-			if (player_game_turn == SECOND_TURN) {
+		else if (player_game_turn == SECOND_TURN) {
 				now_game_player = game_player2;
 			}
 
@@ -106,7 +103,6 @@ void game_progress(char* name1, char* name2)
 		} while (((game_horizontal_axis < 1) || (game_horizontal_axis > 3)) ||
 			((game_vertical_axis < 1) || (game_vertical_axis > 3)));
 
-		// 
 		if (put_piece(game_horizontal_axis, game_vertical_axis, now_game_player) == TRUE) {
 
 			print_now_board();									// 駒配置後、再度盤面を表示
@@ -158,7 +154,8 @@ int main(void) {
 			name_array++;
 		} while (name1[name_array] != '\0');
 
-		while (getchar() != '\n');
+		while (getchar() != '\n')
+		  ;
 
 	} while ((name1[name_array] != '\0' ) || (name_array == 0));
 
