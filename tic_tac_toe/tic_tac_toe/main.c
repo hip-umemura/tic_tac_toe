@@ -36,12 +36,12 @@ void print_result(RESULT result, PLAYER player) {
 // ゲーム終了後、再度ゲームをプレイするか否か
 int retry_game(void) {
 
-	char userInput;	// プレイヤーが入力した値
+	int userInput;	// プレイヤーが入力した値
 
 	printf("再プレイしますか(YES...1 / No...1以外):");
-	scanf_s("%c", &userInput, 1);
+	scanf_s("%d", &userInput);
 
-	if (userInput == '1') {
+	if (userInput == 1) {
 		return TRUE;
 	}
 	else {
@@ -67,8 +67,8 @@ void game_progress(char* name1, char* name2)
 
 	RESULT game_result = NONE;			// ゲームの結果（初期値）
 
-	int  board_horizontal_axis[1];		// 盤面の横軸（int型）
-	int  board_vertical_axis[1];		// 盤面の縦軸（int型）
+	int  board_horizontal_axis;		// 盤面の横軸（int型）
+	int  board_vertical_axis;		// 盤面の縦軸（int型）
 
 	clean_board();		// 盤面を初期化
 
@@ -91,12 +91,12 @@ void game_progress(char* name1, char* name2)
 		do {
 
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
-			scanf_s("%1d", &board_horizontal_axis[0]);
-			scanf_s("%1d", &board_vertical_axis[0]);
+			scanf_s("%d", &board_horizontal_axis);
+			scanf_s("%d", &board_vertical_axis);
 			while (getchar() != '\n');
 
-			if ((board_horizontal_axis[0] < 1) || (board_horizontal_axis[0] > 3) ||
-				(board_vertical_axis[0] < 1) || (board_vertical_axis[0] > 3)) {
+			if ((board_horizontal_axis < 1) || (board_horizontal_axis > 3) ||
+				(board_vertical_axis < 1) || (board_vertical_axis > 3)) {
 				input_error = FALSE;
 				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
 			} else {
@@ -105,7 +105,7 @@ void game_progress(char* name1, char* name2)
 		} while (input_error != TRUE);
 
 		// 入力された盤面の座標に駒を配置し、プレイヤーの交代を行う
-		if (put_piece(board_horizontal_axis[0], board_vertical_axis[0], now_game_player) == TRUE) {
+		if (put_piece(board_horizontal_axis, board_vertical_axis, now_game_player) == TRUE) {
 
 			print_now_board();				// 駒配置後、再度盤面を表示
 
@@ -174,8 +174,7 @@ int main(void) {
 	do
 	{
 		game_progress(name[0], name[1]);
-		while (getchar() != '\n')
-		  ;
+
 	} while (retry_game() == TRUE);
 
 	printf("ゲーム終了！");
