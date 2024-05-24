@@ -1,4 +1,0 @@
-﻿sanmoku.obj : error LNK2005: main は既に input_num.obj で定義されています。
-ソース.obj : error LNK2005: InitBoard は既に input_num.obj で定義されています。
-ソース.obj : error LNK2005: main は既に input_num.obj で定義されています。
-C:\Users\y_sugitomo\Desktop\git_practice\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe : fatal error LNK1169: 1 つ以上の複数回定義されているシンボルが見つかりました。
