@@ -9,9 +9,9 @@ int main(void)
 {
     //ƒ{[ƒhî•ñ‚Ì‰¼ì¬
     char a[3][3];
-    for (int i = 0; i < 3; i++) {
+    for (int i = 2; i >= 0; i--) {
         for (int j = 0; j < 3; j++) {
-            a[i][j] = '1' + i * 3 + j;
+            a[i][j] = '7' - i * 3 + j;
         }
     }
 
@@ -21,6 +21,11 @@ int main(void)
     Output_Result(O_WIN);
     Output_Result(X_WIN);
     Output_Result(DRAW);
+
+    //‰¼
+    Insert(&a[0][1], 0);
+    Output_Grid(a);
+
 
 
 

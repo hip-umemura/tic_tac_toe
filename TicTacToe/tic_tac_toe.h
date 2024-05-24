@@ -13,3 +13,6 @@ void Output_Result(int result_info);
 
 //入力引数の値に対応したグリッドがどの要素なのかを探索し、その要素を返す関数
 INDEX Search(char input_info, char board_info[3][3]);
+
+//データの挿入部分の定義を記述する関数
+void Insert(char* board_element_info, int turn_info);
