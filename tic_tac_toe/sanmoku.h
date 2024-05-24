@@ -4,6 +4,11 @@ typedef enum {
 }BOOL;
 
 typedef enum {
+	CIRCLE,
+	CROSS
+}MARK;
+
+typedef enum {
 	CIRCLE_WIN,
 	CROSS_WIN,
 	DROW
@@ -15,4 +20,8 @@ typedef enum {
 	ERROR
 }RETRY;
 
+typedef enum {
+	END,
+	EXTEND
+};
 

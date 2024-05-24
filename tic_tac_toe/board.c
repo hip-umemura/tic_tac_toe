@@ -1,10 +1,10 @@
 #include<stdio.h>
 #include<locale.h>
+#include "sanmoku.h"
 #include "board.h"
-#include"sanmoku.h"
 
 
-void ShowBoard(int square[9]) {
+void ShowBoard(wchar_t square[9]) {
 	setlocale(LC_ALL, "ja_JP.UTF-8");
 	printf(" -------------------- \n|      |      |      |\n");
 	for (int i = 0; i < 9; i++) {
@@ -23,27 +23,24 @@ void ShowBoard(int square[9]) {
 int CheckTurn(int turn) {
 	if (turn % 2 == 0) {
 		return CIRCLE;
-	}
-	else {
+	}else {
 		return CROSS;
 	}
 }
 
-int DisplayWin(CIRCLE_WIN || CROSS_WIN) {
-	if (CIRCLE_WIN) {
+int DisplayWin(JUDGE judge) {
+	if (judge ==CIRCLE_WIN) {
 		printf("〇の勝利");
-	}
-	else {
-		printf("×の勝利")
+	}else if(judge == CROSS_WIN){
+		printf("×の勝利");
 	}
 	return EXTEND;
 }
 
-int ChangeState(int input, CIRCLE || CROSS) {
-	if (CIRCLE) {
+int ChangeState(int input,MARK mark) {
+	if (mark == CIRCLE) {
 		square[input] = '〇';
-	}
-	else {
+	}else {
 		square[input] = '×';
 	}
 	return square[input];
