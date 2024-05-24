@@ -10,6 +10,7 @@ BOOL RangeNum(int input) {
 	else {
 		in_range = FALSE;
 	}
+	return in_range;
 }
 
 BOOL CheckNum(int input, int* p) {
@@ -24,8 +25,20 @@ BOOL CheckNum(int input, int* p) {
 	return ischeck;
 }
 
-JUDGE CheckWin(int p[9]) {
-	for (int i = 0; i < 3; (i + i * 2)) {
-
+JUDGE CheckWin(int p[9],int turn) {
+	int win = 0;
+	if (turn % 2 == 0) {
+		for (int i=0; i < 3; i++) {//‰¡‚Ìƒ‰ƒCƒ“
+			if (p[(i * 3)] == p[(i * 3) + 1] == p[(i * 3) + 2]) {
+				win = CIRCLE_WIN;
+			}
+		}
+		for (int j = 0; j < 3; j++) {//c‚Ìƒ‰ƒCƒ“
+			if (p[j] == p[j + 3] == p[j + 6]) {
+				win = CIRCLE_WIN;
+			}
+		}
+		
 	}
+
 }

@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<locale.h>
 #include "board.h"
+#include"sanmoku.h"
 
 
-void ShowBoard(square[9]) {
+void ShowBoard(int square[9]) {
 	setlocale(LC_ALL, "ja_JP.UTF-8");
 	printf(" -------------------- \n|      |      |      |\n");
 	for (int i = 0; i < 9; i++) {

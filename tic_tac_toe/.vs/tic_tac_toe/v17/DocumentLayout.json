@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\",
+  "WorkspaceRootPath": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:decision_count.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:input_num.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:sanmoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -42,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "sanmoku.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.c",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.c",
               "RelativeDocumentMoniker": "sanmoku.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.c",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.c",
               "RelativeToolTip": "sanmoku.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-24T06:26:21.042Z",
               "EditorCaption": ""
@@ -61,9 +61,9 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "sanmoku.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.h",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.h",
               "RelativeDocumentMoniker": "sanmoku.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.h",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.h",
               "RelativeToolTip": "sanmoku.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -72,26 +72,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "input_num.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.c",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.c",
               "RelativeDocumentMoniker": "input_num.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.c",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.c",
               "RelativeToolTip": "input_num.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-24T06:21:24.58Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "decision_count.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.c",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.c",
               "RelativeDocumentMoniker": "decision_count.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.c",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.c",
               "RelativeToolTip": "decision_count.c",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAABAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACgAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-24T06:21:13.172Z",
               "EditorCaption": ""
@@ -100,22 +100,22 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "board.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\board.c",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.c",
               "RelativeDocumentMoniker": "board.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\board.c",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.c",
               "RelativeToolTip": "board.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-24T06:20:46.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "input_num.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.h",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.h",
               "RelativeDocumentMoniker": "input_num.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.h",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.h",
               "RelativeToolTip": "input_num.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -124,11 +124,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "decision_count.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.h",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.h",
               "RelativeDocumentMoniker": "decision_count.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.h",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.h",
               "RelativeToolTip": "decision_count.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -137,11 +137,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "board.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\board.h",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.h",
               "RelativeDocumentMoniker": "board.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\board.h",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.h",
               "RelativeToolTip": "board.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",

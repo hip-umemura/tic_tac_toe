@@ -33,7 +33,6 @@ int CountWin(JUDGE result, int get_circle, int get_cross) {
 }
 
 RETRY PlayEnd() {
-
 	RETRY iscontinue = ERROR;
 	while (iscontinue = ERROR) {
 		char  input_end[1];
@@ -52,3 +51,4 @@ RETRY PlayEnd() {
 		}
 		return iscontinue;
 	}
+}
