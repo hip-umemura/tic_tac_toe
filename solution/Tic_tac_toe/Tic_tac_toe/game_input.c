@@ -1,44 +1,54 @@
 #include <stdio.h>
+#include<stdlib.h>
 #include "data.h"
-#include "game_input.h"
 
-void InputByPlayer(char input[4])
+BOOL CheckInputViolation(char input[INPUT_LEN_MAX])
 {
+	int index = 0;
+	while(input[index] != '\n') {
+		if ((input[index] < '0') || (input[index] > '8') || (index >= INPUT_LEN_MAX)) {
+			printf("0～8を入力してください。\n");
+			return TRUE;
+		}
+		index++;
+	}
+	return FALSE;
+}
 
-	for (int i = 0; i < 4; i++) {
+BOOL isDuplicate(char game_board){
+	if (game_board == 'o' || game_board == 'x') {
+		printf("既に埋まっています\n");
+		printf("もう一度入力してください：");
+		return TRUE;
+	}
+	return FALSE;
+}
+
+int InputProcess()
+{
+	char input[INPUT_LEN_MAX] = "\0";
+	int input_number = INPUT_ERR;
+	int index = 0;
+
+	for (int i = 0; i < INPUT_LEN_MAX; i++) {
 		input[i] = '\0';
 	}
 
-	scanf_s("%3[^\n]", input, (unsigned)sizeof(input));
+	do {
+		if (index >= INPUT_LEN_MAX) {
+			while (getchar() != '\n')
+				;
+			break;
+		}
+		input[index] = getchar();
+		index++;
+	} while (input[index - 1] != '\n');
 
-	while ((input = getchar()) != '\n' && input != EOF) {
-	}
-}
-
-int InputToValue(char input[4])
-{
-	if (input < '0' || input > '8') {
-		printf("0～8を入力してください。\n");
-	}
-	return INPUT_ERR;
-}
-
-int InputProcess(char input[4])
-{
-	int serial_number;
-
-	InputByPlayer(input);
-	serial_number = InputToValue(input);
-
-	return serial_number;
-}
-
-BOOL isDuplicate(char game_board[BOARD_HEIGHT][BOARD_WIDTH], COORDINATES a)
-{
-	if (game_board[a.x][a.y] == 'o' || game_board[a.x][a.y] == 'x') {
-		printf("既に埋まっています\n");
-		return TRUE;
+	if (CheckInputViolation(input) == TRUE) {
+		return INPUT_ERR;
 	}
 
-	return FALSE;
+	return atoi(input);
+
 }
+
