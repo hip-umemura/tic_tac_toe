@@ -16,8 +16,13 @@ int main(void)
     }
 
     //Output_InfoŠÖ”‚ÌŒÄ‚Ño‚µ
-    Output_Info(0, a);
-    
-    
+    Output_Info(0);
+    Output_Grid(a);
+    Output_Result(O_WIN);
+    Output_Result(X_WIN);
+    Output_Result(DRAW);
+
+
+
     return 0;
 }

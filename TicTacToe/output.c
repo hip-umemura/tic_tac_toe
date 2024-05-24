@@ -2,21 +2,15 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "define.h"
 
-//Output_Info関数の宣言
-//int tern_info	ターンの情報を持つ変数
+//Output_Grid関数の宣言
 //char board_info	ボードの情報を持つ変数
-void Output_Info(int tern_info, char board_info [3][3])
+void Output_Grid(char board_info[3][3])
 {
-	if (tern_info % 2 == 0) {
-		printf("○のターンです。\n");
-	}
-	else {
-		printf("×のターンです。\n");
-	}
 	printf("-----------------\n");
-	for (int column = 2; column >= 0; column--) {
-		for (int row = 0; row <= 2; row++) {
+	for (int column = GRID_HEIGHT - 1; column >= 0; column--) {
+		for (int row = 0; row <= GRID_WIDTH - 1; row++) {
 			printf("  %c  ", board_info[column][row]);
 			printf("|");
 		}
@@ -27,10 +21,30 @@ void Output_Info(int tern_info, char board_info [3][3])
 	}
 }
 
-//Output_Result関数の実装
-void Output_Result()
+//Output_Info関数の宣言
+//int tern_info	ターンの情報を持つ変数
+void Output_Info(int tern_info)
 {
+	if (tern_info % 2 == 0) {
+		printf("○のターンです。\n");
+	}
+	else {
+		printf("×のターンです。\n");
+	}
+}
 
+//Output_Result関数の実装
+void Output_Result(int result_info)
+{
+	if (result_info == O_WIN) {
+		printf("〇の勝利です。\n");
+	}
+	else if (result_info == X_WIN){
+		printf("×の勝利です。\n");
+	}
+	else if (result_info  == DRAW){
+		printf("引き分けです。\n");
+	}
 }
 
 
