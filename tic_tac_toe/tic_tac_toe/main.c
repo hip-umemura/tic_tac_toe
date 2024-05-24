@@ -95,14 +95,8 @@ void game_progress(char* name1, char* name2)
 			scanf_s("%d", &board_vertical_axis);
 			while (getchar() != '\n');
 
-<<<<<<< HEAD
-			if ((board_horizontal_axis[0] < 1) || (board_horizontal_axis[0] > 3) ||
-				(board_vertical_axis[0] < 1) || (board_vertical_axis[0] > 3)) {
-		
-=======
 			if ((board_horizontal_axis < 1) || (board_horizontal_axis > 3) ||
 				(board_vertical_axis < 1) || (board_vertical_axis > 3)) {
->>>>>>> efb5fab2cea6a1a27e26a5c39b50ce96c522051f
 				input_error = FALSE;
 				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
 			} else {
