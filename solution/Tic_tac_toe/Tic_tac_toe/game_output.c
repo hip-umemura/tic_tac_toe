@@ -2,53 +2,41 @@
 #include "data.h"
 #include "game_output.h"
 
-void DisplayBoard(char game_board[BOARD_HEIGHT][BOARD_WIDTH], int count)
+void DisplayBoard(char game_board[BOARD_HEIGHT][BOARD_WIDTH])
 {
-	int row = 0;
-	int column = 0;
+	char game_board[BOARD_HEIGHT][BOARD_WIDTH] = {
+		{'7', '8', '9'}, {'4', '5', '6'}, {'1', '2', '3'}
+	};
 
 	for (int i = 0; i < BOARD_HEIGHT; i++) {
 		printf("--+---+--\n");
 
 		for (int j = 0; j < BOARD_WIDTH; j++) {
+			printf("%c ", game_board[i][j]);
 
-			if (j < 2) {
-				printf("%c | ", game_board[i][j]);
+			if (j < BOARD_WIDTH - 1) {
+				printf("| ");
 			}
 
-			if (j == 2) {
-				printf("%c", game_board[i][j]);
-			}
 		}
 
 		printf("\n");
 	}
+
+	printf("--+---+--\n");
 }
 
 void DisplayStatus(char player_name[])
 {
-	if (count % 2 == 0) {
-		player_name[] = "プレイヤー2";
-		printf("%cのターンです。", player_name);
-	}
-	else
-		player_name[] = "プレイヤー1";
-		printf("%cのターンです。", player_name);
+	printf("0～8の数字を入力してください : ");
+	printf("%sのターン", player_name);
 }
 
 void DisplayResult(char winner_name[], int judge)
 {
-	printf("0～8の数字を入力してください : ");
-
-	if (〇三つ並んでたら) {
-		printf("プレイヤー1の勝利!");
-	}
-	else if (×三つ並んでたら) {
-		printf("プレイヤー2の勝利!");
+	if (judge == WIN) {
+		printf("%sの勝利!", winner_name);
 	}
 	else
 		printf("引き分け");
 }
-
-
-
