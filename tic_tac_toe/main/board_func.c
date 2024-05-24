@@ -2,17 +2,20 @@
 #include <ctype.h>
 #include "board_func.h"
 
-#define DEBUG
-#define SIDE_LONG 3
-//#define BOARD_NUM 9
-#define I_EVEN (i % 2 == 0)
-#define I_ODD (i % 2 == 1)
-#define J_EVEN (j % 2 == 0)
-#define J_ODD (j % 2 == 1)
-
+//#define DEBUG
+#define LINE_UP_NUM 3
+#define ORIGIN_POINT(list, row, column) list[row][column]
+#define ONE_RIGHT(list, row, column) list[row][column + 1]
+#define DOUBLE_RIGHT(list, row, column) list[row][column + 2]
+#define ONE_LOWER(list, row, column) list[row + 1][column]
+#define DOUBLE_LOWER(list, row, column) list[row + 2][column]
+#define ONE_LOWER_RIGHT(list, row, column) list[row + 1][column + 1]
+#define DOUBLE_LOWER_RIGHT(list, row, column) list[row + 2][column + 2]
+#define ONE_LOWER_LEFT(list, row, column) list[row + 1][column - 1]
+#define DOUBLE_LOWER_LEFT(list, row, column) list[row + 2][column - 2]
 
 int ScanInput(void) {
-  int recive_char;
+  int recive_char = 0;
   int input_num = 0;
   int input_str_length = 0;
   int input_roop_flag = TRUE;
@@ -26,22 +29,13 @@ int ScanInput(void) {
       recive_char = getchar();
       input_str_length++;
 
-      #ifdef DEBUG
-      printf("%c\n", recive_char);
-      #endif // DEBUG
-
       if (input_str_length == 1) {
-        if (isdigit(recive_char)){
+        if ((isdigit(recive_char)) && (recive_char != '0')) {
           recive_char = recive_char - '0';
           input_num = recive_char;
           input_roop_flag = FALSE;
-
-         #ifdef DEBUG
-          printf("1ï∂éöñ⁄%d\n", input_num);
-         #endif // DEBUG
         }
         else {
-          printf("1Å`%dÇÃÉ}ÉXî‘çÜÇì¸óÕÇµÇƒÇ≠ÇæÇ≥Ç¢\n", SIDE_LONG * SIDE_LONG);
           input_roop_flag = TRUE;
         }
       }
@@ -49,97 +43,111 @@ int ScanInput(void) {
         input_roop_flag = TRUE;
       }
     } while (recive_char != '\n');
-
+    if (input_roop_flag == TRUE) {
+      printf("1Å`%dÇÃÉ}ÉXî‘çÜÇì¸óÕÇµÇƒÇ≠ÇæÇ≥Ç¢\n", SIDE_LONG * SIDE_LONG);
+    }
   } while (input_roop_flag);
 
   return input_num;
 
 }
 
-void PrintBoard(MARK*pt_playerboard) {
-  int board_long = SIDE_LONG * 2 - 1;
+void PrintBoard(MARK* pt_playerboard) {
   int board_number = 0;
-  char multibyte_num_str[SIDE_LONG * SIDE_LONG][3] = { {"ÇP"},{"ÇQ"},{"ÇR"},{"ÇS"},{"ÇT"},{"ÇU"},{"ÇV"},{"ÇW"},{"ÇX"} };
+  char multibyte_num_str[][3] = { {"ÇP"},{"ÇQ"},{"ÇR"},{"ÇS"},{"ÇT"},{"ÇU"},{"ÇV"},{"ÇW"},{"ÇX"} };
 
-#ifdef DEBUG
-    printf("board long is %d\n", board_long);
-    for (int i = 0; i < SIDE_LONG * SIDE_LONG; i++) {
-      printf("ëSäp%s\n", multibyte_num_str[i]);
-    }
-#endif // DEBUG
-
-    for (int i = 0; i < board_long; i++) {
-      for (int j = 0; j < board_long; j++) {
-        if (I_EVEN && J_EVEN) {
-          switch (*pt_playerboard) {
-          case BLANK:printf("%s", multibyte_num_str[board_number]);
-            pt_playerboard++;
-            board_number++;
-            break;
-          case PLAYER1:printf("ÅZ");
-            pt_playerboard++;
-            board_number++;
-            break;
-          case PLAYER2:printf("Å~");
-            pt_playerboard++; 
-            board_number++;
-            break;
-          default:
-            break;
-          }
-        }
-        else if (I_EVEN && J_ODD){
-          printf("Åb");
-        }
+  for (int i = 0; i < SIDE_LONG; i++) {
+    for (int j = 0; j < SIDE_LONG; j++) {
+      switch (*pt_playerboard) {
+      case BLANK:printf("%s", multibyte_num_str[board_number]);
+        pt_playerboard++;
+        board_number++;
+        break;
+      case PLAYER1_MARK:printf("ÅZ");
+        pt_playerboard++;
+        board_number++;
+        break;
+      case PLAYER2_MARK:printf("Å~");
+        pt_playerboard++;
+        board_number++;
+        break;
+      default:
+        break;
       }
-      if (I_ODD)
+      if (j != SIDE_LONG - 1)
       {
-        printf("Å[Å{Å[Å{Å[");
+        printf("Åb");
       }
-      printf("\n");
+      else
+      {
+        printf("\nÅ[Å{Å[Å{Å[");
+      }
     }
- }
+    printf("\n");
+  }
+}
 
-RESULT CheckBoard(MARK*pt_player_board) {
-  MARK* temp_pt = pt_player_board;
-  //MARK player_board[3][3];
-  //&player_board[0][0] = temp_pt;
-  int row_roop = 0;
-  int vertical_roop = 0;
+RESULT CheckBoard(const MARK player_board[SIDE_LONG][SIDE_LONG]) {
   int blank_flag = FALSE;
   int player1_win_flag = FALSE;
   int player2_win_flag = FALSE;
 
-  while (row_roop < SIDE_LONG)
-  {
-    if ((temp_pt[row_roop] == PLAYER1) && (temp_pt[row_roop + SIDE_LONG] == PLAYER1) && (temp_pt[row_roop + 2 * SIDE_LONG] == PLAYER1))
-    {
-      player1_win_flag = TRUE;
-      break;
+  for (int i = 0; i < SIDE_LONG; i++) {
+    for (int j = 0; j < SIDE_LONG; j++) {
+      if (player_board[i][j] == BLANK)
+      {
+        blank_flag = TRUE;
+      }
     }
-    else if ((temp_pt[row_roop] == PLAYER2) && (temp_pt[row_roop + SIDE_LONG] == PLAYER2) && (temp_pt[row_roop + 2 * SIDE_LONG] == PLAYER2))
-    {
-      player2_win_flag = TRUE;
-      break;
-    }
-    row_roop++;
   }
 
-  while (row_roop < SIDE_LONG)
-  {
-    if ((temp_pt[row_roop] == PLAYER1) && (temp_pt[row_roop + SIDE_LONG] == PLAYER1) && (temp_pt[row_roop + 2 * SIDE_LONG] == PLAYER1))
+  for (int column = 0; column < SIDE_LONG - LINE_UP_NUM + 1; column++) {
+    for (int row = 0; row < SIDE_LONG  ; row++)
     {
-      player1_win_flag = TRUE;
-      break;
+      if (((ORIGIN_POINT(player_board, row, column)) == PLAYER1_MARK) && ((ONE_RIGHT(player_board, row, column)) == PLAYER1_MARK) && ((DOUBLE_RIGHT(player_board, row, column)) == PLAYER1_MARK)) {
+        player1_win_flag = TRUE;
+      }
+      if (((ORIGIN_POINT(player_board, row, column)) == PLAYER2_MARK) && ((ONE_RIGHT(player_board, row, column)) == PLAYER2_MARK) && ((DOUBLE_RIGHT(player_board, row, column)) == PLAYER2_MARK)) {
+        player2_win_flag = TRUE;
+      }
     }
-    else if ((temp_pt[row_roop] == PLAYER2) && (temp_pt[row_roop + SIDE_LONG] == PLAYER2) && (temp_pt[row_roop + 2 * SIDE_LONG] == PLAYER2))
-    {
-      player2_win_flag = TRUE;
-      break;
-    }
-    row_roop++;
   }
 
+  for (int row = 0; row < SIDE_LONG - LINE_UP_NUM + 1; row++) {
+    for (int column = 0; column < SIDE_LONG ; column++)
+    {
+      if (((ORIGIN_POINT(player_board, row, column)) == PLAYER1_MARK) && ((ONE_LOWER(player_board, row, column)) == PLAYER1_MARK) && ((DOUBLE_LOWER(player_board, row, column)) == PLAYER1_MARK)) {
+        player1_win_flag = TRUE;
+      }
+      if (((ORIGIN_POINT(player_board, row, column)) == PLAYER2_MARK) && ((ONE_LOWER(player_board, row, column)) == PLAYER2_MARK) && ((DOUBLE_LOWER(player_board, row, column)) == PLAYER2_MARK)) {
+        player2_win_flag = TRUE;
+      }
+    }
+  }
+
+  for (int column = 0; column < SIDE_LONG - LINE_UP_NUM + 1; column++) {
+    for (int row = 0; row < SIDE_LONG - LINE_UP_NUM + 1; row++)
+    {
+      if (((ORIGIN_POINT(player_board, row, column)) == PLAYER1_MARK) && ((ONE_LOWER_RIGHT(player_board, row, column)) == PLAYER1_MARK) && ((DOUBLE_LOWER_RIGHT(player_board, row, column)) == PLAYER1_MARK)) {
+        player1_win_flag = TRUE;
+      }
+      if (((ORIGIN_POINT(player_board, row, column)) == PLAYER2_MARK) && ((ONE_LOWER_RIGHT(player_board, row, column)) == PLAYER2_MARK) && ((DOUBLE_LOWER_RIGHT(player_board, row, column)) == PLAYER2_MARK)) {
+        player2_win_flag = TRUE;
+      }
+    }
+  }
+
+  for (int column = SIDE_LONG - 1; column >= SIDE_LONG - 1; column--) {
+    for (int row = 0; row < SIDE_LONG - LINE_UP_NUM + 1; row++)
+    {
+      if (((ORIGIN_POINT(player_board, row, column)) == PLAYER1_MARK) && ((ONE_LOWER_LEFT(player_board, row, column)) == PLAYER1_MARK) && ((DOUBLE_LOWER_LEFT(player_board, row, column)) == PLAYER1_MARK)) {
+        player1_win_flag = TRUE;
+      }
+      else if (((ORIGIN_POINT(player_board, row, column)) == PLAYER2_MARK) && ((ONE_LOWER_LEFT(player_board, row, column)) == PLAYER2_MARK) && ((DOUBLE_LOWER_LEFT(player_board, row, column)) == PLAYER2_MARK)) {
+        player2_win_flag = TRUE;
+      }
+    }
+  }
 
   if (player1_win_flag) {
     return PLAYER1_WIN;
@@ -150,18 +158,7 @@ RESULT CheckBoard(MARK*pt_player_board) {
   else if (blank_flag) {
     return NONE;
   }
-  else{
+  else {
     return DRAW;
   }
-}
-
-int main(void) {
-
-  RESULT t;
-  MARK p[SIDE_LONG][SIDE_LONG] = {{BLANK,BLANK,BLANK},{PLAYER2,BLANK,PLAYER1},{PLAYER1,PLAYER1,PLAYER1}};
-  //t = ScanInput();
-  //printf("%d\n", t);
-  PrintBoard(p);
-  t = CheckBoard(p);
-  printf("èüîs %d\n", t);
 }

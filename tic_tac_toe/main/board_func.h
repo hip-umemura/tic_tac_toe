@@ -3,8 +3,8 @@
 typedef enum
 {
   BLANK,
-  PLAYER1,
-  PLAYER2
+  PLAYER1_MARK,
+  PLAYER2_MARK
 } MARK;
 
 typedef enum
@@ -22,3 +22,4 @@ RESULT CheckBoard(MARK*);
 
 #define TRUE 1
 #define FALSE 0
+#define SIDE_LONG 3
