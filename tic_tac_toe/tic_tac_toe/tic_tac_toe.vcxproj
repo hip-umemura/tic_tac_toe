@@ -137,6 +137,7 @@
     <ClCompile Include="decision_count.c" />
     <ClCompile Include="input_num.c" />
     <ClCompile Include="sanmoku.c" />
+    <ClCompile Include="ソース.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
