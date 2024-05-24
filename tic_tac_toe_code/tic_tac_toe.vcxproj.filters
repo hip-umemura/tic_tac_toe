@@ -15,16 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sanmoku.h">
+    <ClInclude Include="board.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="board.h">
+    <ClInclude Include="decision_count.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="input_num.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="decision_count.h">
+    <ClInclude Include="sanmoku.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
@@ -35,10 +35,10 @@
     <ClCompile Include="board.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="input_num.c">
+    <ClCompile Include="decision_count.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="decision_count.c">
+    <ClCompile Include="input_num.c">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
