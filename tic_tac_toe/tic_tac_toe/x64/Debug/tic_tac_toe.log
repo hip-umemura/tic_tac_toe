@@ -1,4 +1,9 @@
+<<<<<<< HEAD
+﻿  main.c
+  tic_tac_toe.vcxproj -> Z:\研修\実習\tic_tac_toe\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
+=======
 ﻿  board.c
   main.c
   コードを生成中...
   tic_tac_toe.vcxproj -> C:\Users\k_tasaka\Desktop\s\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
+>>>>>>> dab312906d99a71fc0ec226b72dacd9e58bb5dd4
