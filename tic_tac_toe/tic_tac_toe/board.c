@@ -7,18 +7,24 @@ void print_now_board(void) { // 盤面の状況を表示
 
 		int row, column; //行、列
 		for (column = 0; column < BOARD_SIZE; column++) {
-			printf("   %d", column + 1);
+			printf("   %d", column + 1);                      // 列番号表示
+		}
+		printf("\n ");
+		for (row = 0; row < BOARD_SIZE; row++) {
+			for (column = 0; column < BOARD_SIZE; column++) {
+				printf("----");                               // 罫線表示
+			}
+			printf("-\n");
+			printf("%d|", row + 1);                           // 行番号と罫線表示
+			for (column = 0; column < BOARD_SIZE; column++) {
+				printf(" %c |", board[row][column]);          // 駒と罫線表示
+			}
+			printf("\n ");
+		}
+		for (row = 0; row < (BOARD_SIZE * 4 + 1); row++) {
+			printf("-");
 		}
 		printf("\n");
-		for (row = 0; row < BOARD_SIZE; row++) {
-			printf(" -------------\n");
-			printf("%d|", row + 1);
-			for (column = 0; column < BOARD_SIZE; column++) {
-				printf(" %c |", board[row][column]);
-			}
-			printf("\n");
-		}
-		printf(" -------------\n");
 }
 
 int put_piece(int row, int column, PLAYER player) {
