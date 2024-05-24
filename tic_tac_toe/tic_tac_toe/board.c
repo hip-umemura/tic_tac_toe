@@ -14,7 +14,7 @@ void print_now_board(void) { // ”Õ–Ê‚Ìó‹µ‚ğ•\¦
 			for (column = 0; column < BOARD_SIZE; column++) {
 				printf("----");
 			}
-			printf("- \n");
+			printf("-\n");
 			printf("%d|", row + 1);
 			for (column = 0; column < BOARD_SIZE; column++) {
 				printf(" %c |", board[row][column]);
