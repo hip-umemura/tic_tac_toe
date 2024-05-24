@@ -9,7 +9,9 @@
 //盤面の要素数を表すマクロ
 #define GRID_HEIGHT	3
 #define GRID_WIDTH	3
-
+//真偽値を表すマクロ
+#define TRUE  1
+#define FALSE 0
 
 //構造体定義
 
