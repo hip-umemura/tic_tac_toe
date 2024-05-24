@@ -6,7 +6,6 @@
 #define GRID_WIDTH	3
 
 
-
 //—ñ‹“Œ^’è‹`
 //ƒQ[ƒ€‚ÌŸ”s‚ğ¦‚·—ñ‹“Œ^
 typedef enum {

@@ -25,9 +25,13 @@ int main(void)
     //‰¼
     Insert(&a[0][1], 0);
     Output_Grid(a);
+    //jugegrid
+    Judge_Grid(a[0][1]);
+
+    //‰¼
+    printf("%c\n", Input(O_TURN));
 
 
-
-
+    
     return 0;
 }

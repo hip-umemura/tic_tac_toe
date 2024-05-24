@@ -16,3 +16,6 @@ INDEX Search(char input_info, char board_info[3][3]);
 
 //データの挿入部分の定義を記述する関数
 void Insert(char* board_element_info, int turn_info);
+
+//入力を受け付ける関数
+char Input(TURN turn_info);
