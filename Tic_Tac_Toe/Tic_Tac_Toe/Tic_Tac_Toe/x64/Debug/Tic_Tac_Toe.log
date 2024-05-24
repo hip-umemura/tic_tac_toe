@@ -1,0 +1,227 @@
+﻿  game_playing.c
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(16,30): error C2065: 'PLAYER_ONE': 定義されていない識別子です。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(21,9): error C2065: 'PLAYER': 定義されていない識別子です。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(21,9): error C2146: 構文エラー: ';' が、識別子 'player_info' の前に必要です。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(21,21): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(21,20): error C2109: 配列または、ポインターでない変数に添字が使われました。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(21,35): error C2059: 構文エラー: '{'
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(37,2): warning C4013: 関数 'InputName' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(37,23): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(39,3): warning C4013: 関数 'ChoiceFirstAttack' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(39,46): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(43,4): warning C4013: 関数 'ShowPlayer' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(43,27): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(43,26): error C2109: 配列または、ポインターでない変数に添字が使われました。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(44,4): warning C4013: 関数 'ShowBoard' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(45,8): warning C4013: 関数 'Input' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(49,5): warning C4013: 関数 'PlayerMove' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(52,5): warning C4013: 関数 'ChoicePosition' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(52,32): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(52,31): error C2109: 配列または、ポインターでない変数に添字が使われました。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(53,19): warning C4013: 関数 'ShowResult' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(53,30): warning C4013: 関数 'GameDecision' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(53,69): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(53,83): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(55,6): warning C4013: 関数 'ChangePlay' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(63,3): warning C4013: 関数 'Retry_Game' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(64,31): error C2065: 'TRUE': 定義されていない識別子です。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(35,7): warning C4047: '初期化中': 間接参照のレベルが 'char' と 'char [1]' で異なっています。
+  (ソース ファイル 'game_playing.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(18,2): error C2365: 'FIRST': 再定義; 以前の定義は '列挙子' でした。
+  Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_start.h(10,2):
+  'FIRST' の宣言を確認してください
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(18,2): error C2086: 'FIRST': 再定義されました。
+  Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(18,2):
+  'FIRST' の宣言を確認してください
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(19,2): error C2365: 'LAST': 再定義; 以前の定義は '列挙子' でした。
+  Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_start.h(11,2):
+  'LAST' の宣言を確認してください
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(19,2): error C2086: '<unnamed-enum-FIRST> LAST': 再定義されました。
+  Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(19,2):
+  'LAST' の宣言を確認してください
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(25,2): error C2371: 'PLAYER': 再定義されています。異なる基本型です。
+  Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_start.h(17,2):
+  'PLAYER' の宣言を確認してください
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(27,6): error C2371: 'ShowPlayer': 再定義されています。異なる基本型です。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(28,6): error C2371: 'ShowBoard': 再定義されています。異なる基本型です。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(30,6): error C2371: 'ChoicePosition': 再定義されています。異なる基本型です。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(33,6): error C2371: 'PlayerMove': 再定義されています。異なる基本型です。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(37,5): error C2084: 関数 'int main(void)' は既に本体を持っています。
+  Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(14,5):
+  'main' の以前の定義を確認してください
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(62,14): warning C4047: '関数': 間接参照のレベルが 'char *' と 'PLAYER (*)[2]' で異なっています。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(62,14): warning C4024: 'PlayerMove': の型が 1 の仮引数および実引数と異なります。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(65,3): error C2198: 'ChoicePosition': 呼び出しに対する引数が少なすぎます。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(119,95): warning C4028: パラメーターの型 3 が関数宣言と一致しません。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(142,25): warning C4047: '関数': 間接参照のレベルが 'char (*)[3]' と 'char *' で異なっています。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_playing.c(142,25): warning C4024: 'OperatingException': の型が 1 の仮引数および実引数と異なります。
+  game_start.c
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(16,30): error C2065: 'PLAYER_ONE': 定義されていない識別子です。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(21,9): error C2065: 'PLAYER': 定義されていない識別子です。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(21,9): error C2146: 構文エラー: ';' が、識別子 'player_info' の前に必要です。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(21,21): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(21,20): error C2109: 配列または、ポインターでない変数に添字が使われました。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(21,35): error C2059: 構文エラー: '{'
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(37,2): warning C4013: 関数 'InputName' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(37,23): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(39,3): warning C4013: 関数 'ChoiceFirstAttack' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(39,46): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(43,4): warning C4013: 関数 'ShowPlayer' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(43,27): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(43,26): error C2109: 配列または、ポインターでない変数に添字が使われました。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(44,4): warning C4013: 関数 'ShowBoard' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(45,8): warning C4013: 関数 'Input' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(49,5): warning C4013: 関数 'PlayerMove' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(52,5): warning C4013: 関数 'ChoicePosition' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(52,32): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(52,31): error C2109: 配列または、ポインターでない変数に添字が使われました。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(53,19): warning C4013: 関数 'ShowResult' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(53,30): warning C4013: 関数 'GameDecision' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(53,69): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(53,83): error C2065: 'player_info': 定義されていない識別子です。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(55,6): warning C4013: 関数 'ChangePlay' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(63,3): warning C4013: 関数 'Retry_Game' は定義されていません。int 型の値を返す外部関数と見なします。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(64,31): error C2065: 'TRUE': 定義されていない識別子です。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(35,7): warning C4047: '初期化中': 間接参照のレベルが 'char' と 'char [1]' で異なっています。
+  (ソース ファイル 'game_start.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_start.c(13,6): error C2371: 'InputName': 再定義されています。異なる基本型です。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_start.c(23,20): warning C4047: '>=': 間接参照のレベルが 'int' と 'void *' で異なっています。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_start.c(29,5): error C2100: 型 'int' のオペランドを逆参照することはできません
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_start.c(29,58): error C2106: '=': 左のオペランドが、左辺値になっていません。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_start.c(16,6): warning C4047: '初期化中': 間接参照のレベルが 'int' と 'char [1]' で異なっています。
+  tic_tac_toe.c
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_start.h(15,28): error C2065: 'NAME_SIZE': 定義されていない識別子です。
+  (ソース ファイル 'tic_tac_toe.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_start.h(15,19): error C2057: 定数式が必要です。
+  (ソース ファイル 'tic_tac_toe.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\game_start.h(16,12): error C2229: struct 'player' にサイズが 0 の配列があります。
+  (ソース ファイル 'tic_tac_toe.c' をコンパイルしています)
+  
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(37,2): warning C4013: 関数 'InputName' は定義されていません。int 型の値を返す外部関数と見なします。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(39,3): warning C4013: 関数 'ChoiceFirstAttack' は定義されていません。int 型の値を返す外部関数と見なします。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(43,4): warning C4013: 関数 'ShowPlayer' は定義されていません。int 型の値を返す外部関数と見なします。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(44,4): warning C4013: 関数 'ShowBoard' は定義されていません。int 型の値を返す外部関数と見なします。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(45,8): warning C4013: 関数 'Input' は定義されていません。int 型の値を返す外部関数と見なします。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(49,5): warning C4013: 関数 'PlayerMove' は定義されていません。int 型の値を返す外部関数と見なします。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(52,5): warning C4013: 関数 'ChoicePosition' は定義されていません。int 型の値を返す外部関数と見なします。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(53,19): warning C4013: 関数 'ShowResult' は定義されていません。int 型の値を返す外部関数と見なします。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(53,30): warning C4013: 関数 'GameDecision' は定義されていません。int 型の値を返す外部関数と見なします。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(55,6): warning C4013: 関数 'ChangePlay' は定義されていません。int 型の値を返す外部関数と見なします。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(63,3): warning C4013: 関数 'Retry_Game' は定義されていません。int 型の値を返す外部関数と見なします。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(64,31): error C2065: 'TRUE': 定義されていない識別子です。
+Z:\研修\実習\C言語\tic_tac_toe_team_a\tic_tac_toe\Tic_Tac_Toe\Tic_Tac_Toe\Tic_Tac_Toe\tic_tac_toe.c(35,7): warning C4047: '初期化中': 間接参照のレベルが 'char' と 'char [1]' で異なっています。
+  コードを生成中...
