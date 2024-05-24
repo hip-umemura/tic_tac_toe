@@ -44,10 +44,11 @@
               "RelativeDocumentMoniker": "tic_tac_toe\\board.h",
               "ToolTip": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.h",
               "RelativeToolTip": "tic_tac_toe\\board.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-22T04:23:49.145Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -78,7 +79,7 @@
               "RelativeDocumentMoniker": "tic_tac_toe\\board.c",
               "ToolTip": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.c",
               "RelativeToolTip": "tic_tac_toe\\board.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-22T04:23:49.082Z",
               "EditorCaption": ""

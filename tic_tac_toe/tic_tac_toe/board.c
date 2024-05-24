@@ -4,18 +4,27 @@
 char board[BOARD_SIZE][BOARD_SIZE];	// 盤面をグローバル変数で定義（char型）
 
 void print_now_board(void) { // 盤面の状況を表示
-		int row, column; //行、列
 
-		printf("　 1   2   3\n");
+		int row, column; //行、列
+		for (column = 0; column < BOARD_SIZE; column++) {
+			printf("   %d", column + 1);
+		}
+		printf("\n ");
 		for (row = 0; row < BOARD_SIZE; row++) {
-			printf(" -------------\n");
+			for (column = 0; column < BOARD_SIZE; column++) {
+				printf("----");
+			}
+			printf("- \n");
 			printf("%d|", row + 1);
 			for (column = 0; column < BOARD_SIZE; column++) {
 				printf(" %c |", board[row][column]);
 			}
-			printf("\n");
+			printf("\n ");
 		}
-		printf(" -------------\n");
+		for (row = 0; row < (BOARD_SIZE * 4 + 1); row++) {
+			printf("-");
+		}
+		printf("\n");
 }
 
 int put_piece(int row, int column, PLAYER player) {

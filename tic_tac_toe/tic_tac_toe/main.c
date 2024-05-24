@@ -23,7 +23,7 @@ TURN change_turn(TURN now) {
 	}
 }
 
-// 勝敗の表示を行う。
+// 勝敗の表示を行う
 void print_result(RESULT result, PLAYER player) {
 	if (result == DRAW) {
 		printf("引き分け！\n");
@@ -49,7 +49,7 @@ int retry_game(void) {
 	}
 }
 
-// チュートリアルとプレイヤー名の入力終了後、ゲーム全体の進行を行う。
+// ゲーム全体の進行を行う。
 void game_progress(char* name1, char* name2)
 {
 
@@ -67,12 +67,8 @@ void game_progress(char* name1, char* name2)
 
 	RESULT game_result = NONE;			// ゲームの結果（初期値）
 
-	int  game_horizontal_axis;								// 盤面の横軸（int型）
-	int  game_vertical_axis;								// 盤面の縦軸（int型）
-	char len_game_horizontal_axis[LEN_HORIZONTAL_AXIS + 1];	// 盤面の横軸（char型）
-	char len_game_vertical_axis[LEN_VERTICAL_AXIS + 1];		// 盤面の縦軸（char型）
-
-	int error_count;	// 不正な入力した場合にエラー文を出させる条件式用変数
+	int  board_horizontal_axis[1];		// 盤面の横軸（int型）
+	int  board_vertical_axis[1];		// 盤面の縦軸（int型）
 
 	clean_board();		// 盤面を初期化
 
@@ -80,42 +76,36 @@ void game_progress(char* name1, char* name2)
 
 	// ゲームの勝敗が決するまでループする。
 	while (game_result == NONE) {
-		game_horizontal_axis = 0;
-		game_vertical_axis   = 0;
-		error_count          = 0;
+
+		int input_error = 0;
 
 		// 現在のプレイヤーを代入
 		if (player_game_turn == FIRST_TURN) {
 			now_game_player = game_player1;
 		}
 		else if (player_game_turn == SECOND_TURN) {
-				now_game_player = game_player2;
-			}
+			now_game_player = game_player2;
+		}
 
 		// 盤面の座標を入力
 		do {
-			if (error_count > 0) {
-				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
-			}
 
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
-			scanf_s("%s", len_game_horizontal_axis, LEN_HORIZONTAL_AXIS + 1 );
-			scanf_s("%s", len_game_vertical_axis, LEN_VERTICAL_AXIS + 1);
-			while (getchar() != '\n');	// バッファをクリアにしている
-			error_count++;
+			scanf_s("%1d", &board_horizontal_axis[0]);
+			scanf_s("%1d", &board_vertical_axis[0]);
+			while (getchar() != '\n');
 
-			// 入力された値が数字か数字以外か判断
-			if ((isdigit(len_game_horizontal_axis[LEN_HORIZONTAL_AXIS - 1]) != 0) &&
-				(isdigit(len_game_vertical_axis[LEN_VERTICAL_AXIS - 1]) != 0)) {
-				game_horizontal_axis = atoi(len_game_horizontal_axis);
-				game_vertical_axis = atoi(len_game_vertical_axis);
+			if ((board_horizontal_axis[0] < 1) || (board_horizontal_axis[0] > 3) ||
+				(board_vertical_axis[0] < 1) || (board_vertical_axis[0] > 3)) {
+				input_error = FALSE;
+				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
+			} else {
+				input_error = TRUE;
 			}
-
-		} while (((game_horizontal_axis < 1) || (game_horizontal_axis > 3)) ||
-			((game_vertical_axis < 1) || (game_vertical_axis > 3)));
+		} while (input_error != TRUE);
 
 		// 入力された盤面の座標に駒を配置し、プレイヤーの交代を行う
-		if (put_piece(game_horizontal_axis, game_vertical_axis, now_game_player) == TRUE) {
+		if (put_piece(board_horizontal_axis[0], board_vertical_axis[0], now_game_player) == TRUE) {
 
 			print_now_board();				// 駒配置後、再度盤面を表示
 
@@ -167,7 +157,7 @@ int main(void) {
 		do {
 		  if (((iswprint(name[player_count][name_array])) && (!iswcntrl(name[player_count][name_array])) &&
 			(!iswascii(name[player_count][name_array]))) || (iswpunct(name[player_count][name_array]))) {
-			printf("\x1b[31m半角英数字10字以内で入力してください！\x1b[39m\n");
+			printf("\x1b[31m半角英数字9字以内で入力してください！\x1b[39m\n");
 			break;
 		  }
 		  name_array++;
