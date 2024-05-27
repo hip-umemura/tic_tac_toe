@@ -47,7 +47,8 @@
               "ViewState": "AQIAAAEAAAAAAAAAAAAAAAYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-22T04:23:49.145Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -57,7 +58,7 @@
               "RelativeDocumentMoniker": "tic_tac_toe\\main.c",
               "ToolTip": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\main.c",
               "RelativeToolTip": "tic_tac_toe\\main.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "ViewState": "AQIAAL8AAAAAAAAAAAAAAAwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-22T04:23:49.161Z",
               "IsPinned": true,
@@ -79,7 +80,7 @@
               "RelativeDocumentMoniker": "tic_tac_toe\\board.c",
               "ToolTip": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.c",
               "RelativeToolTip": "tic_tac_toe\\board.c",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwCUAAAAHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-22T04:23:49.082Z"
             },
@@ -91,7 +92,7 @@
               "RelativeDocumentMoniker": "tic_tac_toe\\basic.h",
               "ToolTip": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\basic.h",
               "RelativeToolTip": "tic_tac_toe\\basic.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-22T04:23:49.145Z"
             },
