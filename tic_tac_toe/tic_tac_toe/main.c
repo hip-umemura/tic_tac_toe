@@ -1,5 +1,4 @@
-﻿﻿// ゲーム（三目並べ）全体を管理するファイル
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <wchar.h>
@@ -182,8 +181,7 @@ int main(void) {
 	do
 	{
 		game_progress(name[0], name[1]);
-		while (getchar() != '\n')
-			;
+		
 	} while (retry_game() == TRUE);
 
 	printf("ゲーム終了！");
