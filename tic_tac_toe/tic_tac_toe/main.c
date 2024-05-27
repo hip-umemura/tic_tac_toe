@@ -82,15 +82,14 @@ void game_progress(char* name1, char* name2)
 	// ゲームの勝敗が決するまでループする。
 	while (game_result == NONE) {
 
-		input_error = 0;
+		input_error           = 0;
 		board_horizontal_axis = 0;
-		board_vertical_axis = 0;
+		board_vertical_axis   = 0;
 
 		// 現在のプレイヤーを代入
 		if (player_game_turn == FIRST_TURN) {
 			now_game_player = game_player1;
-		}
-		else {
+		} else {
 			now_game_player = game_player2;
 		}
 
@@ -102,17 +101,16 @@ void game_progress(char* name1, char* name2)
 			while (getchar() != '\n');
 
 			array_board_horizontal_axis = temporary_array_board_axis[0];
-			array_board_vertical_axis = temporary_array_board_axis[2];
+			array_board_vertical_axis   = temporary_array_board_axis[2];
 
 			if ((isdigit(array_board_horizontal_axis)) && (isdigit(array_board_vertical_axis))) {
-				input_error = TRUE;
+				input_error           = TRUE;
 				board_horizontal_axis = array_board_horizontal_axis - '0';
-				board_vertical_axis = array_board_vertical_axis - '0';
-			}
-			else {
+				board_vertical_axis   = array_board_vertical_axis - '0';
+			} else {
 				input_error = FALSE;
 				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
-			}
+			} 
 		} while (input_error != TRUE);
 
 		// 入力された盤面の座標に駒を配置し、プレイヤーの交代を行う
