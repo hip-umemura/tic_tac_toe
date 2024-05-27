@@ -7,7 +7,6 @@
 //mainŠÖ”‚Ìì¬
 int main(void)
 {
-    //ƒ{[ƒhî•ñ‚Ì‰¼ì¬
     char a[3][3];
     for (int i = 2; i >= 0; i--) {
         for (int j = 0; j < 3; j++) {
