@@ -54,8 +54,7 @@
               "RelativeToolTip": "tic_tac_toe\\board.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-22T04:23:49.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.082Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "tic_tac_toe\\basic.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.145Z"
             },
             {
               "$type": "Document",
@@ -90,7 +88,7 @@
               "RelativeDocumentMoniker": "tic_tac_toe\\main.c",
               "ToolTip": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\main.c",
               "RelativeToolTip": "tic_tac_toe\\main.c",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-22T04:23:49.161Z",
               "EditorCaption": ""
@@ -105,8 +103,7 @@
               "RelativeToolTip": "tic_tac_toe\\tutorial.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.161Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "tic_tac_toe\\tutorial.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-22T04:23:49.161Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.161Z"
             }
           ]
         }
