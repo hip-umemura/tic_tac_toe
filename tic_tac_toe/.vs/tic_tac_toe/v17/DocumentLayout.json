@@ -54,7 +54,8 @@
               "RelativeToolTip": "tic_tac_toe\\board.c",
               "ViewState": "AQIAABEAAAAAAAAAAADwvxwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-22T04:23:49.082Z"
+              "WhenOpened": "2024-05-22T04:23:49.082Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -97,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "tutorial.h",
               "DocumentMoniker": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.h",
               "RelativeDocumentMoniker": "tic_tac_toe\\tutorial.h",
@@ -105,7 +106,8 @@
               "RelativeToolTip": "tic_tac_toe\\tutorial.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.161Z"
+              "WhenOpened": "2024-05-22T04:23:49.161Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
