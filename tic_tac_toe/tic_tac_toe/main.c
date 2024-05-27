@@ -1,4 +1,4 @@
-﻿// ゲーム（三目並べ）全体を管理するファイル
+﻿﻿// ゲーム（三目並べ）全体を管理するファイル
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
