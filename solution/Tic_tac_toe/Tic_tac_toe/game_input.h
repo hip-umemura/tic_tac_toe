@@ -2,13 +2,10 @@
 #define GAME_INPUT_H
 
 // プロトタイプ宣言
-void InputByPlayer(char[]);
+BOOL CheckInputViolation(char[INPUT_LEN_MAX]);
 
-int InputToValue(char[]);
+int InputProcess();
 
-int InputProcess(char[]);
-
-BOOL isDuplicate(char, struct COORDINATES);
-
+BOOL isDuplicate(char);
 
 #endif // GAME_INPUT_H

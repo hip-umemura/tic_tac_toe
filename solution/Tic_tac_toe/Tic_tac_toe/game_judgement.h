@@ -2,7 +2,6 @@
 #define GAME_JUDGEMENT_H
 
 // プロトタイプ宣言
-int BoardJudgement(char[BOARD_HEIGHT][BOARD_WIDTH], int);
-
+BOOL BoardJudgement(char[BOARD_HEIGHT][BOARD_WIDTH]);
 
 #endif // GAME_JUDGEMENT_H
