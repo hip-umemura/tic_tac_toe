@@ -70,11 +70,9 @@ void game_progress(char* name1, char* name2)
 
 	int   input_error;					// 入力エラーを表示する条件変数
 
-	int   board_horizontal_axis;		// 入力した盤面の横軸（int型）
-	int   board_vertical_axis;			// 入力した盤面の縦軸（int型）
-	char  array_board_horizontal_axis;	// 入力した盤面の横軸（char型）
-	char  array_board_vertical_axis;	// 入力した盤面の縦軸（char型）
-	char  temporary_array_board_axis[4] = "";// 入力した盤面の軸を一時的に格納
+	int   board_horizontal_axis;		// 入力した盤面の横軸
+	int   board_vertical_axis;			// 入力した盤面の縦軸
+	char  array_board_axis[4] = "";		// 入力した盤面の軸
 
 	clean_board();		// 盤面を初期化
 
@@ -83,7 +81,7 @@ void game_progress(char* name1, char* name2)
 	// ゲームの勝敗が決するまでループする。
 	while (game_result == NONE) {
 
-		input_error           = 0;
+		input_error               = 0;
 		board_horizontal_axis = 0;
 		board_vertical_axis   = 0;
 
@@ -98,16 +96,15 @@ void game_progress(char* name1, char* name2)
 		do {
 
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
-			scanf_s("%[^\n]s", temporary_array_board_axis, 4);
+			scanf_s("%[^\n]s", array_board_axis, 4);
 			while (getchar() != '\n');
 
-			array_board_horizontal_axis = temporary_array_board_axis[0];
-			array_board_vertical_axis   = temporary_array_board_axis[2];
-
-			if ((isdigit(array_board_horizontal_axis)) && (isdigit(array_board_vertical_axis) && (temporary_array_board_axis[1] == ' '))) {
+			if ((isdigit(array_board_axis[0])) &&
+				(isdigit(array_board_axis[2])  && 
+				(array_board_axis[1] == ' '))) {
 				input_error           = TRUE;
-				board_horizontal_axis = array_board_horizontal_axis - '0';
-				board_vertical_axis   = array_board_vertical_axis - '0';
+				board_horizontal_axis = array_board_axis[0] - '0';
+				board_vertical_axis   = array_board_axis[2] - '0';
 			} else {
 				input_error = FALSE;
 				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
@@ -136,10 +133,10 @@ void game_progress(char* name1, char* name2)
 
 int main(void) {
 
-	int start_tutorial;				// チュートリアルを表示する条件変数
+	int start_tutorial;
 	char name[MEMBERS][NAME_LEN];
 	int name_array;
-	int player_count = 0;			// プレイヤー名の入力を入れ替える条件変数
+	int player_count = 0;
 
 	printf("チュートリアルを見ますか(YES...1 / NO...1以外)：");
 	scanf_s("%d", &start_tutorial);
