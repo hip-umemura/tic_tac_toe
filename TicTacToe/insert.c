@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 
+//
 void Insert(char* board_element_info, int turn_info)
 {
 	if (turn_info % 2 == 1) {
