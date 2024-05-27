@@ -30,8 +30,8 @@ BOOL BoardJudgement(char game_board[BOARD_HEIGHT][BOARD_WIDTH])
     for (col = 0; col < BOARD_WIDTH; col++) {
         o_count = 0;
         x_count = 0;
-        for (row = 0; row < BOARD_HEIGHT; row++) {
-            if (game_board[row][col] == 'o') {
+        for (row = 1; row < BOARD_HEIGHT; row++) {
+            if (game_board[row][col] == game_board[row - 1][col]) {
                 o_count++;
             }
             else if (game_board[row][col] == 'x') {
