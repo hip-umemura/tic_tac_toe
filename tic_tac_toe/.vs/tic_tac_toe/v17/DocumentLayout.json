@@ -1,6 +1,5 @@
 {
   "Version": 1,
-<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\",
   "Documents": [
     {
@@ -21,32 +20,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-=======
-  "WorkspaceRootPath": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\basic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\basic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\tutorial.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
->>>>>>> cf8db85570ed6cc75c814e4c366a5311b5bd8a8f
       "RelativeMoniker": "D:0:0:{85D8D2FA-042D-447E-AB02-A0983E30C6E0}|tic_tac_toe\\tic_tac_toe.vcxproj|solutionrelative:tic_tac_toe\\tutorial.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -61,11 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
           "SelectedChildIndex": 5,
-=======
-          "SelectedChildIndex": 1,
->>>>>>> cf8db85570ed6cc75c814e4c366a5311b5bd8a8f
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,84 +47,29 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-<<<<<<< HEAD
               "Title": "board.c",
               "DocumentMoniker": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.c",
               "RelativeDocumentMoniker": "tic_tac_toe\\board.c",
               "ToolTip": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.c",
               "RelativeToolTip": "tic_tac_toe\\board.c",
               "ViewState": "AQIAABsAAAAAAAAAAAAAAB0AAAATAAAA",
-=======
-              "Title": "board.h",
-              "DocumentMoniker": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.h",
-              "RelativeDocumentMoniker": "tic_tac_toe\\board.h",
-              "ToolTip": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.h",
-              "RelativeToolTip": "tic_tac_toe\\board.h",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAAAYAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.145Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\main.c",
-              "RelativeDocumentMoniker": "tic_tac_toe\\main.c",
-              "ToolTip": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\main.c",
-              "RelativeToolTip": "tic_tac_toe\\main.c",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAAAGAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-22T04:23:49.161Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "board.c",
-              "DocumentMoniker": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.c",
-              "RelativeDocumentMoniker": "tic_tac_toe\\board.c",
-              "ToolTip": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.c",
-              "RelativeToolTip": "tic_tac_toe\\board.c",
-              "ViewState": "AQIAABkAAAAAAAAAAAAQwCUAAAAHAAAA",
->>>>>>> cf8db85570ed6cc75c814e4c366a5311b5bd8a8f
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-22T04:23:49.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.082Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "basic.h",
-<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\basic.h",
               "RelativeDocumentMoniker": "tic_tac_toe\\basic.h",
               "ToolTip": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\basic.h",
               "RelativeToolTip": "tic_tac_toe\\basic.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
-=======
-              "DocumentMoniker": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\basic.h",
-              "RelativeDocumentMoniker": "tic_tac_toe\\basic.h",
-              "ToolTip": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\basic.h",
-              "RelativeToolTip": "tic_tac_toe\\basic.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
->>>>>>> cf8db85570ed6cc75c814e4c366a5311b5bd8a8f
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.145Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "board.h",
               "DocumentMoniker": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\board.h",
@@ -164,8 +78,7 @@
               "RelativeToolTip": "tic_tac_toe\\board.h",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-22T04:23:49.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-22T04:23:49.145Z"
             },
             {
               "$type": "Document",
@@ -175,7 +88,7 @@
               "RelativeDocumentMoniker": "tic_tac_toe\\main.c",
               "ToolTip": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\main.c",
               "RelativeToolTip": "tic_tac_toe\\main.c",
-              "ViewState": "AQIAAIAAAAAAAAAAAADwv4cAAAAQAAAA",
+              "ViewState": "AQIAAGUAAAAAAAAAAADwv2MAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-22T04:23:49.161Z",
               "EditorCaption": ""
@@ -187,35 +100,20 @@
               "DocumentMoniker": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.h",
               "RelativeDocumentMoniker": "tic_tac_toe\\tutorial.h",
               "ToolTip": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.h",
-=======
-              "DocumentIndex": 5,
-              "Title": "tutorial.h",
-              "DocumentMoniker": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.h",
-              "RelativeDocumentMoniker": "tic_tac_toe\\tutorial.h",
-              "ToolTip": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.h",
->>>>>>> cf8db85570ed6cc75c814e4c366a5311b5bd8a8f
               "RelativeToolTip": "tic_tac_toe\\tutorial.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-22T04:23:49.161Z"
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
               "DocumentIndex": 5,
               "Title": "tutorial.c",
               "DocumentMoniker": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.c",
               "RelativeDocumentMoniker": "tic_tac_toe\\tutorial.c",
               "ToolTip": "C:\\Users\\r_morimoto\\Desktop\\a\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.c",
-=======
-              "DocumentIndex": 4,
-              "Title": "tutorial.c",
-              "DocumentMoniker": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.c",
-              "RelativeDocumentMoniker": "tic_tac_toe\\tutorial.c",
-              "ToolTip": "C:\\Users\\k_tasaka\\Desktop\\s\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe\\tutorial.c",
->>>>>>> cf8db85570ed6cc75c814e4c366a5311b5bd8a8f
               "RelativeToolTip": "tic_tac_toe\\tutorial.c",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAEkAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-22T04:23:49.161Z"
             }
