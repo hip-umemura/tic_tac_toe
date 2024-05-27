@@ -2,11 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-<<<<<<< HEAD
-      <FullPath>Z:\研修\実習\tic_tac_toe\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe</FullPath>
-=======
-      <FullPath>C:\Users\k_tasaka\Desktop\s\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe</FullPath>
->>>>>>> dab312906d99a71fc0ec226b72dacd9e58bb5dd4
+      <FullPath>C:\Users\r_morimoto\Desktop\a\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
