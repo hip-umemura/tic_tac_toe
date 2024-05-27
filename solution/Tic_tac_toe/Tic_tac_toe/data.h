@@ -9,10 +9,10 @@
 #define BOARD_WIDTH	3																		// ボードの幅
 #define INPUT_LEN_MAX	2																	// 入力長の最大
 #define INPUT_VAL_MIN	0
-#define INPUT_VAL_MAX ((BOARD_HEIGHT * BOARD_WIDTH) – 1)		// 入力数値の最大値
+#define INPUT_VAL_MAX ((BOARD_HEIGHT * BOARD_WIDTH) – 1)									// 入力数値の最大値
 #define INPUT_ERR  INPUT_VAL_MIN - 1														// 入力エラーを表す値
 #define CONNECTED_NUM_FOR_END  3															// 終了条件の同じ記号が並ぶ数
-#define PLAYER_INDEX(turn) (turn % PLAYER_NUM)							// turnをplayer_indexに変換する
+#define PLAYER_INDEX(turn) (turn % PLAYER_NUM)												// turnをplayer_indexに変換する
 #define EMPTY  " "																			// 空文字列
 
 
