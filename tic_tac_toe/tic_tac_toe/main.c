@@ -135,7 +135,7 @@ void game_progress(char* name1, char* name2)
 int main(void) {
 
 	int start_tutorial;				// チュートリアルを表示する条件変数
-	char name[PLAYERS][NAME_LEN];	// 
+	char name[MEMBERS][NAME_LEN];
 	int name_array;
 	int player_count = 0;			// プレイヤー名の入力を入れ替える条件変数
 
@@ -175,14 +175,12 @@ int main(void) {
 				;
 		} while ((name[player_count][name_array] != '\0') || (name_array == 0));
 		player_count++;
-	} while (player_count != PLAYERS);
+	} while (player_count != MEMBERS);
 
 	// ゲームを始める
 	do
 	{
 		game_progress(name[0], name[1]);
-		while (getchar() != '\n')
-			;
 	} while (retry_game() == TRUE);
 
 	printf("ゲーム終了！");
