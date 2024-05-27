@@ -36,12 +36,12 @@ void print_result(RESULT result, PLAYER player) {
 // ゲーム終了後、再度ゲームをプレイするか否か
 int retry_game(void) {
 
-	int userInput;	// プレイヤーが入力した値
+	char userInput;	// プレイヤーが入力した値
 
 	printf("再プレイしますか(YES...1 / No...1以外):");
-	scanf_s("%d", &userInput);
+	scanf_s("%c", &userInput, 1);
 
-	if (userInput == 1) {
+	if (userInput == '1') {
 		return TRUE;
 	}
 	else {
@@ -67,8 +67,13 @@ void game_progress(char* name1, char* name2)
 
 	RESULT game_result = NONE;			// ゲームの結果（初期値）
 
-	int  board_horizontal_axis;		// 盤面の横軸（int型）
-	int  board_vertical_axis;		// 盤面の縦軸（int型）
+	int   input_error;					// 入力エラーを表示する条件変数
+
+	int   board_horizontal_axis;		// 入力した盤面の横軸（int型）
+	int   board_vertical_axis;			// 入力した盤面の縦軸（int型）
+	char  array_board_horizontal_axis;	// 入力した盤面の横軸（char型）
+	char  array_board_vertical_axis;	// 入力した盤面の縦軸（char型）
+	char  temporary_array_board_axis[4];// 入力した盤面の軸を一時的に格納
 
 	clean_board();		// 盤面を初期化
 
@@ -77,13 +82,14 @@ void game_progress(char* name1, char* name2)
 	// ゲームの勝敗が決するまでループする。
 	while (game_result == NONE) {
 
-		int input_error = 0;
+		input_error           = 0;
+		board_horizontal_axis = 0;
+		board_vertical_axis   = 0;
 
 		// 現在のプレイヤーを代入
 		if (player_game_turn == FIRST_TURN) {
 			now_game_player = game_player1;
-		}
-		else if (player_game_turn == SECOND_TURN) {
+		} else {
 			now_game_player = game_player2;
 		}
 
@@ -91,17 +97,20 @@ void game_progress(char* name1, char* name2)
 		do {
 
 			printf("%sさん、駒を置く座標を入力してください：", now_game_player.name);
-			scanf_s("%d", &board_horizontal_axis);
-			scanf_s("%d", &board_vertical_axis);
+			scanf_s("%[^\n]s", temporary_array_board_axis, 4);
 			while (getchar() != '\n');
 
-			if ((board_horizontal_axis < 1) || (board_horizontal_axis > 3) ||
-				(board_vertical_axis < 1) || (board_vertical_axis > 3)) {
+			array_board_horizontal_axis = temporary_array_board_axis[0];
+			array_board_vertical_axis   = temporary_array_board_axis[2];
+
+			if ((isdigit(array_board_horizontal_axis)) && (isdigit(array_board_vertical_axis))) {
+				input_error           = TRUE;
+				board_horizontal_axis = array_board_horizontal_axis - '0';
+				board_vertical_axis   = array_board_vertical_axis - '0';
+			} else {
 				input_error = FALSE;
 				printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
-			} else {
-				input_error = TRUE;
-			}
+			} 
 		} while (input_error != TRUE);
 
 		// 入力された盤面の座標に駒を配置し、プレイヤーの交代を行う
@@ -116,7 +125,8 @@ void game_progress(char* name1, char* name2)
 			if (game_result == NONE) {
 				player_game_turn = change_turn(player_game_turn);	// 現在のプレイヤーを交代する
 			}
-		} else {
+		}
+		else {
 			printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
 		}
 	}
@@ -125,10 +135,10 @@ void game_progress(char* name1, char* name2)
 
 int main(void) {
 
-	int start_tutorial;		// チュートリアルを表示する条件変数
-	char name[MEMBERS][NAME_LEN];
-	int name_array;			// プレイヤー名の要素数
-	int player_count = 0;
+	int start_tutorial;				// チュートリアルを表示する条件変数
+	char name[PLAYERS][NAME_LEN];	// 
+	int name_array;
+	int player_count = 0;			// プレイヤー名の入力を入れ替える条件変数
 
 	printf("チュートリアルを見ますか(YES...1 / NO...1以外)：");
 	scanf_s("%d", &start_tutorial);
@@ -141,40 +151,39 @@ int main(void) {
 
 	printf("ゲーム開始！\n");
 
-	// 先手のプレイヤー名を入力
+	// プレイヤー名を入力
 	do {
-	  do {
-		name_array = 0;
-
-		if (player_count == 0) {
-		  printf("先手のプレイヤー名を入力してください：");
-		}
-		else {
-		  printf("後手のプレイヤー名を入力してください：");
-		}
-		scanf_s("%s", name[player_count], NAME_LEN);
-
 		do {
-		  if (((iswprint(name[player_count][name_array])) && (!iswcntrl(name[player_count][name_array])) &&
-			(!iswascii(name[player_count][name_array]))) || (iswpunct(name[player_count][name_array]))) {
-			printf("\x1b[31m半角英数字9字以内で入力してください！\x1b[39m\n");
-			break;
-		  }
-		  name_array++;
-		} while (name[player_count][name_array] != '\0');
+			name_array = 0;
 
-		while (getchar() != '\n')
-			;
+			if (player_count == 0) {
+				printf("先手のプレイヤー名を入力してください：");
+			}
+			else {
+				printf("後手のプレイヤー名を入力してください：");
+			}
+			scanf_s("%s", name[player_count], NAME_LEN);
+			do {
+				if (((iswprint(name[player_count][name_array])) && (!iswcntrl(name[player_count][name_array])) &&
+					(!iswascii(name[player_count][name_array]))) || (iswpunct(name[player_count][name_array]))) {
+					printf("\x1b[31m半角英数字9字以内で入力してください！\x1b[39m\n");
+					break;
+				}
+				name_array++;
+			} while (name[player_count][name_array] != '\0');
 
-	  } while ((name[player_count][name_array] != '\0') || (name_array == 0));
-	  player_count++;
-	} while (player_count != MEMBERS);
+			while (getchar() != '\n')
+				;
+		} while ((name[player_count][name_array] != '\0') || (name_array == 0));
+		player_count++;
+	} while (player_count != PLAYERS);
 
-	// プレイヤー名入力後、ゲームを行う
+	// ゲームを始める
 	do
 	{
 		game_progress(name[0], name[1]);
-
+		while (getchar() != '\n')
+			;
 	} while (retry_game() == TRUE);
 
 	printf("ゲーム終了！");
