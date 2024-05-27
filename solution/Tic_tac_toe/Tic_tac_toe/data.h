@@ -28,7 +28,7 @@ typedef struct
 typedef struct
 {
 	char game_board[BOARD_HEIGHT][BOARD_WIDTH];
-	char players[PLAYER_NUM][NAME_LEN_MAX];
+	char player_names[PLAYER_NUM][NAME_LEN_MAX];
 	char marks[PLAYER_NUM];
 	int turn_counter;
 	int player_index;
