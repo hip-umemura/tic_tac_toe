@@ -1,14 +1,2 @@
-﻿  game_input.c
-  game_output.c
-Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\Tic_tac_toe\game_output.c(30,12): error C2065: 'count': 定義されていない識別子です。
-Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\Tic_tac_toe\game_output.c(31,15): error C2059: 構文エラー: ']'
-Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\Tic_tac_toe\game_output.c(32,10): warning C4477: 'printf' : 書式文字列 '%c' には、型 'int' の引数が必要ですが、可変個引数 1 は型 'char *' です
-Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\Tic_tac_toe\game_output.c(32,10): warning C4313: 'printf': 書式文字列内の '%c' が引数 1 ('char *' 型) と競合しています
-Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\Tic_tac_toe\game_output.c(35,15): error C2059: 構文エラー: ']'
-Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\Tic_tac_toe\game_output.c(36,10): warning C4477: 'printf' : 書式文字列 '%c' には、型 'int' の引数が必要ですが、可変個引数 1 は型 'char *' です
-Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\Tic_tac_toe\game_output.c(36,10): warning C4313: 'printf': 書式文字列内の '%c' が引数 1 ('char *' 型) と競合しています
-Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\Tic_tac_toe\game_output.c(39,25): warning C4028: パラメーターの型 1 が関数宣言と一致しません。
-Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\Tic_tac_toe\game_output.c(43,30): error C2065: '〇三つ並んでたら': 定義されていない識別子です。
-Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\Tic_tac_toe\game_output.c(46,11): error C3873: '0xd7': この文字を識別子の最初の文字にすることはできません
-Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\Tic_tac_toe\game_output.c(46,34): error C2065: '×三つ並んでたら': 定義されていない識別子です。
-  コードを生成中...
+﻿  game_output.c
+  Tic_tac_toe.vcxproj -> Z:\研修\実習\C言語\cording\tic_tac_toe\solution\Tic_tac_toe\x64\Debug\Tic_tac_toe.exe

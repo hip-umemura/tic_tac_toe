@@ -40,14 +40,13 @@ void DisplayResult(char winner_name[], BOOL judge)
 void UpdateBoard(char* square, char mark)
 {
 	*square = mark;
-	//game_info.game_board[board_index.y][board_index.x] = game_info.marks[game_info.player_index];
 }
 
 COORDINATES ToIndexOfBoard(int input_number)
 {
 	COORDINATES index;
-	index.y = input_number % BOARD_WIDTH;
-	index.x = input_number / BOARD_WIDTH;
+	index.y = input_number / BOARD_HEIGHT;
+	index.x = input_number % BOARD_WIDTH;
 
 	return index;
 }
