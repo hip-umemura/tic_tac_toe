@@ -57,7 +57,7 @@ RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], int turn_info, INDEX gri
 
 	for (loop_count = 0; loop_count < 4; loop_count++) {
 		line_count = 0;
-		while (current_element_designation[loop_count].x < 3 || current_element_designation[loop_count].y < 3) {
+		while (current_element_designation[loop_count].x < 3 && current_element_designation[loop_count].y < 3) {
 			if (joke[current_element_designation[loop_count].y][current_element_designation[loop_count].x] == standard_symbol) {
 				line_count++;
 			}
