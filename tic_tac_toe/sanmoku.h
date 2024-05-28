@@ -1,3 +1,5 @@
+#define ELEMENT 9
+
 typedef enum{
 	TRUE,
 	FALSE,

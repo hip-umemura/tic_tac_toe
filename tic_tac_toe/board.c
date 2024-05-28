@@ -4,17 +4,17 @@
 #include "board.h"
 
 
-void ShowBoard(int square[9]) {
+void ShowBoard(int square[ELEMENT]) {
 	setlocale(LC_ALL, "ja_JP.UTF-8");
 	printf(" -------------------- \n|      |      |      |\n");
 	for (int i = 0; i < 9; i++) {
-		wprintf(L"|  %lc  ", square[i]);
+		printf("|  %lc  ", square[i]);
 		if (i == 8) {
 			printf("| \n|      |      |      |\n --------------------\n");
 			break;
 		}
-		if ((i + 1) % 3 == 0) {
-			wprintf(L"|\n|      |      |      |\n -------------------- \n|      |      |      |\n");
+		else if ((i + 1) % 3 == 0) {
+			printf("|\n|      |      |      |\n -------------------- \n|      |      |      |\n");
 		}
 
 	}
@@ -30,10 +30,11 @@ TURN CheckTurn(int turn) {
 	return mark;
 }
 
-int DisplayWin(JUDGE win_result) {
-	if (win_result ==CIRCLE_WIN) {
+CONTINUE DisplayWin(JUDGE judge) {
+	if (judge == CIRCLE_WIN) {
 		printf("〇の勝利");
-	}else if(win_result == CROSS_WIN){
+	}
+	else if (judge == CROSS_WIN) {
 		printf("×の勝利");
 	}
 	return EXTEND;
