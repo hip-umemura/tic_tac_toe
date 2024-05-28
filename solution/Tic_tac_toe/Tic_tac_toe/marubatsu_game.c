@@ -7,11 +7,10 @@
 
 int main(void) {
 
-	COORDINATES board_index = { INPUT_ERR,0 };
+	COORDINATES board_index = { 0,0 };
 	int input_number = INPUT_ERR;
-	//BOOL game_flag = FALSE;
+	BOOL line_up = FALSE;
 	BOOL input_flag = FALSE;
-	JUDGE game_result = DRAW;
 
 	GAME_INFO game_info = {
 	.game_board = {{'0','1','2'},
@@ -23,28 +22,37 @@ int main(void) {
 	.player_index = PLAYER_INDEX(game_info.turn_counter) };
 
 
-	while (BoardJudgement(game_info.game_board) != TRUE) {
+
+	for (game_info.turn_counter = 0; game_info.turn_counter < BOARD_HEIGHT * BOARD_WIDTH; game_info.turn_counter++) {
+		game_info.player_index = PLAYER_INDEX(game_info.turn_counter);
+
 		DisplayBoard(game_info.game_board);
 		DisplayStatus(game_info.player_names[game_info.player_index]);
 
-		while (input_flag != TRUE) {
+		while (input_flag == FALSE) {
+
 			input_number = InputProcess();
-
 			if (input_number != INPUT_ERR) {
-
 				board_index = ToIndexOfBoard(input_number);
 
-				if (isDuplicate != TRUE) {
+				if (isDuplicate(game_info.game_board[board_index.y][board_index.x]) == FALSE) {
 					input_flag = TRUE;
 				}
 			}
 		}
+		input_flag = FALSE;
 
-		UpdateBoard(game_info.game_board[board_index.y][board_index.x], game_info.marks[game_info.player_index]);
+		UpdateBoard(&game_info.game_board[board_index.y][board_index.x], game_info.marks[game_info.player_index]);
+
+		line_up = BoardJudgement(game_info.game_board);
+
+		if (line_up == TRUE) {
+			break;
+		}
 	}
 
 	DisplayBoard(game_info.game_board);
-	DisplayResult(game_info.player_names[game_info.player_index], game_result);
+	DisplayResult(game_info.player_names[game_info.player_index], line_up);
 
 
 

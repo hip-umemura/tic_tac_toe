@@ -1,38 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\",
+  "WorkspaceRootPath": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|solutionrelative:Tic_tac_toe\\game_judgement.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\marubatsu_game.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\marubatsu_game.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|solutionrelative:Tic_tac_toe\\marubatsu_game.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|solutionrelative:Tic_tac_toe\\data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|solutionrelative:Tic_tac_toe\\game_output.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|solutionrelative:Tic_tac_toe\\game_judgement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|solutionrelative:Tic_tac_toe\\game_output.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|solutionrelative:Tic_tac_toe\\game_input.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|solutionrelative:Tic_tac_toe\\game_input.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|solutionrelative:Tic_tac_toe\\game_judgement.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|solutionrelative:Tic_tac_toe\\data.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E7F5942F-CEDA-48AC-81CD-4454BB908BA1}|Tic_tac_toe\\Tic_tac_toe.vcxproj|solutionrelative:Tic_tac_toe\\game_judgement.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,50 +54,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "game_output.c",
-              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.c",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.c",
               "RelativeDocumentMoniker": "Tic_tac_toe\\game_output.c",
-              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.c",
+              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.c",
               "RelativeToolTip": "Tic_tac_toe\\game_output.c",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAC0AAAAaAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAACoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-28T05:33:58.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "game_output.h",
-              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.h",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.h",
               "RelativeDocumentMoniker": "Tic_tac_toe\\game_output.h",
-              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.h",
+              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_output.h",
               "RelativeToolTip": "Tic_tac_toe\\game_output.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-28T05:34:02.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "game_input.c",
-              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.c",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.c",
               "RelativeDocumentMoniker": "Tic_tac_toe\\game_input.c",
-              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.c",
+              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.c",
               "RelativeToolTip": "Tic_tac_toe\\game_input.c",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADIAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-28T05:33:57.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "game_input.h",
-              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.h",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.h",
               "RelativeDocumentMoniker": "Tic_tac_toe\\game_input.h",
-              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.h",
+              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_input.h",
               "RelativeToolTip": "Tic_tac_toe\\game_input.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -106,55 +106,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "game_judgement.c",
-              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.c",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.c",
               "RelativeDocumentMoniker": "Tic_tac_toe\\game_judgement.c",
-              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.c",
+              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.c",
               "RelativeToolTip": "Tic_tac_toe\\game_judgement.c",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAACsAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-28T05:33:58.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "game_judgement.h",
-              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.h",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.h",
               "RelativeDocumentMoniker": "Tic_tac_toe\\game_judgement.h",
-              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.h",
+              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\game_judgement.h",
               "RelativeToolTip": "Tic_tac_toe\\game_judgement.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-28T05:34:02.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T05:34:02.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "marubatsu_game.c",
-              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\marubatsu_game.c",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\marubatsu_game.c",
               "RelativeDocumentMoniker": "Tic_tac_toe\\marubatsu_game.c",
-              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\marubatsu_game.c",
+              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\marubatsu_game.c",
               "RelativeToolTip": "Tic_tac_toe\\marubatsu_game.c",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-28T05:33:59.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "data.h",
-              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\data.h",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\data.h",
               "RelativeDocumentMoniker": "Tic_tac_toe\\data.h",
-              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\coding\\Tictactoe\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\data.h",
+              "ToolTip": "Z:\\\u7814\u4FEE\\\u5B9F\u7FD2\\C\u8A00\u8A9E\\cording\\tic_tac_toe\\solution\\Tic_tac_toe\\Tic_tac_toe\\data.h",
               "RelativeToolTip": "Tic_tac_toe\\data.h",
               "ViewState": "AQIAABIAAAAAAAAAAAAAACwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-28T05:34:00.556Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T05:34:00.556Z"
             }
           ]
         }
