@@ -4,7 +4,7 @@
 #include "board.h"
 
 
-void ShowBoard(wchar_t square[9]) {
+void ShowBoard(int square[9]) {
 	setlocale(LC_ALL, "ja_JP.UTF-8");
 	printf(" -------------------- \n|      |      |      |\n");
 	for (int i = 0; i < 9; i++) {
@@ -20,28 +20,30 @@ void ShowBoard(wchar_t square[9]) {
 	}
 }
 
-int CheckTurn(int turn) {
+TURN CheckTurn(int turn) {
+	TURN mark;
 	if (turn % 2 == 0) {
-		return CIRCLE;
+		mark = CIRCLE;
 	}else {
-		return CROSS;
+		mark = CROSS;
 	}
+	return mark;
 }
 
-int DisplayWin(JUDGE judge) {
-	if (judge ==CIRCLE_WIN) {
+int DisplayWin(JUDGE win_result) {
+	if (win_result ==CIRCLE_WIN) {
 		printf("〇の勝利");
-	}else if(judge == CROSS_WIN){
+	}else if(win_result == CROSS_WIN){
 		printf("×の勝利");
 	}
 	return EXTEND;
 }
 
-int ChangeState(int input,MARK mark) {
+int ChangeState(int input,int *square,TURN mark) {
 	if (mark == CIRCLE) {
-		square[input] = '〇';
+		*(square+input) = '〇';
 	}else {
-		square[input] = '×';
+		*(square + input) = '×';
 	}
 	return square[input];
 }

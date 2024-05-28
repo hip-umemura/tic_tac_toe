@@ -6,7 +6,6 @@ void InitBoard(int* board_num) {
 	for (int i = 0; i < 9; i++) {
 		*(board_num + i) = i + 1;
 	}
-	return *board_num;
 }
 
 int PushNum(int turn) {
@@ -35,9 +34,9 @@ int CountWin(JUDGE result, int get_circle, int get_cross) {
 RETRY PlayEnd() {
 	RETRY iscontinue = ERROR;
 	while (iscontinue = ERROR) {
-		char  input_end[1];
+		char  input_end[1]=0;
 		printf("ƒŠƒgƒ‰ƒC(T)orI—¹(Q):");
-		scanf_s("%c", &input_end[0]);
+		scanf_s("%c", &input_end);
 		if (input_end == 'T') {
 			iscontinue = TRY;
 			break;

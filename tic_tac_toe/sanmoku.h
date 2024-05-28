@@ -1,4 +1,4 @@
-typedef enum {
+typedef enum{
 	TRUE,
 	FALSE,
 }BOOL;
@@ -6,9 +6,12 @@ typedef enum {
 typedef enum {
 	CIRCLE,
 	CROSS
-}MARK;
+}TURN;
+
+
 
 typedef enum {
+	UNKNOWN,
 	CIRCLE_WIN,
 	CROSS_WIN,
 	DROW
@@ -23,5 +26,5 @@ typedef enum {
 typedef enum {
 	END,
 	EXTEND
-};
+}CONTINUE;
 

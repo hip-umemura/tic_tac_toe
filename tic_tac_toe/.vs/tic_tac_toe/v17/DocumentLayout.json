@@ -1,37 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\",
+  "WorkspaceRootPath": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:decision_count.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:input_num.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:sanmoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -46,107 +30,54 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "sanmoku.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.c",
-              "RelativeDocumentMoniker": "sanmoku.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.c",
-              "RelativeToolTip": "sanmoku.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAPAAAA",
+              "DocumentIndex": 1,
+              "Title": "input_num.c",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.c",
+              "RelativeDocumentMoniker": "input_num.c",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.c",
+              "RelativeToolTip": "input_num.c",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAABwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-24T06:26:21.042Z",
+              "WhenOpened": "2024-05-27T00:18:23.499Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "sanmoku.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.h",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.h",
               "RelativeDocumentMoniker": "sanmoku.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\sanmoku.h",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.h",
               "RelativeToolTip": "sanmoku.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAHAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAIAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-24T06:26:07.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-24T06:26:07.358Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "input_num.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.c",
-              "RelativeDocumentMoniker": "input_num.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.c",
-              "RelativeToolTip": "input_num.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-24T06:21:24.58Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "decision_count.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.c",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.c",
               "RelativeDocumentMoniker": "decision_count.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.c",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.c",
               "RelativeToolTip": "decision_count.c",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACgAAAACAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAE4AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-24T06:21:13.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "board.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.c",
-              "RelativeDocumentMoniker": "board.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.c",
-              "RelativeToolTip": "board.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-24T06:20:46.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "input_num.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.h",
-              "RelativeDocumentMoniker": "input_num.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\input_num.h",
-              "RelativeToolTip": "input_num.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-24T06:20:06.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "decision_count.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.h",
-              "RelativeDocumentMoniker": "decision_count.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\decision_count.h",
-              "RelativeToolTip": "decision_count.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-24T06:19:51.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "board.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.h",
-              "RelativeDocumentMoniker": "board.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\tic_tac_toe\\board.h",
-              "RelativeToolTip": "board.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-24T06:19:31.077Z",
-              "EditorCaption": ""
+              "Title": "board.c",
+              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\board.c",
+              "RelativeDocumentMoniker": "board.c",
+              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\board.c",
+              "RelativeToolTip": "board.c",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-05-24T06:20:46.501Z"
             }
           ]
         }
