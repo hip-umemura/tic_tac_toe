@@ -32,16 +32,15 @@ int main(void) {
 
 			if (input_number != INPUT_ERR) {
 
-				board_index.y = input_number % BOARD_WIDTH;
-				board_index.x = input_number / BOARD_WIDTH;
+				board_index = ToIndexOfBoard(input_number);
 
 				if (isDuplicate != TRUE) {
 					input_flag = TRUE;
 				}
-
 			}
 		}
-		game_info.game_board[board_index.y][board_index.x] = game_info.marks[game_info.player_index];
+
+		UpdateBoard(game_info.game_board[board_index.y][board_index.x], game_info.marks[game_info.player_index]);
 	}
 
 	DisplayBoard(game_info.game_board);
