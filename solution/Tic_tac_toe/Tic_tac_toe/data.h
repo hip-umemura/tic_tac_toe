@@ -43,9 +43,4 @@ typedef enum {
 	FALSE
 }BOOL;
 
-typedef enum {
-	WIN,
-	DRAW
-}JUDGE;
-
 #endif // DATA_H

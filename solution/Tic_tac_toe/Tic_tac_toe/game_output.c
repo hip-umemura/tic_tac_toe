@@ -13,7 +13,6 @@ void DisplayBoard(char game_board[BOARD_HEIGHT][BOARD_WIDTH])
 			if (j < BOARD_WIDTH - 1) {
 				printf("| ");
 			}
-
 		}
 
 		printf("\n");
@@ -24,15 +23,16 @@ void DisplayBoard(char game_board[BOARD_HEIGHT][BOARD_WIDTH])
 
 void DisplayStatus(char player_name[])
 {
+	printf("%sのターン\n", player_name);
 	printf("0～8の数字を入力してください : ");
-	printf("%sのターン", player_name);
 }
 
-void DisplayResult(char winner_name[], int judge)
+void DisplayResult(char winner_name[], BOOL judge)
 {
-	if (judge == WIN) {
+	if (judge == TRUE) {
 		printf("%sの勝利!", winner_name);
 	}
-	else
+	else if (judge == FALSE) {
 		printf("引き分け");
+	}
 }
