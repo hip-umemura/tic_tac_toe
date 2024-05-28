@@ -72,7 +72,7 @@ void game_progress(char* name1, char* name2)
 
 	int   board_horizontal_axis;		// 入力した盤面の横軸
 	int   board_vertical_axis;			// 入力した盤面の縦軸
-	char  array_board_axis[4] = "";		// 入力した盤面の軸
+	char  array_board_axis[4];			// 入力した盤面の軸
 
 	clean_board();		// 盤面を初期化
 
@@ -81,7 +81,7 @@ void game_progress(char* name1, char* name2)
 	// ゲームの勝敗が決するまでループする。
 	while (game_result == NONE) {
 
-		input_error               = 0;
+		input_error = 0;
 		board_horizontal_axis = 0;
 		board_vertical_axis   = 0;
 
