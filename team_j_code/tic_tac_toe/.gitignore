@@ -2,7 +2,3 @@
 /.vs
 /x64
 /main/x64
-main.vcxproj
-main.vcxproj.filters
-main.vcxproj.user
-tic_tac_toe.sln
