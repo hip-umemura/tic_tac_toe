@@ -30,7 +30,21 @@ int main(void)
     //‰¼
     printf("%c\n", Input(O_TURN));
 
-
+    //‰¼
+    Insert(&a[1][1], 0); Insert(&a[2][1], 0);
     
+    Output_Grid(a);
+    INDEX millll = { 1, 1 };
+    RESULT ret = Judge_Result(a, 0, millll);
+    
+    if (ret == X_WIN) {
+        printf("tatsuya");
+    }
+
+
+
+
+
+
     return 0;
 }
