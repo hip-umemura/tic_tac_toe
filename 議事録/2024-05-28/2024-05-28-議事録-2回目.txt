@@ -1,0 +1,9 @@
+Show_GameResult関数のboardの引数がmain関数内に変数として定義されていない。
+Play_Tic_Tac_Toe内に入れます。修正完了
+
+構造体がヘッダファイル内に定義されていない。
+general.hに移動します。修正完了
+
+isCorrectInputの引数が足りない。
+盤面を追加します。修正完了
+
