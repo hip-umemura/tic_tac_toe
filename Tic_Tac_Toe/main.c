@@ -14,16 +14,16 @@ int main(void) {
       instruction = GAME_START;
     } else {
       do {
-      int game_end = Show_ExitGame();
-      if (game_end == Y) {
-        program_end = TRUE;
-        instruction = GAME_END;
-      } else if (game_end == N) {
-        program_end = TRUE;
-        instruction = GAME_START;
-      } else {
-        program_end = FALSE;
-      }
+        int game_end = Show_ExitGame();
+        if (game_end == Y) {
+          program_end = TRUE;
+          instruction = GAME_END;
+        } else if (game_end == N) {
+          program_end = TRUE;
+          instruction = GAME_START;
+        } else {
+          program_end = FALSE;
+        }
       } while (program_end == FALSE);
     }
   } while (instruction == GAME_START);
