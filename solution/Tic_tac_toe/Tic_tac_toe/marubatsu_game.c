@@ -17,13 +17,13 @@ int main(void) {
 								 {'3','4','5'},
 								 {'6','7','8'}},
 	.player_names = {"プレイヤー1","プレイヤー2"},
-	.marks = {'o','x'},
+	.marks				= {'o','x'},
 	.turn_counter = 0,
 	.player_index = PLAYER_INDEX(game_info.turn_counter) };
 
 
 
-	for (game_info.turn_counter = 0; game_info.turn_counter < BOARD_HEIGHT * BOARD_WIDTH; game_info.turn_counter++) {
+	for (game_info.turn_counter = 0; game_info.turn_counter <= INPUT_VAL_MAX; game_info.turn_counter++) {
 		game_info.player_index = PLAYER_INDEX(game_info.turn_counter);
 
 		DisplayBoard(game_info.game_board);
@@ -32,6 +32,7 @@ int main(void) {
 		while (input_flag == FALSE) {
 
 			input_number = InputProcess();
+
 			if (input_number != INPUT_ERR) {
 				board_index = ToIndexOfBoard(input_number);
 
