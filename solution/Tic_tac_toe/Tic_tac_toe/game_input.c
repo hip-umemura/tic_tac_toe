@@ -6,7 +6,7 @@ BOOL CheckInputViolation(char input[INPUT_LEN_MAX])
 {
 	int index = 0;
 	do{
-		if ((input[index] < '0') || (input[index] > '8') || (index >= INPUT_LEN_MAX)||(input[index] == '\n')) {
+		if ((input[index] < VAL_TO_ASCII(INPUT_VAL_MIN)) || (input[index] > VAL_TO_ASCII(INPUT_VAL_MAX)) || (index >= INPUT_LEN_MAX) || (input[index] == '\n')) {
 			printf("0`8‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ : ");
 			return TRUE;
 		}
