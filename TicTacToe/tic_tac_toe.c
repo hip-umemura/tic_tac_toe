@@ -7,39 +7,69 @@
 //main関数の作成
 int main(void)
 {
-    char a[3][3];
+    //変数の宣言
+    char    input_info = '0';
+    RESULT  win_info = CONTINUE;
+    int     turn_count = 0;
+    TURN    turn_info = O_TURN;
+    //配列の宣言
+    char board_info[GRID_HEIGHT][GRID_WIDTH];
+    //構造体の宣言
+    INDEX index = { 0,0 };
+
+    //配列の初期化
     for (int i = 2; i >= 0; i--) {
         for (int j = 0; j < 3; j++) {
-            a[i][j] = '7' - i * 3 + j;
+            board_info[i][j] = '7' - i * 3 + j;
         }
     }
 
-    //Output_Info関数の呼び出し
-    Output_Info(0);
-    Output_Grid(a);
-    Output_Result(O_WIN);
-    Output_Result(X_WIN);
-    Output_Result(DRAW);
+    //Aループ
+    while(win_info == CONTINUE){
 
-    //仮
-    Insert(&a[0][1], 0);
-    Output_Grid(a);
-    //jugegrid
-    Judge_Grid(a[0][1]);
+        turn_count++;
 
-    //仮
-    printf("%c\n", Input(O_TURN));
+        if (turn_count % 2 == 0) {
+            turn_info = X_TURN;
+        }
+        else {
+            turn_info = O_TURN;
+        }
 
-    //仮
-    Insert(&a[1][1], 0); Insert(&a[2][1], 0);
-    
-    Output_Grid(a);
-    INDEX millll = { 1, 1 };
-    RESULT ret = Judge_Result(a, 0, millll);
-    
-    if (ret == X_WIN) {
-        printf("tatsuya");
+        Output_Turn(turn_info);
+        Output_Grid(board_info);
+
+        //Bループ
+        BOOL loop_flag = TRUE;
+        while (loop_flag == TRUE) {
+            input_info = Input(turn_info);
+            if (Judge_Input(input_info) == TRUE) {
+                index = Search(input_info, board_info);
+                if (Judge_Grid(board_info[index.y][index.x]) == TRUE) {
+                    loop_flag = FALSE;
+                }
+            }
+        }
+
+
+
+
+
+        //ここにJudgeがうんたらかんたら
+
+        Insert(&board_info[index.y][index.x], turn_info);
+
+        win_info = Judge_Result(board_info, turn_info, index, turn_count);
+
     }
+    //戻り値がCONTINUEかどうか
+
+
+
+    Output_Grid(board_info);
+    Output_Result(win_info);
+
+
 
 
 

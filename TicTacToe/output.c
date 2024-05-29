@@ -22,10 +22,10 @@ void Output_Grid(char board_info[3][3])
 }
 
 //Output_Info関数の宣言
-//int tern_info	ターンの情報を持つ変数
-void Output_Info(int tern_info)
+//TURN tern_info	ターンの情報を持つ変数
+void Output_Turn(TURN turn_info)
 {
-	if (tern_info % 2 == 0) {
+	if (turn_info == O_TURN) {
 		printf("○のターンです。\n");
 	}
 	else {
@@ -34,7 +34,7 @@ void Output_Info(int tern_info)
 }
 
 //Output_Result関数の実装
-void Output_Result(int result_info)
+void Output_Result(RESULT result_info)
 {
 	if (result_info == O_WIN) {
 		printf("〇の勝利です。\n");

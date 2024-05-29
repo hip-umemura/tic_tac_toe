@@ -29,7 +29,7 @@ BOOL Judge_Input(char input_possess)
 }
 
 //
-RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], int turn_info, INDEX grid_element_designation)
+RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, INDEX grid_element_designation, int turn_count)
 {
 	INDEX start_element_designation;
 	start_element_designation.x = grid_element_designation.x;
@@ -68,7 +68,7 @@ RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], int turn_info, INDEX gri
 			current_element_designation[loop_count].y += diff_element_designation[loop_count].y;
 		}
 		if (line_count >= 3) {
-			if (turn_info % 2 == 1) {
+			if (turn_info == O_TURN) {
 				return O_WIN;
 			}
 			else {
@@ -76,7 +76,7 @@ RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], int turn_info, INDEX gri
 			}
 		}
 	}
-	if (turn_info >= 9) {
+	if (turn_count >= 9) {
 		return DRAW;
 	}
 	else {
