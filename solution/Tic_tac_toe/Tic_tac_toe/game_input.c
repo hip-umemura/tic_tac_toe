@@ -5,13 +5,14 @@
 BOOL CheckInputViolation(char input[INPUT_LEN_MAX])
 {
 	int index = 0;
-	while (input[index] != '\n') {
-		if ((input[index] < '0') || (input[index] > '8') || (index >= INPUT_LEN_MAX)) {
+	do{
+		if ((input[index] < '0') || (input[index] > '8') || (index >= INPUT_LEN_MAX)||(input[index] == '\n')) {
 			printf("0`8‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ : ");
 			return TRUE;
 		}
 		index++;
-	}
+	} while (input[index] != '\n');
+
 	return FALSE;
 }
 
@@ -40,10 +41,8 @@ int InputProcess()
 		index++;
 	} while (input[index - 1] != '\n');
 
-	input_number = atoi(input);
-
-	if (CheckInputViolation(input) == TRUE) {
-		input_number = INPUT_ERR;
+	if (CheckInputViolation(input) == FALSE) {
+		input_number = atoi(input);
 	}
 
 	return input_number;
