@@ -18,9 +18,9 @@ int main(void)
     INDEX index = { 0,0 };
 
     //”z—ñ‚Ì‰Šú‰»
-    for (int i = 0; i < GRID_HEIGHT; i++) {
+    for (int i = GRID_HEIGHT - 1; i >= 0; i--) {
         for (int j = 0; j < GRID_WIDTH; j++) {
-            board_info[i][j] = '1' + i * GRID_WIDTH + j;
+            board_info[i][j] = '7' - i * GRID_WIDTH + j;
         }
     }
 
