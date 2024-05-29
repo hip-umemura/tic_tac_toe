@@ -7,6 +7,7 @@
 int main(void) {
   int row;
   int column;
+  int game_end = FALSE;
   TURN player_turn = TURN_PLAYER1;
   RESULT result = RESULT_NONE;
   // ”Õ–Ê‚Ì‰Šú‰»
@@ -23,8 +24,12 @@ int main(void) {
     // Ÿ”s”»’è
     result = ResultJudge(player_turn);
     // è”Ô‚ğis
-    player_turn = NextTurn(player_turn);
-  } while (result == RESULT_NONE);
+    if (result == RESULT_NONE) {
+      player_turn = NextTurn(player_turn);
+    } else {
+      game_end = TRUE;
+    }
+  } while (game_end == FALSE);
   // Ÿ”s‚ÌŒ‹‰Ê‚ğ•\¦
   PrintResult(result);
 
