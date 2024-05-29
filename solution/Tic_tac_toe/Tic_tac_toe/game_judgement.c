@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "data.h"
-#include "game_judgement.h"
 
 BOOL BoardJudgement(char game_board[BOARD_HEIGHT][BOARD_WIDTH])
 {

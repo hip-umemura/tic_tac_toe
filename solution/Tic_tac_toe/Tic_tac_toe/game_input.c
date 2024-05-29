@@ -16,7 +16,8 @@ BOOL CheckInputViolation(char input[INPUT_LEN_MAX])
 	return FALSE;
 }
 
-BOOL isDuplicate(char game_board) {
+BOOL isDuplicate(char game_board)
+{
 	if (game_board == 'o' || game_board == 'x') {
 		printf("Šù‚É–„‚Ü‚Á‚Ä‚¢‚Ü‚·\n");
 		printf("‚à‚¤ˆê“x“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ : ");
@@ -27,7 +28,7 @@ BOOL isDuplicate(char game_board) {
 
 int InputProcess()
 {
-	char input[INPUT_LEN_MAX] = { '\0' };
+	char input[INPUT_LEN_MAX] = {'\0'};
 	int input_number = INPUT_ERR;
 	int index = 0;
 

@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "data.h"
-#include "game_output.h"
 
 void DisplayBoard(char game_board[BOARD_HEIGHT][BOARD_WIDTH])
 {
@@ -29,6 +28,7 @@ void DisplayStatus(char player_name[])
 
 void DisplayResult(char winner_name[], BOOL judge)
 {
+	printf("ƒQ[ƒ€I—¹\n");
 	if (judge == TRUE) {
 		printf("%s‚ÌŸ—˜!", winner_name);
 	}

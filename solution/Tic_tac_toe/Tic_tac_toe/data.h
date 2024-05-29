@@ -22,7 +22,6 @@ typedef struct
 {
 	int x;
 	int y;
-
 }COORDINATES;
 
 typedef struct
@@ -32,13 +31,13 @@ typedef struct
 	char marks[PLAYER_NUM];
 	int turn_counter;
 	int player_index;
-
 }GAME_INFO;
 
 
 // 列挙型の定義 // 
 
-typedef enum {
+typedef enum
+{
 	TRUE,
 	FALSE
 }BOOL;
