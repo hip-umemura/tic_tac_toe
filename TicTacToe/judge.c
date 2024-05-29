@@ -29,7 +29,7 @@ BOOL Judge_Input(char input_possess)
 }
 
 //
-RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], int tern_info, INDEX grid_element_designation)
+RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], int turn_info, INDEX grid_element_designation)
 {
 	INDEX start_element_designation;
 	start_element_designation.x = grid_element_designation.x;
@@ -57,7 +57,7 @@ RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], int tern_info, INDEX gri
 
 	for (loop_count = 0; loop_count < 4; loop_count++) {
 		line_count = 0;
-		while (current_element_designation[loop_count].x < 3 || current_element_designation[loop_count].y < 3) {
+		while (current_element_designation[loop_count].x < 3 && current_element_designation[loop_count].y < 3) {
 			if (joke[current_element_designation[loop_count].y][current_element_designation[loop_count].x] == standard_symbol) {
 				line_count++;
 			}
@@ -68,12 +68,20 @@ RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], int tern_info, INDEX gri
 			current_element_designation[loop_count].y += diff_element_designation[loop_count].y;
 		}
 		if (line_count >= 3) {
-
+			if (turn_info % 2 == 1) {
+				return O_WIN;
+			}
+			else {
+				return X_WIN;
+			}
 		}
-
-
 	}
-
+	if (turn_info >= 9) {
+		return DRAW;
+	}
+	else {
+		return CONTINUE;
+	}
 
 
 

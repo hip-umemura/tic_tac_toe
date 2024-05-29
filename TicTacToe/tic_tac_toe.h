@@ -19,3 +19,14 @@ void Insert(char* board_element_info, int turn_info);
 
 //“ü—Í‚ğó‚¯•t‚¯‚éŠÖ”
 char Input(TURN turn_info);
+
+//
+BOOL Judge_Grid(char board_info);
+
+//
+BOOL Judge_Input(char input_possess);
+
+//
+RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], int turn_info, INDEX grid_element_designation);
+
+
