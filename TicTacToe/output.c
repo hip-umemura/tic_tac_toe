@@ -9,7 +9,7 @@
 void Output_Grid(char board_info[3][3])
 {
 	printf("-----------------\n");
-	for (int column = 0; column < GRID_HEIGHT; column++) {
+	for (int column = GRID_HEIGHT - 1; column >= 0; column--) {
 		for (int row = 0; row <= GRID_WIDTH - 1; row++) {
 			printf("  %c  ", board_info[column][row]);
 			printf("|");

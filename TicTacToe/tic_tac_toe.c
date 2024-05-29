@@ -18,9 +18,9 @@ int main(void)
     INDEX index = { 0,0 };
 
     //”z—ñ‚Ì‰Šú‰»
-    for (int i = 2; i >= 0; i--) {
-        for (int j = 0; j < 3; j++) {
-            board_info[i][j] = '7' - i * 3 + j;
+    for (int i = 0; i < GRID_HEIGHT; i++) {
+        for (int j = 0; j < GRID_WIDTH; j++) {
+            board_info[i][j] = '1' + i * GRID_WIDTH + j;
         }
     }
 
@@ -51,30 +51,13 @@ int main(void)
             }
         }
 
-
-
-
-
-        //‚±‚±‚ÉJudge‚ª‚¤‚ñ‚½‚ç‚©‚ñ‚½‚ç
-
         Insert(&board_info[index.y][index.x], turn_info);
 
         win_info = Judge_Result(board_info, turn_info, index, turn_count);
-
     }
-    //–ß‚è’l‚ªCONTINUE‚©‚Ç‚¤‚©
-
-
 
     Output_Grid(board_info);
     Output_Result(win_info);
-
-
-
-
-
-
-
 
     return 0;
 }

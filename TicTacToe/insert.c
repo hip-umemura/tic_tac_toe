@@ -12,6 +12,4 @@ void Insert(char* board_element_info, TURN turn_info)
 	else {
 		*board_element_info = 'x';
 	}
-
-
 }

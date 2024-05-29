@@ -3,11 +3,14 @@
 INDEX Search(char input_info, char board_info[3][3]) {
   int x = 0;
   int y = 0;
+  // “ü—Íˆø”‚ğintŒ^‚É•ÏŠ·
+  int input_val = input_info - '0';
+  int loop_count = 0;
 
-  for (y = 0; y < GRID_HEIGHT; y++) {
-    int match = FALSE;
-    for (x = 0; x < GRID_WIDTH; x++) {
-      if (board_info[y][x] == input_info) {
+  for (y = 0, loop_count = 0; y < GRID_HEIGHT; y++) {
+    BOOL match = FALSE;
+    for (x = 0; x < GRID_WIDTH; x++, loop_count++) {
+      if (input_val == loop_count) {
         match = TRUE;
         break;
       }
@@ -17,7 +20,6 @@ INDEX Search(char input_info, char board_info[3][3]) {
     }
   }
 
-  // —v‘f‚ğ2ŸŒ³”z—ñ‚É“K‚·‚é‚æ‚¤‚É\‘¢‘Ì‚ÉŠi”[‚·‚é
-  INDEX index = {x, y};
+  INDEX index = { x, y };
   return index;
 }
