@@ -6,7 +6,9 @@ BOOL CheckInputViolation(char input[INPUT_LEN_MAX])
 {
 	int index = 0;
 	do{
-		if ((input[index] < VAL_TO_ASCII(INPUT_VAL_MIN)) || (input[index] > VAL_TO_ASCII(INPUT_VAL_MAX)) || (index >= INPUT_LEN_MAX) || (input[index] == '\n')) {
+		if ((input[index] < VAL_TO_ASCII(INPUT_VAL_MIN)) ||
+				(input[index] > VAL_TO_ASCII(INPUT_VAL_MAX)) ||
+				(index >= INPUT_LEN_MAX) || (input[index] == '\n')) {
 			printf("0`8‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ : ");
 			return TRUE;
 		}
@@ -16,9 +18,9 @@ BOOL CheckInputViolation(char input[INPUT_LEN_MAX])
 	return FALSE;
 }
 
-BOOL isDuplicate(char game_board)
+BOOL isDuplicate(char square)
 {
-	if (game_board == 'o' || game_board == 'x') {
+	if (square == 'o' || square == 'x') {
 		printf("Šù‚É–„‚Ü‚Á‚Ä‚¢‚Ü‚·\n");
 		printf("‚à‚¤ˆê“x“ü—Í‚µ‚Ä‚­‚¾‚³‚¢ : ");
 		return TRUE;
