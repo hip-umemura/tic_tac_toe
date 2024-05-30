@@ -1,11 +1,11 @@
-//出力部分の関数の定義を記述するソースファイル
+// 出力部分の関数の定義を記述するソースファイル
 
 #include <stdio.h>
 #include <stdlib.h>
 #include "define.h"
 
-//Output_Grid関数の宣言
-//char board_info	ボードの情報を持つ変数
+// Output_Grid関数の宣言
+// char board_info	ボードの情報を持つ変数
 void Output_Grid(char board_info[3][3])
 {
 	printf("-----------------\n");
@@ -21,8 +21,8 @@ void Output_Grid(char board_info[3][3])
 	}
 }
 
-//Output_Info関数の宣言
-//TURN tern_info	ターンの情報を持つ変数
+// Output_Info関数の宣言
+// TURN tern_info	ターンの情報を持つ変数
 void Output_Turn(TURN turn_info)
 {
 	if (turn_info == O_TURN) {

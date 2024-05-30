@@ -1,9 +1,9 @@
-//判定部分の関数の定義を記述するソースファイル
+// 判定部分の関数の定義を記述するソースファイル
 
 #include <stdio.h>
 #include "define.h"
 
-//Judge_Grid関数の宣言
+// Judge_Grid関数の宣言
 BOOL Judge_Grid(char board_info)
 {
 	if (board_info == 'o' || board_info == 'x') {
@@ -15,7 +15,7 @@ BOOL Judge_Grid(char board_info)
 	}
 }
 
-//
+// 入力が正しいかを判定する関数
 BOOL Judge_Input(char input_possess)
 {
 	if (input_possess < '1' || input_possess > '9') {
@@ -28,7 +28,7 @@ BOOL Judge_Input(char input_possess)
 
 }
 
-//
+// 三目並べの勝敗の判定をする関数
 RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, INDEX grid_element_designation, int turn_count)
 {
 	INDEX start_element_designation;
@@ -82,17 +82,5 @@ RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, INDEX gr
 	else {
 		return CONTINUE;
 	}
-
-
-
-
-
-
-
-	//INDEX start_element_designation;
-	//start_element_designation.x = grid_element_designation.x;
-	//start_element_designation.y = 0;
-
-	
 
 }

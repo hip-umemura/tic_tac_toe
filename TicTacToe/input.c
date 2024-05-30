@@ -1,9 +1,10 @@
-//入力部分の関数の定義を記述するソースファイル
+// 入力部分の関数の定義を記述するソースファイル
 
 #include <stdio.h>
 #include <conio.h>
 #include "define.h"
 
+// 入力を受け付ける関数
 char Input(TURN turn_info)
 {
 	char input = '0';
