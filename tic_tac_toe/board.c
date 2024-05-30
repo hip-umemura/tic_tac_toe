@@ -1,50 +1,52 @@
 #include<stdio.h>
-#include<locale.h>
 #include "sanmoku.h"
 #include "board.h"
 
-
-void ShowBoard(int square[ELEMENT]) {
-	setlocale(LC_ALL, "ja_JP.UTF-8");
-	printf(" -------------------- \n|      |      |      |\n");
+void ShowBoard(char square[ELEMENT]) {
+	printf(" -------------------- \n");
+	printf("|      |      |      |\n");
 	for (int i = 0; i < 9; i++) {
-		printf("|  %lc  ", square[i]);
+		printf("|   %c  ", square[i]);
+
 		if (i == 8) {
-			printf("| \n|      |      |      |\n --------------------\n");
-			break;
+			printf("| \n");
+			printf("|      |      |      |\n");
+			printf(" --------------------\n");
 		}
 		else if ((i + 1) % 3 == 0) {
-			printf("|\n|      |      |      |\n -------------------- \n|      |      |      |\n");
+			printf("|\n");
+			printf("|      |      |      |\n");
+			printf(" -------------------- \n");
+			printf("|      |      |      |\n");
 		}
-
 	}
 }
 
-TURN CheckTurn(int turn) {
-	TURN mark;
-	if (turn % 2 == 0) {
-		mark = CIRCLE;
+TURN CheckTurn(int turn_counter) {
+	TURN turn_symbol;
+	if (turn_counter % 2 == 0) {
+		turn_symbol = CIRCLE;
 	}else {
-		mark = CROSS;
+		turn_symbol = CROSS;
 	}
-	return mark;
+	return turn_symbol;
 }
 
-CONTINUE DisplayWin(JUDGE judge) {
-	if (judge == CIRCLE_WIN) {
+CONTINUE DisplayWin(JUDGE win_result) {
+	if (win_result == CIRCLE_WIN) {
 		printf("〇の勝利");
 	}
-	else if (judge == CROSS_WIN) {
+	else if (win_result == CROSS_WIN) {
 		printf("×の勝利");
 	}
 	return EXTEND;
 }
 
-int ChangeState(int input,int *square,TURN mark) {
-	if (mark == CIRCLE) {
-		*(square+input) = '〇';
-	}else {
-		*(square + input) = '×';
-	}
-	return square[input];
+void ChangeState(char input_num,char *square,TURN turn_symbol) {
+		int tmp = input_num - '0';
+		if (turn_symbol == CIRCLE) {
+			*(square + tmp - 1) = 'o';
+		}else {
+			*(square + tmp - 1) = 'x';
+		}
 }

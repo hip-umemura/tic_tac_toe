@@ -2,52 +2,59 @@
 #include "sanmoku.h"
 #include "input_num.h"
 
-void InitBoard(int* board_num) {
+void InitBoard(char* square) {
 	for (int i = 0; i < 9; i++) {
-		*(board_num + i) = i + 1;
+		*(square + i) = '1' + i;
 	}
 }
 
-int PushNum(int turn) {
-	int num;
-	if (turn % 2 == 0) {
+char PushNum(TURN turn_symbol) {
+	char input_num = '0';
+	if (turn_symbol == CIRCLE) {
 		printf("Z‚Ì”Ô‚Å‚·F");
-		scanf_s("%d", &num);
-	}
-	else {
+		input_num = getch();
+		printf("%c\n", input_num);
+	}else {
 		printf("~‚Ì”Ô‚Å‚·F");
-		scanf_s("%d", &num);
+		input_num = getch();
+		printf("%c\n", input_num);
 	}
-	return num;
+	return input_num;
 }
 
-int CountWin(JUDGE result, int get_circle, int get_cross) {
+void CountWin(JUDGE win_result, int* get_circle, int* get_cross) {
 
-	if (result == CIRCLE_WIN) {
-		return get_circle++;
-	}
-	else if (result == CROSS_WIN) {
-		return	get_cross++;
+	if (win_result == CIRCLE_WIN) {
+		printf("Z‚ÌŸ—˜\n");
+		*get_circle += 1;
+		
+	}else {
+		printf("~‚ÌŸ—˜\n");
+		*get_cross += 1;
+
 	}
 }
 
-RETRY PlayEnd() {
+RETRY PlayEnd(int get_circle,int get_cross) {
 	RETRY iscontinue = ERROR;
-	while (iscontinue = ERROR) {
-		char  input_end[1]=0;
+	while (iscontinue == ERROR) {
+		char input_end = '0';
 		printf("ƒŠƒgƒ‰ƒC(T)orI—¹(Q):");
-		scanf_s("%c", &input_end);
+		input_end = getch();
+		printf("%c\n", input_end);
+		//scanf_s("%c", &input_end, 1);
 		if (input_end == 'T') {
 			iscontinue = TRY;
-			break;
 		}
 		else if (input_end == 'Q') {
 			iscontinue = QUIT;
-			break;
+			printf("Z:%dŸ\n", get_circle);
+			printf("~:%dŸ\n", get_cross);
+		}else {
+			printf("T‚Ü‚½‚ÍQ‚Ì‚Ý‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");
 		}
-		else {
-			printf("T‚Ü‚½‚ÍQ‚Ì‚Ý‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B");
-		}
-		return iscontinue;
+		
+		
 	}
+	return iscontinue;
 }

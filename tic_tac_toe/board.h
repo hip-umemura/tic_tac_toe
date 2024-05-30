@@ -1,12 +1,11 @@
 #pragma once
-#ifdef BOARD
 
-void ShowBoard(wchar_t square[9]);
+void ShowBoard(char square[ELEMENT]);
 
-int CheckTurn(int turn);
+int CheckTurn(int turn_counter);
 
-int DisplayWin(JUDGE judge);
+int DisplayWin(JUDGE win_result);
 
-int ChangeState(int input, MARK mark);
+void ChangeState(char input_num, char *square, TURN turn_symbol);
 
-#endif // BOARD
+

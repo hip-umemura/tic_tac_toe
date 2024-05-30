@@ -1,0 +1,6 @@
+﻿  decision_count.c
+  input_num.c
+  sanmoku.c
+C:\Users\y_sugitomo\Desktop\三目並べ編集用フォルダ\tic_tac_toe\input_num.c(15,15): warning C4013: 関数 'getch' は定義されていません。int 型の値を返す外部関数と見なします。
+  コードを生成中...
+  tic_tac_toe.vcxproj -> C:\Users\y_sugitomo\Desktop\三目並べ編集用フォルダ\tic_tac_toe\x64\Debug\tic_tac_toe.exe

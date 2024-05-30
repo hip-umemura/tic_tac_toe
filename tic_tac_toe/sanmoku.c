@@ -6,39 +6,54 @@
 
 int main(void) {
 	
-	int turn = 0;
 	int get_circle = 0;
 	int get_cross = 0;
-	//int circle = 0;
-	//int cross = 0;
-	int input;
-	int square[9];
-	TURN mark = 0;
-	JUDGE win_result = UNKNOWN;
-	
-	while (PlayEnd() != QUIT) {	
-	
-		while (1) {
-			 InitBoard(square);
-			 ShowBoard(square);
-			while (win_result == EXTEND) {
-				CheckTurn();
-				while (RangeNum(input) == FALSE || CheckNum(input,square) == FALSE) {
-					PushNum(turn);
-					RangeNum(input);
-					CheckNum(input, square);
+	char square[9];
+	char input_num = 0;
+	RETRY iscontinue = ERROR;
+		while (iscontinue != QUIT) {
+			int turn_counter = 0;
+			TURN  turn_symbol = CIRCLE;
+			JUDGE win_result = UNKNOWN;
+			CONTINUE draw_result = EXTEND;
+			
+			
+			InitBoard(square);
+			ShowBoard(square);
+			
+			while (win_result == UNKNOWN && draw_result == EXTEND) {
+				BOOL range = FALSE;
+				BOOL ischeck = FALSE;	
+				turn_symbol =	CheckTurn(turn_counter);
+
+
+				while (range != TRUE || ischeck != TRUE) {
+					input_num = PushNum(turn_symbol);
+					range = RangeNum(input_num);
+					if (range == TRUE) {
+						ischeck = CheckNum(input_num, square);
+					}
+					
 				}
-				ChangeState(square, input, mark);
+
+				ChangeState(input_num, square, turn_symbol);
 				ShowBoard(square);
-				win_result = CheckWin(square, turn);
-				win_result=CheckDraw(turn);	
-				turn++;
+			
+				win_result = CheckWin(square, turn_symbol);
+				if (win_result == UNKNOWN) {
+					draw_result = CheckDraw(turn_counter);
+				
+				}
+				turn_counter++;	
 			}
-			CountWin(win_result,	get_circle,	get_cross);
-			PlayEnd();
+
+			if (win_result == CIRCLE_WIN || win_result == CROSS_WIN) {
+				CountWin(win_result,	&get_circle,	&get_cross);
+			//	printf("%d,%d", get_circle, get_cross);
+			}
+			iscontinue = PlayEnd(get_circle, get_cross);
 	
 		}
 	}
-}
 
 
