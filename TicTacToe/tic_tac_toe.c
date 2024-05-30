@@ -40,14 +40,12 @@ int main(void)
     Output_Grid(board_info);
 
     // BÉãÅ[Év
-    BOOL loop_flag = TRUE;
-    while (loop_flag == TRUE) {
+    BOOL is_open = FALSE;
+    while (is_open == FALSE) {
       input_info = Input(turn_info);
       if (Judge_Input(input_info) == TRUE) {
         index = Search(input_info, board_info);
-        if (Judge_Grid(board_info[index.y][index.x]) == TRUE) {
-          loop_flag = FALSE;
-        }
+        is_open = Judge_Grid(board_info[index.y][index.x]);
       }
     }
 

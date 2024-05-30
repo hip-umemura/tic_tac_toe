@@ -31,44 +31,19 @@ BOOL Judge_Input(char input_possess)
 // O–Ú•À‚×‚ÌŸ”s‚Ì”»’è‚ğ‚·‚éŠÖ”
 RESULT Judge_Result(char board_info[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, INDEX grid_element_designation, int turn_count)
 {
-	int		loop_count;
-	int		line_count;
 	char 	standard_symbol = board_info[grid_element_designation.y][grid_element_designation.x];
 
-	INDEX current_element_designation[] = {
-		{grid_element_designation.x,0},
-		{0,grid_element_designation.y},
-		{0,0},
-		{2,0}
-	};
-
-	INDEX diff_element_designation[] = {
-		{0,1},
-		{1,0},
-		{1,1},
-		{-1,1}
-	};
-	
-	for (loop_count = 0; loop_count < 4; loop_count++) {
-		line_count = 0;
-		while (current_element_designation[loop_count].x < GRID_WIDTH && current_element_designation[loop_count].y < GRID_HEIGHT
-			&& current_element_designation[loop_count].x >= 0 && current_element_designation[loop_count].y >= 0) {
-			if (board_info[current_element_designation[loop_count].y][current_element_designation[loop_count].x] == standard_symbol) {
-				line_count++;
-			}
-			else {
-				break;
-			}
-			current_element_designation[loop_count].x += diff_element_designation[loop_count].x;
-			current_element_designation[loop_count].y += diff_element_designation[loop_count].y;
+	if (((board_info[(grid_element_designation.y + 1) % GRID_HEIGHT][grid_element_designation.x] == standard_symbol)
+				&& (board_info[(GRID_HEIGHT + grid_element_designation.y - 1) % GRID_HEIGHT][grid_element_designation.x] == standard_symbol))
+			|| ((board_info[grid_element_designation.y][(grid_element_designation.x + 1) % GRID_WIDTH] == standard_symbol)
+				&& (board_info[grid_element_designation.y][(GRID_WIDTH + grid_element_designation.x - 1) % GRID_WIDTH] == standard_symbol))
+			|| ((board_info[0][0] == board_info[1][1]) && (board_info[1][1] == board_info[2][2]))
+			|| ((board_info[0][2] == board_info[1][1]) && (board_info[1][1] == board_info[2][0]))) {
+		if (turn_info == O_TURN) {
+			return O_WIN;
 		}
-		if (line_count >= 3) {
-			if (turn_info == O_TURN) {
-				return O_WIN;
-			}
-			else {
-				return X_WIN;
-			}
+		else {
+			return X_WIN;
 		}
 	}
 
