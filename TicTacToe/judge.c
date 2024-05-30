@@ -51,7 +51,8 @@ RESULT Judge_Result(char board_info[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, IN
 	
 	for (loop_count = 0; loop_count < 4; loop_count++) {
 		line_count = 0;
-		while (current_element_designation[loop_count].x < 3 && current_element_designation[loop_count].y < 3) {
+		while (current_element_designation[loop_count].x < GRID_WIDTH && current_element_designation[loop_count].y < GRID_HEIGHT
+			&& current_element_designation[loop_count].x >= 0 && current_element_designation[loop_count].y >= 0) {
 			if (board_info[current_element_designation[loop_count].y][current_element_designation[loop_count].x] == standard_symbol) {
 				line_count++;
 			}
