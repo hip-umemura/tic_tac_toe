@@ -128,6 +128,8 @@ int main(void) {
 			printf("%sさんのターン\n", player2_name);
 		}
 
+		printf("マークを書き込むマスの番号を入力してください：");
+		board_check_flag = FALSE;
 		do {
 			// マークを書き込むマスの番号の入力
 			board_number = ScanInput();
@@ -140,7 +142,7 @@ int main(void) {
 				board_check_flag = TRUE;
 			}
 			else {
-				printf("マークが書き込まれていないマス番号を入力してください\n");
+				printf("マークが書き込まれていないマス番号を入力してください：");
 			}
 		} while (board_check_flag == FALSE);
 

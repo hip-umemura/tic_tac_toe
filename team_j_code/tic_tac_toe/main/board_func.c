@@ -22,7 +22,6 @@ int ScanInput(void) {
 
   do
   {
-    printf("マークを書き込むマスの番号を入力してください：");
     input_str_length = 0;
     do
     {
@@ -44,7 +43,7 @@ int ScanInput(void) {
       }
     } while (recive_char != '\n');
     if (input_roop_flag == TRUE) {
-      printf("1～%dのマス番号を入力してください\n", SIDE_LONG * SIDE_LONG);
+      printf("1～%dのマス番号を入力してください：", SIDE_LONG * SIDE_LONG);
     }
   } while (input_roop_flag);
 
