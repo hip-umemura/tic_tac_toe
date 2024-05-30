@@ -4,8 +4,7 @@
 #include <stdlib.h>
 #include "define.h"
 
-// Output_Grid関数の宣言
-// char board_info	ボードの情報を持つ変数
+// 盤面を表示する関数
 void Output_Grid(char board_info[3][3])
 {
 	printf("-----------------\n");
@@ -14,15 +13,12 @@ void Output_Grid(char board_info[3][3])
 			printf("  %c  ", board_info[column][row]);
 			printf("|");
 		}
-
-		//バックスペースを入力し、半角スペースで上書き
 		printf("\b \n");
 		printf("-----------------\n");
 	}
 }
 
-// Output_Info関数の宣言
-// TURN tern_info	ターンの情報を持つ変数
+// 盤面とどちらのターンかを表示する関数
 void Output_Turn(TURN turn_info)
 {
 	if (turn_info == O_TURN) {
@@ -33,7 +29,7 @@ void Output_Turn(TURN turn_info)
 	}
 }
 
-//Output_Result関数の実装
+// 盤面と勝敗の結果を表示する関数
 void Output_Result(RESULT result_info)
 {
 	if (result_info == O_WIN) {

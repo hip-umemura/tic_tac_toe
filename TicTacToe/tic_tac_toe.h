@@ -29,5 +29,3 @@ BOOL Judge_Input(char input_possess);
 
 // O–Ú•À‚×‚ÌŸ”s‚Ì”»’è‚ğ‚·‚éŠÖ”
 RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, INDEX grid_element_designation, int turn_count);
-
-

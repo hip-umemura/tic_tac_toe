@@ -29,15 +29,11 @@ BOOL Judge_Input(char input_possess)
 }
 
 // 三目並べの勝敗の判定をする関数
-RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, INDEX grid_element_designation, int turn_count)
+RESULT Judge_Result(char board_info[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, INDEX grid_element_designation, int turn_count)
 {
-	INDEX start_element_designation;
-	start_element_designation.x = grid_element_designation.x;
-	start_element_designation.y = 0;
-
-	int loop_count;
-	int line_count;
-	char standard_symbol;
+	int		loop_count;
+	int		line_count;
+	char 	standard_symbol = board_info[grid_element_designation.y][grid_element_designation.x];
 
 	INDEX current_element_designation[] = {
 		{grid_element_designation.x,0},
@@ -53,12 +49,10 @@ RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, INDEX gr
 		{-1,1}
 	};
 	
-	standard_symbol = joke[grid_element_designation.y][grid_element_designation.x];
-
 	for (loop_count = 0; loop_count < 4; loop_count++) {
 		line_count = 0;
 		while (current_element_designation[loop_count].x < 3 && current_element_designation[loop_count].y < 3) {
-			if (joke[current_element_designation[loop_count].y][current_element_designation[loop_count].x] == standard_symbol) {
+			if (board_info[current_element_designation[loop_count].y][current_element_designation[loop_count].x] == standard_symbol) {
 				line_count++;
 			}
 			else {
@@ -76,6 +70,9 @@ RESULT Judge_Result(char joke[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, INDEX gr
 			}
 		}
 	}
+
+	// グリッド内がすべって埋まっている場合、DRAWを返す。
+	// ゲームの終了が判定されていない場合、CONTINUEを返す。
 	if (turn_count >= 9) {
 		return DRAW;
 	}
