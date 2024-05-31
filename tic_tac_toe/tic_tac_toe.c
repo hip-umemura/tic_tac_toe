@@ -23,7 +23,6 @@ int main(void) {
 		count = 0;
 		result = UNKNOWN;
 		try = CONTINUE;
-		result = UNKNOWN;
 
 		InitSquare(game_board);
 
@@ -49,13 +48,13 @@ int main(void) {
 
 			result = Bingo(game_board, count);
 
-			if (result == O_WIN || result == X_WIN) {
+			if (result != UNKNOWN) {
 				break;
 			}
 			
 			result = SquareFull(count);
 
-			if (result == DROW) {
+			if (result != UNKNOWN) {
 				break;
 			}
 
