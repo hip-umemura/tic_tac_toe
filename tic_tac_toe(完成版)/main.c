@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <assert.h>
 
 // マクロ定義
 #define TRUE       1
@@ -74,6 +75,8 @@ int ConvertingInputToInt(char input) {
 
 //盤面の配列にOXが入っていないかの判定
 int isNotAlreadyPlaced(int vertical, int horizontal, char board[BOARDSIZE][BOARDSIZE]) {
+  assert(vertical > 0 && vertical < 4 && horizontal > 0 && horizontal < 4); // 強制終了
+
   if (board[vertical - 1][horizontal - 1] == ' ') { // 指定した座標が空いている
     return TRUE;
   }
@@ -86,11 +89,15 @@ int isNotAlreadyPlaced(int vertical, int horizontal, char board[BOARDSIZE][BOARD
 
 // OXを配置する
 void StoringInput(int vertical, int horizontal, char turn, char *board) {
+  assert(vertical > 0 && vertical < 4 && horizontal > 0 && horizontal < 4); // 強制終了
+
   board[(vertical - 1) * BOARDSIZE + (horizontal - 1)] = turn;
 }
 
 // 勝ち、引き分け、続行の判定
 int isWinDrawContinues(int vertical, int horizontal, char board[BOARDSIZE][BOARDSIZE]) {
+  assert(vertical > 0 && vertical < 4 && horizontal > 0 && horizontal < 4); // 強制終了
+
   int count_free = 0; // 空いているマスの数
   // 縦または横にOXが揃っているか
   if ((board[vertical - 1][1] != ' ') && (board[vertical - 1][0] == board[vertical - 1][1]) && (board[vertical - 1][1] == board[vertical - 1][2])) {  // 横に揃っているか
