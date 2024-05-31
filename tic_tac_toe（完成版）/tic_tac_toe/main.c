@@ -4,6 +4,7 @@
 #include <wchar.h>
 #include <wctype.h>
 #include <string.h>
+#include <assert.h>
 
 #include "tutorial.h"
 #include "board.h"
@@ -24,6 +25,9 @@ TURN change_turn(TURN now) {
 
 // 勝敗の表示を行う
 void print_result(RESULT result, PLAYER player) {
+
+	assert(result != NONE);
+
 	if (result == DRAW) {
 		printf("引き分け！\n");
 	}
