@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1205F539-8F7C-47D3-A653-264642B45289}|tic_tac_toe_team_e\\tic_tac_toe_team_e.vcxproj|C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\input.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1205F539-8F7C-47D3-A653-264642B45289}|tic_tac_toe_team_e\\tic_tac_toe_team_e.vcxproj|solutionrelative:tic_tac_toe_team_e\\input.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1205F539-8F7C-47D3-A653-264642B45289}|tic_tac_toe_team_e\\tic_tac_toe_team_e.vcxproj|C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\judge.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1205F539-8F7C-47D3-A653-264642B45289}|tic_tac_toe_team_e\\tic_tac_toe_team_e.vcxproj|solutionrelative:tic_tac_toe_team_e\\judge.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1205F539-8F7C-47D3-A653-264642B45289}|tic_tac_toe_team_e\\tic_tac_toe_team_e.vcxproj|C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1205F539-8F7C-47D3-A653-264642B45289}|tic_tac_toe_team_e\\tic_tac_toe_team_e.vcxproj|solutionrelative:tic_tac_toe_team_e\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1205F539-8F7C-47D3-A653-264642B45289}|tic_tac_toe_team_e\\tic_tac_toe_team_e.vcxproj|C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\output.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1205F539-8F7C-47D3-A653-264642B45289}|tic_tac_toe_team_e\\tic_tac_toe_team_e.vcxproj|solutionrelative:tic_tac_toe_team_e\\output.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "output.c",
+              "DocumentMoniker": "C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\output.c",
+              "RelativeDocumentMoniker": "tic_tac_toe_team_e\\output.c",
+              "ToolTip": "C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\output.c",
+              "RelativeToolTip": "tic_tac_toe_team_e\\output.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-05-31T00:06:57.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\main.c",
+              "RelativeDocumentMoniker": "tic_tac_toe_team_e\\main.c",
+              "ToolTip": "C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\main.c",
+              "RelativeToolTip": "tic_tac_toe_team_e\\main.c",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-05-31T00:06:56.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "judge.c",
+              "DocumentMoniker": "C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\judge.c",
+              "RelativeDocumentMoniker": "tic_tac_toe_team_e\\judge.c",
+              "ToolTip": "C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\judge.c",
+              "RelativeToolTip": "tic_tac_toe_team_e\\judge.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-05-31T00:06:55.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "input.c",
+              "DocumentMoniker": "C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\input.c",
+              "RelativeDocumentMoniker": "tic_tac_toe_team_e\\input.c",
+              "ToolTip": "C:\\Users\\s_kawasaki\\Documents\\\u30C1\u30FC\u30E0E\\tic_tac_toe\\tic_tac_toe\\tic_tac_toe_team_e\\input.c",
+              "RelativeToolTip": "tic_tac_toe_team_e\\input.c",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-05-30T05:37:48.521Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
