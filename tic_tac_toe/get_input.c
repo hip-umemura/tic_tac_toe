@@ -14,18 +14,24 @@ void SquareNumber(int count, char *game) {
 
 	printf("縦の値を半角で1～3の整数値で入力してください：");
 	scanf_s(" %c", &game[0], 1);
-	game[0] -= '1';
 	
 	printf("横の値を半角で1～3の整数値で入力してください：");
 	scanf_s(" %c", &game[1], 1);
-	game[1] -= '1';
-
+	
 }
 
 //入力した値は規定値内か
 BOOL NumRange(char game[]) {
 
 	int range = 0;
+
+	if (isdigit(game[0]) == 0 || isdigit(game[1]) == 0) {
+		printf("整数値を入力してください。\n");
+		return range = FALSE;
+	}
+	
+	game[0] -= '1';
+	game[1] -= '1';
 
 	if (game[0] < 0 || game[0] > 3 || game[1] < 0 || game[1] > 3) {
 		printf("整数値を入力してください。\n");
