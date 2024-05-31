@@ -11,8 +11,8 @@
 
 // 現在のプレイヤーの交代を行う
 TURN change_turn(TURN now) {
+	assert(now == FIRST_TURN || now == SECOND_TURN);
 	printf("先手と後手のターンを交代します\n");
-
 	if (now == FIRST_TURN) {
 		now = SECOND_TURN;	// 先手→後手
 		return now;
