@@ -64,7 +64,6 @@ RESULT judge_game(void) {
 			}
 		}
 	}
-	return DRAW; // 全てのスペースが埋まっているならDRAW
 }
 
 void clean_board(void) { // 盤面を初期化

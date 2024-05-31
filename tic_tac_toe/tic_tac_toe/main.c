@@ -39,6 +39,8 @@ int retry_game(void) {
 
 	printf("再プレイしますか(YES...1 / No...1以外):");
 	scanf_s("%c", &userInput, 1);
+	while (getchar() != '\n')
+	  ;
 
 	if (userInput == '1') {
 		return TRUE;
@@ -72,7 +74,7 @@ void game_progress(char* name1, char* name2)
 	int   board_vertical_axis;			// 入力した盤面の縦軸（int型）
 	char  array_board_horizontal_axis;	// 入力した盤面の横軸（char型）
 	char  array_board_vertical_axis;	// 入力した盤面の縦軸（char型）
-	char  temporary_array_board_axis[4];// 入力した盤面の軸を一時的に格納
+	char  temporary_array_board_axis[4] = "";// 入力した盤面の軸を一時的に格納
 
 	clean_board();		// 盤面を初期化
 
@@ -102,7 +104,7 @@ void game_progress(char* name1, char* name2)
 			array_board_horizontal_axis = temporary_array_board_axis[0];
 			array_board_vertical_axis   = temporary_array_board_axis[2];
 
-			if ((isdigit(array_board_horizontal_axis)) && (isdigit(array_board_vertical_axis))) {
+			if ((isdigit(array_board_horizontal_axis)) && (isdigit(array_board_vertical_axis) && (temporary_array_board_axis[1] == ' '))) {
 				input_error           = TRUE;
 				board_horizontal_axis = array_board_horizontal_axis - '0';
 				board_vertical_axis   = array_board_vertical_axis - '0';
@@ -181,7 +183,7 @@ int main(void) {
 	do
 	{
 		game_progress(name[0], name[1]);
-		
+
 	} while (retry_game() == TRUE);
 
 	printf("ゲーム終了！");

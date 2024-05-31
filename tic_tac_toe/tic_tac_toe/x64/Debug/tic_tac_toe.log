@@ -1,1 +1,3 @@
-﻿  tic_tac_toe.vcxproj -> C:\Users\k_tasaka\Desktop\s\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
+﻿  board.c
+C:\Users\k_tasaka\Desktop\s\tic_tac_toe\tic_tac_toe\tic_tac_toe\board.c(67,1): warning C4715: 'judge_game': 値を返さないコントロール パスがあります。
+  tic_tac_toe.vcxproj -> C:\Users\k_tasaka\Desktop\s\tic_tac_toe\tic_tac_toe\x64\Debug\tic_tac_toe.exe
