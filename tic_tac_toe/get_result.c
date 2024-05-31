@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 #include "define.h"
 #include "get_result.h"
 
@@ -21,14 +22,16 @@ void GameResult(int result)
 EXIT PlayAgain(void){
 
 	int exit = 0;
+	int try = 0;
 	
 	printf("もう一度遊ぶ…0/やめる…0以外：");
 	scanf_s("%d", &exit);
 
 	if (exit == 0) {
-		return CONTINUE;
+		try = CONTINUE;
 	}
 	else {
-		return END;
+		try = END;
 	}
+	return try;
 }

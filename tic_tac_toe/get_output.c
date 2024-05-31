@@ -38,31 +38,32 @@ void PrintMark(int count, char game[], char(*game_board)[3]) {
 WIN Bingo(char game_board[3][3], int count) {
 
 	char mark = (count % 2 == 0) ? 'O' : 'X';
+	int result = UNKNOWN;
 
 	for (int i = 0; i < 3; i++) {
-		if (game_board[i][0] != ' ' && game_board[i][0] == game_board[i][1] && game_board[i][1] == game_board[i][2]) {
-			return (game_board[i][0] == mark) ? O_WIN : X_WIN;
+		if (game_board[i][0] != ' ' && game_board[i][0] == mark && game_board[i][1] == mark && game_board[i][2] == mark) {
+		result = (mark == 'O') ? O_WIN : X_WIN;
 		}
 			
 	}
 
 	for (int j = 0; j < 3; j++) {
-		if (game_board[0][j] != ' ' && game_board[0][j] == game_board[1][j] && game_board[1][j] == game_board[2][j]) {
-			return (game_board[0][j] == mark) ? O_WIN : X_WIN;
+		if (game_board[0][j] != ' ' && game_board[0][j] == mark && game_board[1][j] == mark && game_board[2][j] == mark) {
+			result = (mark == 'O') ? O_WIN : X_WIN;
 		}
 			
 	}
 
-	if (game_board[0][0] != ' ' && game_board[0][0] ==  game_board[1][1] && game_board[1][1] == game_board[2][2]) {
-		return (game_board[0][0] == mark) ? O_WIN : X_WIN;
+	if (game_board[0][0] != ' ' && game_board[0][0] == mark && game_board[1][1] == mark && game_board[2][2] == mark) {
+		result = (mark == 'O') ? O_WIN : X_WIN;
 	}
 	
 
-	if (game_board[2][0] != ' ' && game_board[2][0] == game_board[1][1] && game_board[1][1] == game_board[0][2]) {
-		return (game_board[2][0] == mark) ? O_WIN : X_WIN;
+	if (game_board[2][0] != ' ' && game_board[2][0] == mark && game_board[1][1] == mark && game_board[0][2] == mark ) {
+		result = (mark == 'O') ? O_WIN : X_WIN;
 	}
-	
-	return UNKNOWN;
+
+	return result;
 
 }
 

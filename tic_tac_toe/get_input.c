@@ -35,10 +35,12 @@ BOOL NumRange(char game[]) {
 
 	if (game[0] < 0 || game[0] > 3 || game[1] < 0 || game[1] > 3) {
 		printf("整数値を入力してください。\n");
-		return range =  FALSE;
+		range =  FALSE;
 	}
 
-	return range = TRUE;
+	range = TRUE;
+
+	return range;
 
 }
 
@@ -46,13 +48,16 @@ BOOL NumRange(char game[]) {
 BOOL MarkChecker(char game_board[3][3],char game[]) {
 
 	int a = game[0];
-	int b = game[1];
+	int b = game[1]; 
+	int checker = 0;
 
 
 	if (game_board[a][b] != ' ') {
 		printf("入力済みのマスです。他のマスを選んでください。\n");
-		return FALSE;
+		checker = FALSE;
 	}
-	return TRUE;
+	checker = TRUE;
+
+	return checker;
 
 }
