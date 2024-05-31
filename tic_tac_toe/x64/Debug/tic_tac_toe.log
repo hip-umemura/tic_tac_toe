@@ -1,6 +1,2 @@
 ﻿  tic_tac_toe.c
-Z:\研修\三目並べ\tic_tac_toe\tic_tac_toe\tic_tac_toe.c(39,25): warning C4133: '関数': 'int [2]' と 'char *' の間で型に互換性がありません。
-Z:\研修\三目並べ\tic_tac_toe\tic_tac_toe\tic_tac_toe.c(41,22): warning C4133: '関数': 'int [2]' と 'char *' の間で型に互換性がありません。
-Z:\研修\三目並べ\tic_tac_toe\tic_tac_toe\tic_tac_toe.c(43,39): warning C4133: '関数': 'int [2]' と 'char *' の間で型に互換性がありません。
-Z:\研修\三目並べ\tic_tac_toe\tic_tac_toe\tic_tac_toe.c(47,21): warning C4133: '関数': 'int [2]' と 'char *' の間で型に互換性がありません。
   tic_tac_toe.vcxproj -> Z:\研修\三目並べ\tic_tac_toe\x64\Debug\tic_tac_toe.exe

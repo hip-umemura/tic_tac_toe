@@ -9,7 +9,7 @@
 
 int main(void) {
 
-	int game[2];
+	char game[2];
 	char game_board[3][3] = { {' ',' ',' '}, {' ',' ',' '}, {' ',' ',' '} };
 
 	int count = 0;
