@@ -4,21 +4,19 @@
 // 盤面の要素数を表すマクロ
 #define GRID_HEIGHT	3
 #define GRID_WIDTH	3
+#define PLAYER_NUM	2
+#define TURN_PLAYER(turn) turn % PLAYER_NUM
+#define ERROR      -1
+#define LINE_NUM		2
+#define INPUT_LEN		2
 
 // 列挙型定義
 // ゲームの勝敗を示す
 typedef enum {
 	CONTINUE,
-	O_WIN,
-	X_WIN,
+	WIN,
 	DRAW,
 } RESULT;
-
-// ターンを示す
-typedef enum {
-	O_TURN,
-	X_TURN,
-} TURN;
 
 // 真偽を示す
 typedef enum {

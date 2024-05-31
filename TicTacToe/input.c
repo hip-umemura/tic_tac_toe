@@ -5,16 +5,15 @@
 #include "define.h"
 
 // 入力を受け付ける関数
-char Input(TURN turn_info)
+void Input(char symbol, char input_info_array[INPUT_LEN])
 {
 	char input = '0';
-	if (turn_info == O_TURN) {
-		printf("〇を置くグリッドを選択してください。\n");
-	}
-	else {
-		printf("×を置くグリッドを選択してください。\n");
-	}
-	input = getch();
 
-	return input;
+	printf("%cを置くグリッドを選択してください。\n：", symbol);
+
+	scanf_s("%s", input_info_array, (unsigned)INPUT_LEN);
+
+	// 入力バッファをクリア
+	while (getchar() != '\n');
+
 }

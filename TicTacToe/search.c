@@ -3,7 +3,7 @@
 #include "define.h"
 
 // 入力引数の値に対応したグリッドがどの要素なのかを探索し、その要素を返す関数
-INDEX Search(char input_info, char board_info[3][3]) {
+INDEX Search(char input_info, char board_info_array[3][3]) {
 	// カウンタ変数の宣言
 	int x = 0;
 	int y = 0;

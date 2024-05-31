@@ -4,47 +4,67 @@
 #include "define.h"
 
 // Judge_Grid関数の宣言
-BOOL Judge_Grid(char board_info)
+BOOL Judge_Grid(char board_info_array, char symbol_array[PLAYER_NUM])
 {
-	if (board_info == 'o' || board_info == 'x') {
-		printf("空いているグリッドを選択してください。\n");
-		return FALSE;
+	for (int i = 0; i < PLAYER_NUM; i++) {
+		if (board_info_array == symbol_array[i]) {
+			printf("グリッドが空の番号を選択してください！\n");
+			return FALSE;
+		}
 	}
-	else {
-		return TRUE;
-	}
+	return TRUE;
 }
 
 // 入力が正しいかを判定する関数
-BOOL Judge_Input(char input_possess)
+BOOL Judge_Input(char input_possess[INPUT_LEN])
 {
 	if (input_possess < '1' || input_possess > '9') {
-		printf("1～9の半角整数を一つ入力してください。");
+		printf("1～9の半角整数を選択してください！\n");
 		return FALSE;
 	}
 	else {
 		return TRUE;
 	}
-
 }
 
 // 三目並べの勝敗の判定をする関数
-RESULT Judge_Result(char board_info[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, INDEX grid_element_designation, int turn_count)
+RESULT Judge_Result(char board_info_array[GRID_HEIGHT][GRID_WIDTH], char symbol, INDEX grid_element_designation, int turn_count)
 {
-	char 	standard_symbol = board_info[grid_element_designation.y][grid_element_designation.x];
-
-	if (((board_info[(grid_element_designation.y + 1) % GRID_HEIGHT][grid_element_designation.x] == standard_symbol)
-				&& (board_info[(GRID_HEIGHT + grid_element_designation.y - 1) % GRID_HEIGHT][grid_element_designation.x] == standard_symbol))
-			|| ((board_info[grid_element_designation.y][(grid_element_designation.x + 1) % GRID_WIDTH] == standard_symbol)
-				&& (board_info[grid_element_designation.y][(GRID_WIDTH + grid_element_designation.x - 1) % GRID_WIDTH] == standard_symbol))
-			|| ((board_info[0][0] == board_info[1][1]) && (board_info[1][1] == board_info[2][2]))
-			|| ((board_info[0][2] == board_info[1][1]) && (board_info[1][1] == board_info[2][0]))) {
-		if (turn_info == O_TURN) {
-			return O_WIN;
+	int count = 0;
+	for (int i = 0; i < LINE_NUM; i++) {
+		if (board_info_array[(grid_element_designation.y + 1 + i) % GRID_HEIGHT][grid_element_designation.x] == symbol) {
+			count++;
 		}
-		else {
-			return X_WIN;
+	}
+	if (count >= LINE_NUM) {
+		return WIN;
+	}
+	count = 0;
+	for (int i = 0; i < LINE_NUM; i++) {
+		if (board_info_array[grid_element_designation.y][(grid_element_designation.x + 1 + i) % GRID_WIDTH] == symbol) {
+			count++;
 		}
+	}
+	if (count >= LINE_NUM) {
+		return WIN;
+	}
+	count = 0;
+	for (int i = 0; i < LINE_NUM; i++) {
+		if (board_info_array[i][i] == board_info_array[i + 1][i + 1]) {
+			count++;
+		}
+	}
+	if (count >= LINE_NUM) {
+		return WIN;
+	}
+	count = 0;
+	for (int i = 0; i < LINE_NUM; i++) {
+		if (board_info_array[i][GRID_WIDTH - 1 - i] == board_info_array[GRID_WIDTH - 1 - i][i]) {
+			count++;
+		}
+	}
+	if (count >= LINE_NUM) {
+		return WIN;
 	}
 
 	// グリッド内がすべって埋まっている場合、DRAWを返す。
@@ -55,5 +75,4 @@ RESULT Judge_Result(char board_info[GRID_HEIGHT][GRID_WIDTH], TURN turn_info, IN
 	else {
 		return CONTINUE;
 	}
-
 }
