@@ -18,12 +18,15 @@ PLAYER PlayerChange(PLAYER player)
 int main(void)
 {
 	char board[INDEX][INDEX];
-	int input;
-	PLAYER player = PLAYER1;
+	char input;
+	PLAYER player;
 	JUDGE result;
+	JUDGE retry;
+	int turn;
 
 	do {
-		int turn = 1;
+		turn = 1;
+		player = PLAYER1;
 
 		BoardInitialize(board);
 		printf("～三目並べ～\n\n");
@@ -33,12 +36,16 @@ int main(void)
 			input = PlayerInput(board, player);
 			BoardUpdate(player, input, board);
 			result = ResultJudge(board, player, turn);
-			player = PlayerChange(player);
-			turn++;
+			if (result == CONTINUE) {
+			  player = PlayerChange(player);
+			  turn++;
+			}
 		} while (result == CONTINUE);
 		BoardOutput(board);
 		ResultOutput(result);
-	} while (Retry() == RETRY);
+		retry = Retry();
+	} while (retry!= FINISH);
+
 	printf("― 終了 ―\n");
 
 	return 0;

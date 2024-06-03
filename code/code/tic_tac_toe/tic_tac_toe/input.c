@@ -18,7 +18,7 @@ void BoardInitialize(char board[][INDEX])
 
 int PlayerInput(char board[INDEX][INDEX], PLAYER player)
 {
-	int input;
+	char input;
 	
 	do {
 		printf("1～9の数字を入力してください\n");
@@ -28,23 +28,34 @@ int PlayerInput(char board[INDEX][INDEX], PLAYER player)
 		} else {
 			printf("プレイヤー２(x)　入力：");
 		}
-		scanf_s("%2d", &input);
-		scanf_s("%*[^\n]");
+		scanf_s("%c", &input,2);
+		/*
+		if (getchar() != '\n') {
+		  while (getchar() != '\n');
+		}
+		*/
+	
 	} while (InputErrorBoard(input, board) == ERROR);
 	return input;
 }
 
-void BoardUpdate(PLAYER player, int input, char board[INDEX][INDEX])
+void BoardUpdate(PLAYER player, int input, char board[][INDEX])
 {
-	int x;
-	int y;
+  int i, j;
+  char mark;
 
-	x = (input - 1) / INDEX;
-	y = (input - 1) % INDEX;
+  if (player == PLAYER1) {
+	mark = 'o';
+  }
+  else {
+	mark = 'x';
+  }
 
-	if (player == PLAYER1) {
-		board[x][y] = 'o';
-	} else if (player == PLAYER2) {
-		board[x][y] = 'x';
+  for (i = 0; i < INDEX; i++) {
+	for (j = 0; j < INDEX; j++) {
+	  if (input == board[i][j]) {
+		board[i][j]= mark;
+	  }
 	}
+  }
 }

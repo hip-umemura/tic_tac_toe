@@ -2,28 +2,37 @@
 #include "enum.h"
 #include "error.h"
 
-JUDGE InputErrorBoard(int input, char board[INDEX][INDEX])
+JUDGE InputErrorBoard(char input, char board[INDEX][INDEX])
 {
-	int x;
-	int y;
+	int i, j;
 
-	x = (input - 1) / INDEX;
-	y = (input - 1) % INDEX;
-
-	if ((input < 1) || (input > 9)) {
-		printf("エラー：適切な数字を入力してください\n");
-		return ERROR;
-	} else if ((board[x][y] == 'o') || (board[x][y] == 'x')) {
-		printf("エラー：適切な数字を入力してください\n");
-		return ERROR;
-	} else {
-		return CONTINUE;
+	if (getchar() != '\n') {
+	  return ERROR;
 	}
+	if ((input < '1') || (input > '9')) {
+		printf("エラー：適切な数字を入力してください\n");
+		return ERROR;
+	} 
+
+	for (i = 0; i < INDEX; i++) {
+      for (j = 0; j < INDEX; j++) {
+		if (input == board[i][j]) {
+	      return CONTINUE;
+		}
+	  }
+     }
+
+	return ERROR;
+	
 }
 
-JUDGE InputErrorRetry(int input)
+JUDGE InputErrorRetry(char input)
 {
-	if ((input == 1) || (input == 2)) {
+  if (getchar() != '\n') {
+	while (getchar() != '\n');
+	return ERROR;
+  }
+	if ((input == '1') || (input == '2')) {
 		return CONTINUE;
 	} else {
 		printf("エラー：適切な数字を入力してください\n");
