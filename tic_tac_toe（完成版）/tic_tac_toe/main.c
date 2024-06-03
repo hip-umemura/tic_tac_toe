@@ -165,7 +165,7 @@ int main(void) {
 			scanf_s("%s", name[player_count], NAME_LEN);
 			do {
 				if (((iswprint(name[player_count][name_array])) && (!iswcntrl(name[player_count][name_array])) &&
-					(!iswascii(name[player_count][name_array]))) || (iswpunct(name[player_count][name_array]))) {
+				(!iswascii(name[player_count][name_array]))) || (iswpunct(name[player_count][name_array])) || ((name[player_count][name_array] == ' '))) {
 					printf("\x1b[31m半角英数字9字以内で入力してください！\x1b[39m\n");
 					break;
 				}
