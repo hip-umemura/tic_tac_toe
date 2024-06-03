@@ -103,9 +103,7 @@ void game_progress(char* name1, char* name2)
 			scanf_s("%[^\n]s", array_board_axis, 4);
 			while (getchar() != '\n');
 
-			if ((isdigit(array_board_axis[0])) &&
-				(isdigit(array_board_axis[2])  && 
-				(array_board_axis[1] == ' '))) {
+			if (((isdigit(array_board_axis[0])!= 0) && (array_board_axis[1] == ' ')) && (isdigit(array_board_axis[2]) != 0)){
 				input_error           = TRUE;
 				board_horizontal_axis = array_board_axis[0] - '0';
 				board_vertical_axis   = array_board_axis[2] - '0';
