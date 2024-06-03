@@ -18,7 +18,7 @@ BOOL Judge_Grid(char board_info_array, char symbol_array[PLAYER_NUM])
 // “ü—Í‚ª³‚µ‚¢‚©‚ğ”»’è‚·‚éŠÖ”
 BOOL Judge_Input(char input_possess[INPUT_LEN])
 {
-	if (input_possess < '1' || input_possess > '9') {
+	if (input_possess[1] != '\0' && input_possess[1] != '\n' || input_possess[0] < '1' || input_possess[0] > '9') {
 		printf("1`9‚Ì”¼Šp®”‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢I\n");
 		return FALSE;
 	}
@@ -59,7 +59,7 @@ RESULT Judge_Result(char board_info_array[GRID_HEIGHT][GRID_WIDTH], char symbol,
 	}
 	count = 0;
 	for (int i = 0; i < LINE_NUM; i++) {
-		if (board_info_array[i][GRID_WIDTH - 1 - i] == board_info_array[GRID_WIDTH - 1 - i][i]) {
+		if (board_info_array[i][GRID_WIDTH - 1 - i] == board_info_array[i + 1][GRID_WIDTH -2 - i]) {
 			count++;
 		}
 	}

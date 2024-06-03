@@ -15,5 +15,4 @@ void Input(char symbol, char input_info_array[INPUT_LEN])
 
 	// 入力バッファをクリア
 	while (getchar() != '\n');
-
 }

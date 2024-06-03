@@ -1,6 +1,7 @@
 // main関数を記述するソースファイル
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "tic_tac_toe.h"
 #include "define.h"
 
@@ -8,10 +9,11 @@
 int main(void)
 {
   // 変数の宣言
-  char    input_info  = '0';
+  int     input_info  = 0;
   RESULT  win_info    = CONTINUE;
   int     turn_count  = 0;
   int     turn_info   = 0;
+  char    input_array[INPUT_LEN] = "\0";
   // 配列の宣言
   char board_info_array[GRID_HEIGHT][GRID_WIDTH];
   char symbol_array[PLAYER_NUM] = {'x','o'};
@@ -36,10 +38,11 @@ int main(void)
     // Bループ
     BOOL is_open = FALSE;
     while (is_open == FALSE) {
-      input_info = Input(symbol_array[turn_info]);
-      if (Judge_Input(input_info) == TRUE) {
+      Input(symbol_array[turn_info], input_array);
+      if (Judge_Input(input_array) == TRUE) {
+        input_info = atoi(input_array);
         index = Search(input_info, board_info_array);
-        is_open = Judge_Grid(board_info_array[index.y][index.x]);
+        is_open = Judge_Grid(board_info_array[index.y][index.x], symbol_array);
       }
     }
 
