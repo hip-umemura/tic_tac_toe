@@ -4,7 +4,7 @@
 
 
 //”z—ñ‚Ì—v‘f‚ğ‰Šú‰»
-void InitSquare(char (*game_board)[TWODIMENTION]) {
+void InitSquare(char *game_board[][TWODIMENTION]) {
 
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
