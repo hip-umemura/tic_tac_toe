@@ -1,2 +1,5 @@
-﻿  tic_tac_toe.c
+﻿  get_input.c
+Z:\研修\三目並べ\tic_tac_toe\tic_tac_toe\get_input.c(28,6): warning C4013: 関数 'isdigit' は定義されていません。int 型の値を返す外部関数と見なします。
+  tic_tac_toe.c
+  コードを生成中...
   tic_tac_toe.vcxproj -> Z:\研修\三目並べ\tic_tac_toe\x64\Debug\tic_tac_toe.exe

@@ -36,9 +36,9 @@ BOOL NumRange(char game[]) {
 	if (game[0] < 0 || game[0] > 3 || game[1] < 0 || game[1] > 3) {
 		printf("整数値を入力してください。\n");
 		range =  FALSE;
+	}else {
+		range = TRUE;
 	}
-
-	range = TRUE;
 
 	return range;
 
@@ -55,9 +55,10 @@ BOOL MarkChecker(char game_board[3][3],char game[]) {
 	if (game_board[a][b] != ' ') {
 		printf("入力済みのマスです。他のマスを選んでください。\n");
 		checker = FALSE;
+	}else{
+		checker = TRUE;
 	}
-	checker = TRUE;
-
+	
 	return checker;
 
 }
