@@ -42,7 +42,9 @@ int main(void)
       if (Judge_Input(input_array) == TRUE) {
         input_info = atoi(input_array);
         index = Search(input_info, board_info_array);
-        is_open = Judge_Grid(board_info_array[index.y][index.x], symbol_array);
+        if (index.x != ERROR) {
+          is_open = Judge_Grid(board_info_array[index.y][index.x], symbol_array);
+        }
       }
     }
 

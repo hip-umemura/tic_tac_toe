@@ -13,7 +13,7 @@ void Output_Grid(char board_info_array[3][3])
 			printf("  %c  ", board_info_array[column][row]);
 			printf("|");
 		}
-		printf("\b \n");
+		printf("\b \b\n");
 		printf("-----------------\n");
 	}
 }
