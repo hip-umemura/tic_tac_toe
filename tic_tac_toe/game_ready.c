@@ -4,7 +4,7 @@
 
 
 //”z—ñ‚Ì—v‘f‚ğ‰Šú‰»
-void InitSquare(char (*game_board)[3]) {
+void InitSquare(char (*game_board)[TWODIMENTION]) {
 
     for (int i = 0; i < 3; ++i) {
         for (int j = 0; j < 3; ++j) {
@@ -16,7 +16,7 @@ void InitSquare(char (*game_board)[3]) {
 
 
 //ƒ}ƒX‚ÆæUŒãU‚Ì•\¦
-void PreScreen(char game_board[3][3]) {
+void PreScreen(char game_board[TWODIMENTION][TWODIMENTION]) {
 
     printf("  Z@æU\n");
     printf("  ~@ŒãU\n");

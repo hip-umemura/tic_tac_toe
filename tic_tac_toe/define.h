@@ -3,6 +3,8 @@
 #define HEADER_H
 
 #define CAPACITY_FULL 8
+#define ONEDIMENTION 2
+#define TWODIMENTION 3
 
 typedef enum { TRUE, FALSE } BOOL;
 

@@ -9,8 +9,8 @@
 
 int main(void) {
 
-	char game[2];
-	char game_board[3][3];
+	char game[ONEDIMENTION];
+	char game_board[TWODIMENTION][TWODIMENTION];
 
 	int count;
 	int range;

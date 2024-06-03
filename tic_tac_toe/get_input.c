@@ -45,7 +45,7 @@ BOOL NumRange(char game[]) {
 }
 
 //Šù‚É“ü—Í‚³‚ê‚Ä‚¢‚È‚¢‚©
-BOOL MarkChecker(char game_board[3][3],char game[]) {
+BOOL MarkChecker(char game_board[TWODIMENTION][TWODIMENTION],char game[]) {
 
 	int a = game[0];
 	int b = game[1]; 

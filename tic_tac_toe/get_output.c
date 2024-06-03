@@ -3,7 +3,7 @@
 #include "get_output.h"
 
 //三目並べの画面のマスに「〇」「×」を出力
-void PrintMark(int count, char game[], char(*game_board)[3]) {
+void PrintMark(int count, char game[], char(*game_board)[TWODIMENTION]) {
 
 	char mark = (count % 2 == 0) ? 'O' : 'X';
 
@@ -35,7 +35,7 @@ void PrintMark(int count, char game[], char(*game_board)[3]) {
 
 
 //一直線がすべて「〇」、または「×」ですか
-WIN Bingo(char game_board[3][3], int count) {
+WIN Bingo(char game_board[TWODIMENTION][TWODIMENTION], int count) {
 
 	char mark = (count % 2 == 0) ? 'O' : 'X';
 	int result = UNKNOWN;

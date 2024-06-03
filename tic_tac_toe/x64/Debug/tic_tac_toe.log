@@ -1,7 +1,7 @@
 ﻿  game_ready.c
   get_input.c
-  get_output.c
 Z:\研修\三目並べ\tic_tac_toe\tic_tac_toe\get_input.c(28,6): warning C4013: 関数 'isdigit' は定義されていません。int 型の値を返す外部関数と見なします。
+  get_output.c
   get_result.c
   tic_tac_toe.c
   コードを生成中...

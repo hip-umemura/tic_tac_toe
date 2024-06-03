@@ -4,6 +4,6 @@
 
 void SquareNumber(int count, char* game);
 BOOL NumRange(char game[]);
-BOOL MarkChecker(char game_board[3][3], char game[]);
+BOOL MarkChecker(char game_board[TWODIMENTION][TWODIMENTION], char game[]);
 
 #endif
