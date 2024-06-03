@@ -2,7 +2,7 @@
 #ifndef HEADER_H
 #define HEADER_H
 
-#define CAPACITY_FULL 9
+#define CAPACITY_FULL 8
 
 typedef enum { TRUE, FALSE } BOOL;
 

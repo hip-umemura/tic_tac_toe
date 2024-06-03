@@ -10,25 +10,24 @@
 int main(void) {
 
 	char game[2];
-	char game_board[3][3] = { {' ',' ',' '}, {' ',' ',' '}, {' ',' ',' '} };
+	char game_board[3][3];
 
-	int count = 0;
-	int range = FALSE;
-	int checker = FALSE;
+	int count;
+	int range;
+	int checker;
 	int try = CONTINUE;
-	char result = UNKNOWN;
+	char result;
 
 	while (try == CONTINUE) {
 
-		count = 0;
 		result = UNKNOWN;
-		try = CONTINUE;
+		count = 0;
 
 		InitSquare(game_board);
 
 		PreScreen(game_board);
 		
-		while (1) {
+		while (result == UNKNOWN) {
 
 			range = FALSE;
 			checker = FALSE;
@@ -48,14 +47,8 @@ int main(void) {
 
 			result = Bingo(game_board, count);
 
-			if (result != UNKNOWN) {
-				break;
-			}
-			
-			result = SquareFull(count);
-
-			if (result != UNKNOWN) {
-				break;
+			if (result == UNKNOWN) {
+				result = SquareFull(count);
 			}
 
 			count++;

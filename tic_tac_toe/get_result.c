@@ -4,7 +4,7 @@
 #include "get_result.h"
 
 //Œ‹‰Ê‚ğo—Í
-void GameResult(int result)
+void GameResult(WIN result)
 {
 	if (result == O_WIN) {
 		printf("O‚ªŸ‚¿‚Ü‚µ‚½I");
