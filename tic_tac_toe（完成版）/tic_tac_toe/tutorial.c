@@ -20,8 +20,8 @@ void view_tutorial(void)
 	printf(" -------------\n");
 	printf("3|   |   |   |\n");
 	printf(" -------------\n\n");
-	printf("\x1b[36m入力は〇行〇列で入力しましょう！数字と数字の間は半角スペース！\x1b[39m\n");
-	printf("aさん、駒を置く座標を入力してください：1 2\n");
+	printf("\x1b[36m入力は〇行〇列で入力しましょう!数字と数字の間は半角スペース！\x1b[39m\n");
+	printf("aさん、駒を置く座標を入力してください：1 2　　\x1b[36m←この場合は1行2列目に配置\x1b[39m\n");
 	printf("　 1   2   3\n");
 	printf(" -------------\n");
 	printf("1|   | O |   |\n");
@@ -33,11 +33,11 @@ void view_tutorial(void)
 	printf("駒を配置しました！\n");
 	printf("先手と後手のターンを交代します\n\n");
 	printf("\x1b[36m先手の行動が終わったら後手の行動です！\x1b[39m\n");
-	printf("ｂさん、駒を置く座標を入力してください：1 2\n");
+	printf("bさん、駒を置く座標を入力してください：1 2\n");
 	printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
-	printf("ｂさん、駒を置く座標を入力してください：4 1\n");
+	printf("bさん、駒を置く座標を入力してください：4 1\n");
 	printf("\x1b[31m不正な入力です。再度入力してください！\x1b[39m\n");
-	printf("ｂさん、駒を置く座標を入力してください：2 2\n");
+	printf("bさん、駒を置く座標を入力してください：2 2\n");
 	printf("　 1   2   3\n");
 	printf(" -------------\n");
 	printf("1|   | O |   |\n");
@@ -53,9 +53,9 @@ void view_tutorial(void)
 	printf("aさん、駒を置く座標を入力してください：2 3\n");
 	printf("　 1   2   3\n");
 	printf(" -------------\n");
-	printf("1| X | O | O |\n");
+	printf("1| X | X | O |\n");
 	printf(" -------------\n");
-	printf("2|   | X | O |\n");
+	printf("2|   | O | O |\n");
 	printf(" -------------\n");
 	printf("3| X |   | O |\n");
 	printf(" -------------\n");
@@ -71,6 +71,7 @@ void view_tutorial(void)
 	printf(" -------------\n");
 	printf("3| X | O | O |\n");
 	printf(" -------------\n");
+	printf("駒を配置しました!\n");
 	printf("引き分け！\n\n\n");
 	printf("\x1b[36mパターン3: 入力座標が不正な場合\x1b[39m\n");
 	printf("aさん、駒を置く座標を入力してください：4 1\n");
