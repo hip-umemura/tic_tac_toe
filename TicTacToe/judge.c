@@ -59,7 +59,7 @@ RESULT Judge_Result(char board_info_array[GRID_HEIGHT][GRID_WIDTH], char symbol,
 	}
 	count = 0;
 	for (int i = 0; i < LINE_NUM; i++) {
-		if (board_info_array[i][GRID_WIDTH - 1 - i] == board_info_array[i + 1][GRID_WIDTH -2 - i]) {
+		if (board_info_array[i][GRID_WIDTH - 1 - i] == board_info_array[i + 1][GRID_WIDTH - 2 - i]) {
 			count++;
 		}
 	}

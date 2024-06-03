@@ -34,5 +34,3 @@ void Output_Result(char symbol, RESULT result_info)
 		printf("ˆø‚«•ª‚¯‚Å‚·B\n");
 	}
 }
-
-

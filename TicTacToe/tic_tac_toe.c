@@ -27,7 +27,7 @@ int main(void)
     }
   }
 
-  // Aループ
+  // 勝敗が出るまでループ(Aループ)
   while (win_info == CONTINUE) {
     turn_count++;
     turn_info = TURN_PLAYER(turn_count);
@@ -35,7 +35,7 @@ int main(void)
     Output_Turn(symbol_array[turn_info]);
     Output_Grid(board_info_array);
 
-    // Bループ
+    // 入力に関数ループ(Bループ)
     BOOL is_open = FALSE;
     while (is_open == FALSE) {
       Input(symbol_array[turn_info], input_array);
