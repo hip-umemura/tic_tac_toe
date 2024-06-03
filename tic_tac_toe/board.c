@@ -5,10 +5,10 @@
 void ShowBoard(char square[ELEMENT]) {
 	printf(" -------------------- \n");
 	printf("|      |      |      |\n");
-	for (int i = 0; i < 9; i++) {
+	for (int i = 0; i < ELEMENT; i++) {
 		printf("|   %c  ", square[i]);
 
-		if (i == 8) {
+		if (i == ELEMENT - 1) {
 			printf("| \n");
 			printf("|      |      |      |\n");
 			printf(" --------------------\n");
@@ -30,16 +30,6 @@ TURN CheckTurn(int turn_counter) {
 		turn_symbol = CROSS;
 	}
 	return turn_symbol;
-}
-
-CONTINUE DisplayWin(JUDGE win_result) {
-	if (win_result == CIRCLE_WIN) {
-		printf("〇の勝利");
-	}
-	else if (win_result == CROSS_WIN) {
-		printf("×の勝利");
-	}
-	return EXTEND;
 }
 
 void ChangeState(char input_num,char *square,TURN turn_symbol) {

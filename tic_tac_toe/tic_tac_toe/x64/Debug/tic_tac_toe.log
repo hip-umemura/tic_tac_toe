@@ -1,3 +1,2 @@
-﻿  sanmoku.c
-C:\Users\y_sugitomo\Desktop\三目並べ編集用フォルダ\tic_tac_toe\sanmoku.c(13,6): warning C4101: 'turn_counter': ローカル変数は 1 度も使われていません。
+﻿  decision_count.c
   tic_tac_toe.vcxproj -> C:\Users\y_sugitomo\Desktop\三目並べ編集用フォルダ\tic_tac_toe\x64\Debug\tic_tac_toe.exe

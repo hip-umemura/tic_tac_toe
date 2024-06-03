@@ -6,8 +6,7 @@ BOOL RangeNum(char input_num) {
 	BOOL range;
 	if (input_num >= '1' && input_num <= '9') {
 		range = TRUE;
-	}
-	else {
+	}else {
 		range = FALSE;
 		printf("範囲内の値を入力してください。\n");
 	}
@@ -17,27 +16,26 @@ BOOL RangeNum(char input_num) {
 BOOL CheckNum(char input_num, char *square) {
 	BOOL ischeck;
 	int tmp = input_num - '0';
-	if (*(square + tmp-1 ) == input_num) {//input_numをchar型にする
+	if (*(square + tmp - 1) == input_num) {
 		ischeck = TRUE;
-	}
-	else {
+	}else {
 		printf("既に入力されています。\n");
 		ischeck = FALSE;
 	}
 	return ischeck;
 }
 
-JUDGE CheckWin(char square[9], TURN turn_symbol) {
+JUDGE CheckWin(char square[ELEMENT], TURN turn_symbol) {
 	JUDGE win_result= UNKNOWN;
 
 	if (turn_symbol == CIRCLE) {
-		for (int i=0; i < 3; i++) {//横のライン
-			if (square[(i * 3)] == square[(i * 3) + 1] && square[(i * 3) + 1] == square[(i * 3) + 2]) {
+		for (int i=0; i < WIDE_GAP; i++) {//横のライン
+			if (square[(i * WIDE_GAP)] == square[(i * WIDE_GAP) + 1] && square[(i * WIDE_GAP) + 1] == square[(i * WIDE_GAP) + 2]) {
 				win_result = CIRCLE_WIN;
 			}
 		}
-		for (int j = 0; j < 3; j++) {//縦のライン
-			if (square[j] == square[j + 3] && square[j + 3] == square[j + 6]) {
+		for (int j = 0; j < VERETICAL_GAP; j++) {//縦のライン
+			if (square[j] == square[j + VERETICAL_GAP] && square[j + VERETICAL_GAP] == square[j + (2 * VERETICAL_GAP)]) {
 				win_result = CIRCLE_WIN;
 			}
 		}
@@ -49,34 +47,33 @@ JUDGE CheckWin(char square[9], TURN turn_symbol) {
 			win_result = CIRCLE_WIN;
 		}
 	}
-		if (turn_symbol == CROSS) {
-			for (int i = 0; i < 3; i++) {//横のライン
-				if (square[(i * 3)] == square[(i * 3) + 1] && square[(i * 3) + 1] == square[(i * 3) + 2]) {
-					win_result = CROSS_WIN;
-				}
-			}
-			for (int j = 0; j < 3; j++) {//縦のライン
-				if (square[j] == square[j + 3] && square[j + 3] == square[j + 6]) {
-					win_result = CROSS_WIN;
-				}
-			}
-			if (square[0] == square[4] && square[4] == square[8]) {//左上から右下のライン
-				win_result = CROSS_WIN;
-			}
-			if (square[2] == square[4] && square[4] == square[6]) {//右上から左下のライン
+	if (turn_symbol == CROSS) {
+		for (int i = 0; i < WIDE_GAP; i++) {
+			if (square[(i * WIDE_GAP)] == square[(i * WIDE_GAP) + 1] && square[(i * WIDE_GAP) + 1] == square[(i * WIDE_GAP) + 2]) {
 				win_result = CROSS_WIN;
 			}
 		}
-		return win_result;
+		for (int j = 0; j < VERETICAL_GAP; j++) {
+			if (square[j] == square[j + VERETICAL_GAP] && square[j + VERETICAL_GAP] == square[j + (2 * VERETICAL_GAP)]) {
+				win_result = CROSS_WIN;
+			}
+		}
+		if (square[0] == square[4] && square[4] == square[8]) {
+			win_result = CROSS_WIN;
+		}
+		if (square[2] == square[4] && square[4] == square[6]) {
+			win_result = CROSS_WIN;
+		}
+	}
+	return win_result;
 }
 
-CONTINUE CheckDraw(int turn_counter) {
-	CONTINUE draw_result;
-	if (turn_counter == 8) {
-		draw_result = END;
-	}
-	else {
-		draw_result = EXTEND;
+JUDGE CheckDraw(int turn_counter) {
+	JUDGE draw_result;
+	if (turn_counter == ELEMENT-1) {
+		draw_result = DROW;
+	}else {
+		draw_result = UNKNOWN;
 	}
 	return draw_result;
 }
