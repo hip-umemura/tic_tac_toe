@@ -5,7 +5,7 @@
 //三目並べの画面のマスに「〇」「×」を出力
 void PrintMark(int count, char game[], char(*game_board)[TWODIMENTION]) {
 
-	char mark = (count % 2 == 0) ? 'O' : 'X';
+	char mark = (count % 2 == 0) ? 'o' : 'x';
 
 	int a = game[0];
 	int b = game[1];
@@ -37,30 +37,30 @@ void PrintMark(int count, char game[], char(*game_board)[TWODIMENTION]) {
 //一直線がすべて「〇」、または「×」ですか
 WIN Bingo(char game_board[TWODIMENTION][TWODIMENTION], int count) {
 
-	char mark = (count % 2 == 0) ? 'O' : 'X';
+	char mark = (count % 2 == 0) ? 'o' : 'x';
 	int result = UNKNOWN;
 
 	for (int i = 0; i < 3; i++) {
 		if (game_board[i][0] != ' ' && game_board[i][0] == mark && game_board[i][1] == mark && game_board[i][2] == mark) {
-		result = (mark == 'O') ? O_WIN : X_WIN;
+		result = (mark == 'o') ? O_WIN : X_WIN;
 		}
 			
 	}
 
 	for (int j = 0; j < 3; j++) {
 		if (game_board[0][j] != ' ' && game_board[0][j] == mark && game_board[1][j] == mark && game_board[2][j] == mark) {
-			result = (mark == 'O') ? O_WIN : X_WIN;
+			result = (mark == 'o') ? O_WIN : X_WIN;
 		}
 			
 	}
 
 	if (game_board[0][0] != ' ' && game_board[0][0] == mark && game_board[1][1] == mark && game_board[2][2] == mark) {
-		result = (mark == 'O') ? O_WIN : X_WIN;
+		result = (mark == 'o') ? O_WIN : X_WIN;
 	}
 	
 
 	if (game_board[2][0] != ' ' && game_board[2][0] == mark && game_board[1][1] == mark && game_board[0][2] == mark ) {
-		result = (mark == 'O') ? O_WIN : X_WIN;
+		result = (mark == 'o') ? O_WIN : X_WIN;
 	}
 
 	return result;
