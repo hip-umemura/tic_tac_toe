@@ -6,28 +6,26 @@ BOOL RangeNum(char input_num) {
 	BOOL range;
 	if (input_num >= '1' && input_num <= '9') {
 		range = TRUE;
-	}
-	else {
+	}else {
 		range = FALSE;
-		printf("範囲内の値を入力してください。\n");
+		/*printf("範囲内の値を入力してください。\n"); mainに移行した　*/
 	}
 	return range;
 }
 
-BOOL CheckNum(char input_num, char *square) {
+BOOL CheckNum(int input_num, char *square) {
 	BOOL ischeck;
 	int tmp = input_num - '0';
 	if (*(square + tmp-1 ) == input_num) {//input_numをchar型にする
 		ischeck = TRUE;
-	}
-	else {
-		printf("既に入力されています。\n");
+	}else {
+		/*printf("既に入力されています。\n");	mainに移行した　*/
 		ischeck = FALSE;
 	}
 	return ischeck;
 }
 
-JUDGE CheckWin(char square[9], TURN turn_symbol) {
+JUDGE CheckWin(char square[ELEMENT],TURN turn_symbol) {
 	JUDGE win_result= UNKNOWN;
 
 	if (turn_symbol == CIRCLE) {
@@ -74,8 +72,7 @@ CONTINUE CheckDraw(int turn_counter) {
 	CONTINUE draw_result;
 	if (turn_counter == 8) {
 		draw_result = END;
-	}
-	else {
+	}else {
 		draw_result = EXTEND;
 	}
 	return draw_result;

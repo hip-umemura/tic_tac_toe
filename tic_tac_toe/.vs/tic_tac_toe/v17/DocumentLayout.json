@@ -1,37 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\",
+  "WorkspaceRootPath": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\decision_count.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:decision_count.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\input_num.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:input_num.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:board.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\sanmoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:board.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\input_num.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:input_num.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\decision_count.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:decision_count.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\sanmoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:sanmoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -42,43 +42,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 185,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "board.c",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\board.c",
+              "RelativeDocumentMoniker": "board.c",
+              "ToolTip": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\board.c",
+              "RelativeToolTip": "board.c",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-05-31T07:49:15.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "decision_count.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\decision_count.c",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\decision_count.c",
               "RelativeDocumentMoniker": "decision_count.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\decision_count.c",
+              "ToolTip": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\decision_count.c",
               "RelativeToolTip": "decision_count.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAABUAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-24T06:21:13.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "board.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\board.c",
-              "RelativeDocumentMoniker": "board.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\board.c",
-              "RelativeToolTip": "board.c",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACsAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "sanmoku.c",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\sanmoku.c",
+              "RelativeDocumentMoniker": "sanmoku.c",
+              "ToolTip": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\sanmoku.c",
+              "RelativeToolTip": "sanmoku.c",
+              "ViewState": "AQIAABsAAAAAAAAAAAAkwDEAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-24T06:20:46.501Z",
+              "WhenOpened": "2024-05-28T04:40:58.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "input_num.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\input_num.c",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\input_num.c",
               "RelativeDocumentMoniker": "input_num.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\input_num.c",
+              "ToolTip": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\input_num.c",
               "RelativeToolTip": "input_num.c",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAADAAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-27T00:18:23.499Z",
               "EditorCaption": ""
@@ -86,57 +99,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "sanmoku.c",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\sanmoku.c",
-              "RelativeDocumentMoniker": "sanmoku.c",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\sanmoku.c",
-              "RelativeToolTip": "sanmoku.c",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAABUAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-28T04:40:58.547Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 215,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "board.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\board.h",
-              "RelativeDocumentMoniker": "board.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\board.h",
-              "RelativeToolTip": "board.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-28T06:27:59.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "input_num.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\input_num.h",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\input_num.h",
               "RelativeDocumentMoniker": "input_num.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\input_num.h",
+              "ToolTip": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\input_num.h",
               "RelativeToolTip": "input_num.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-28T06:27:56.253Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "decision_count.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\decision_count.h",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\decision_count.h",
               "RelativeDocumentMoniker": "decision_count.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\decision_count.h",
+              "ToolTip": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\decision_count.h",
               "RelativeToolTip": "decision_count.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAPAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-28T06:27:55.19Z",
               "EditorCaption": ""
@@ -145,13 +126,26 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "sanmoku.h",
-              "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\sanmoku.h",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\sanmoku.h",
               "RelativeDocumentMoniker": "sanmoku.h",
-              "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\\u4E09\u76EE\u4E26\u3079\u7DE8\u96C6\u7528\u30D5\u30A9\u30EB\u30C0\\tic_tac_toe\\sanmoku.h",
+              "ToolTip": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\sanmoku.h",
               "RelativeToolTip": "sanmoku.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-28T04:41:13.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "board.h",
+              "DocumentMoniker": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\board.h",
+              "RelativeDocumentMoniker": "board.h",
+              "ToolTip": "Z:\\\u7814\u4FEE\\tool\\i\\tic_tac_toe\\board.h",
+              "RelativeToolTip": "board.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-28T06:27:59.299Z",
               "EditorCaption": ""
             }
           ]

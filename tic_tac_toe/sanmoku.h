@@ -10,14 +10,12 @@ typedef enum {
 	CROSS
 }TURN;
 
-
-
 typedef enum {
 	UNKNOWN,
 	CIRCLE_WIN,
-	CROSS_WIN,
-	DROW
+	CROSS_WIN
 }JUDGE;
+// DROWèëÇ¢ÇƒÇΩÇØÇ«Ç¢ÇÁÇ»Ç¢
 
 typedef enum {
 	TRY,
