@@ -77,7 +77,7 @@ void PrintBoard(MARK* pt_playerboard) {
       {
         printf("Åb");
       }
-      else
+      else if (i != SIDE_LONG - 1)
       {
         printf("\nÅ[Å{Å[Å{Å[");
       }
