@@ -42,39 +42,63 @@ void DisplayScreen(char board[BOARDSIZE][BOARDSIZE]) {
 
 // 縦軸の入力
 char InputVerticalAxis(void) {
-  char input[ARRAYSIZE];  // 文字列を格納する変数(要素数2)
-  int skip_flag = TRUE;          // 読み飛ばしフラグ
-  printf("選択するマスの縦軸を入力してください：");
+  char input[ARRAYSIZE];    // 文字列を格納する変数(要素数2)
+  int roop_flag = TRUE;    // ループフラグ
   //scanf_s("%s", input, (int)sizeof(input));  // 入力を配列に格納
-  for (int i = 0; i < sizeof(input); i++) {
-    input[i] = getchar();
-    if (input[i] == '\n') {
-      skip_flag = FALSE;
-      break;
+  while (roop_flag == TRUE) {
+    int skip_flag = TRUE;     // 読み飛ばしフラグ
+    printf("選択するマスの縦軸を入力してください：");
+    for (int i = 0; i < ARRAYSIZE; i++) {
+      input[i] = getchar();
+      if (input[i] == '\n') {
+        skip_flag = FALSE;
+        break;
+      }
+    }
+    if (skip_flag == TRUE) {
+      while (getchar() != '\n')
+        ;
+    }
+
+    if (((input[0] == '1') || (input[0] == '2') || (input[0] == '3')) && (input[1] == '\n')) {  // inputが1or2or3
+      roop_flag = FALSE;
+    }
+    else {
+      printf("\033[41m1,2,3で入力してください\033[0m\n");   // 背景色を赤にして表示
     }
   }
 
-  if (skip_flag == TRUE) {
-    while (getchar() != '\n')
-      ;
-  }
   return input[0];  // 文字列の0番目を文字として返す
 }
 
 // 横軸の入力
 char InputHorizontalAxis(void) {
-  char input[ARRAYSIZE];  // 文字列を格納する変数(要素数2)
-  printf("選択するマスの横軸を入力してください：");
-  for (int i = 0; i < sizeof(input); i++) {
-    input[i] = getchar();
-    if (input[0] == '\n') {
-      return '\n';
+  char input[ARRAYSIZE];    // 文字列を格納する変数(要素数2)
+  int roop_flag = TRUE;    // ループフラグ
+  //scanf_s("%s", input, (int)sizeof(input));  // 入力を配列に格納
+  while (roop_flag == TRUE) {
+    int skip_flag = TRUE;     // 読み飛ばしフラグ
+    printf("選択するマスの縦軸を入力してください：");
+    for (int i = 0; i < ARRAYSIZE; i++) {
+      input[i] = getchar();
+      if (input[i] == '\n') {
+        skip_flag = FALSE;
+        break;
+      }
+    }
+    if (skip_flag == TRUE) {
+      while (getchar() != '\n')
+        ;
+    }
+
+    if (((input[0] == '1') || (input[0] == '2') || (input[0] == '3')) && (input[1] == '\n')) {  // inputが1or2or3
+      roop_flag = FALSE;
+    }
+    else {
+      printf("\033[41m1,2,3で入力してください\033[0m\n");   // 背景色を赤にして表示
     }
   }
-  if (input[ARRAYSIZE - 1] != '\n') {
-    while (getchar() != '\n')
-      ;
-  }
+
   return input[0];  // 文字列の0番目を文字として返す
 }
 
