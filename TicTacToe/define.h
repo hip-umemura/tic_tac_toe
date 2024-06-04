@@ -9,6 +9,9 @@
 #define ERROR      -1
 #define LINE_NUM		2
 #define INPUT_LEN		2
+#define O_MARK		 'o'
+#define X_MARK		 'x'
+
 
 // 列挙型定義
 // ゲームの勝敗を示す
@@ -17,6 +20,12 @@ typedef enum {
 	WIN,
 	DRAW,
 } RESULT;
+
+// ターンを示す
+typedef enum {
+	O_TURN,
+	X_TURN,
+} TURN;
 
 // 真偽を示す
 typedef enum {

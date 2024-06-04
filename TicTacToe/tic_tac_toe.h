@@ -7,10 +7,10 @@
 void Output_Grid(char board_info_array[3][3]);
 
 // 現在のターンを表示する関数
-void Output_Turn(char symbol);
+void Output_Turn(TURN turn_info);
 
 // ゲームの勝敗を表示する関数
-void Output_Result(char symbol, RESULT result_info);
+void Output_Result(RESULT result_info);
 
 // 入力引数の値に対応したグリッドがどの要素なのかを探索し、その要素を返す関数
 INDEX Search(int input_info, char board_info_array[3][3]);

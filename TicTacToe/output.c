@@ -19,18 +19,33 @@ void Output_Grid(char board_info_array[3][3])
 }
 
 // 盤面とどちらのターンかを表示する関数
-void Output_Turn(char symbol)
+void Output_Turn(TURN current_turn)
 {
-	printf("%cのターンです。\n", symbol);
+	if (current_turn == O_TURN) {
+		printf("%cのターンです。\n", O_MARK);
+	}
+	else {
+		printf("%cのターンです。\n", X_MARK);
+	}
 }
 
 // 盤面と勝敗の結果を表示する関数
-void Output_Result(char symbol, RESULT result_info)
+void Output_Result(TURN current_turn, RESULT result_info)
 {
-	if (result_info == WIN) {
-		printf("%cの勝利です。\n", symbol);
-	}
-	else if (result_info  == DRAW){
+	switch (result_info) {
+	case WIN:
+		if (current_turn == O_TURN) {
+			printf("%c", O_MARK);
+		}
+		else {
+			printf("%c", X_MARK);
+		}
+		printf("の勝利です。\n");
+		break;
+	case DRAW:
 		printf("引き分けです。\n");
+		break;
+	default:
+		printf("エラー：結果を判定できませんでした。\n");
+		break;
 	}
-}
