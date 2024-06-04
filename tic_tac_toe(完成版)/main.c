@@ -21,8 +21,8 @@ void DisplayRule() {
   printf("ルール説明                           \n");
   printf("─────────────────────────────────────\n");
   printf(" 横軸[1, 2, 3]＋Enterと              \n");
-  printf(" 縦軸[1, 2, 3]＋Enterと              \n");
-  printf(" 〇×を置く位置を入力してください    \n");
+  printf(" 縦軸[1, 2, 3]＋Enterで              \n");
+  printf(" OXを置く位置を入力してください。    \n");
   printf("─────────────────────────────────────\n");
   printf("\n\n");
 }
@@ -43,10 +43,21 @@ void DisplayScreen(char board[BOARDSIZE][BOARDSIZE]) {
 // 縦軸の入力
 char InputVerticalAxis(void) {
   char input[ARRAYSIZE];  // 文字列を格納する変数(要素数2)
+  int skip_flag = TRUE;          // 読み飛ばしフラグ
   printf("選択するマスの縦軸を入力してください：");
-  scanf_s("%s", input, (int)sizeof(input));  // 入力を配列に格納
-  while (getchar() != '\n')
-    ;
+  //scanf_s("%s", input, (int)sizeof(input));  // 入力を配列に格納
+  for (int i = 0; i < sizeof(input); i++) {
+    input[i] = getchar();
+    if (input[i] == '\n') {
+      skip_flag = FALSE;
+      break;
+    }
+  }
+
+  if (skip_flag == TRUE) {
+    while (getchar() != '\n')
+      ;
+  }
   return input[0];  // 文字列の0番目を文字として返す
 }
 
@@ -54,14 +65,21 @@ char InputVerticalAxis(void) {
 char InputHorizontalAxis(void) {
   char input[ARRAYSIZE];  // 文字列を格納する変数(要素数2)
   printf("選択するマスの横軸を入力してください：");
-  scanf_s("%s", input, (int)sizeof(input));
-  while (getchar() != '\n')
-    ;
-  return input[0];
+  for (int i = 0; i < sizeof(input); i++) {
+    input[i] = getchar();
+    if (input[0] == '\n') {
+      return '\n';
+    }
+  }
+  if (input[ARRAYSIZE - 1] != '\n') {
+    while (getchar() != '\n')
+      ;
+  }
+  return input[0];  // 文字列の0番目を文字として返す
 }
 
 // 入力を整数値に変換
-int ConvertingInputToInt(char input) {       
+int ConvertingInputToInt(char input) {
   int input_to_int;
   if ((input == '1') || (input == '2') || (input == '3')) {  // inputが1or2or3
     input_to_int = input - '0'; // 整数値変換
@@ -84,11 +102,11 @@ int isNotAlreadyPlaced(int vertical, int horizontal, char board[BOARDSIZE][BOARD
     printf("\033[41mすでに置かれています！\033[0m\n");      // 背景色を赤にして表示
     return FALSE;
   }
-  
+
 }
 
 // OXを配置する
-void StoringInput(int vertical, int horizontal, char turn, char *board) {
+void StoringInput(int vertical, int horizontal, char turn, char* board) {
   assert(vertical > 0 && vertical < 4 && horizontal > 0 && horizontal < 4); // 強制終了
 
   board[(vertical - 1) * BOARDSIZE + (horizontal - 1)] = turn;
@@ -179,7 +197,7 @@ int main(void)
     input_vertical = InputVerticalAxis();     // 縦軸入力
 
     printf("\033[8;0H \033[0J\n");            // カーソルの位置移動&画面クリア
-    
+
     // 整数変換＆入力が正しいか判断
     horizontal = ConvertingInputToInt(input_horizontal);
     if (horizontal == FALSE) {
