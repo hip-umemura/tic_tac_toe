@@ -135,21 +135,24 @@ void game_progress(char* name1, char* name2)
 
 int main(void) {
 
-	int start_tutorial;
-	char name[MEMBERS][NAME_LEN];
+	char start_tutorial;
+    char name[MEMBERS][NAME_LEN];
 	int name_array;
 	int player_count = 0;
 
 	printf("チュートリアルを見ますか(YES...1 / NO...1以外)：");
-	scanf_s("%d", &start_tutorial);
+	scanf_s("%[^\n]s", &start_tutorial,2);
 	while (getchar() != '\n');
-
-	// チュートリアルを表示する
+	if (start_tutorial == '1') {
+		start_tutorial = TRUE;
+	}
+	// チュートリアルを表示する	
 	if (start_tutorial == TRUE) {
 		view_tutorial();
 	}
-
-	printf("ゲーム開始！\n");
+	else {
+		printf("ゲーム開始！\n");
+	}
 
 	// プレイヤー名を入力
 	do {
