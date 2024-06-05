@@ -1,13 +1,14 @@
 // 判定部分の関数の定義を記述するソースファイル
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "define.h"
 
 // Judge_Grid関数の宣言
-BOOL Judge_Grid(char board_info_array, char symbol_array[PLAYER_NUM])
+BOOL Judge_Grid(char board_info_array)
 {
 	for (int i = 0; i < PLAYER_NUM; i++) {
-		if (board_info_array == symbol_array[i]) {
+		if (board_info_array == O_MARK || board_info_array == X_MARK) {
 			printf("グリッドが空の番号を選択してください！\n");
 			return FALSE;
 		}
@@ -28,26 +29,39 @@ BOOL Judge_Input(char input_possess[INPUT_LEN])
 }
 
 // 三目並べの勝敗の判定をする関数
-RESULT Judge_Result(char board_info_array[GRID_HEIGHT][GRID_WIDTH], char symbol, INDEX grid_element_designation, int turn_count)
+RESULT Judge_Result(char board_info_array[GRID_HEIGHT][GRID_WIDTH], INDEX grid_element_designation, int turn_count)
 {
+	// INDEXのメンバの値が、要素指定できない値の場合、強制終了させる
+	if (grid_element_designation.x < 0 || grid_element_designation.x >= GRID_WIDTH ||
+			grid_element_designation.y < 0 || grid_element_designation.y >= GRID_HEIGHT) {
+		abort();
+	}
+
+	// 縦を見て、同じ図柄が3つ並んでいるか確認する。
 	int count = 0;
 	for (int i = 0; i < LINE_NUM; i++) {
-		if (board_info_array[(grid_element_designation.y + 1 + i) % GRID_HEIGHT][grid_element_designation.x] == symbol) {
+		if (board_info_array[(grid_element_designation.y + i) % GRID_HEIGHT][grid_element_designation.x] ==
+				board_info_array[(grid_element_designation.y + 1 + i) % GRID_HEIGHT][grid_element_designation.x]) {
 			count++;
 		}
 	}
 	if (count >= LINE_NUM) {
 		return WIN;
 	}
+
+	// 横を見て、同じ図柄が3つ並んでいるか確認する。
 	count = 0;
 	for (int i = 0; i < LINE_NUM; i++) {
-		if (board_info_array[grid_element_designation.y][(grid_element_designation.x + 1 + i) % GRID_WIDTH] == symbol) {
+		if (board_info_array[grid_element_designation.y][(grid_element_designation.x + i) % GRID_WIDTH] ==
+				board_info_array[grid_element_designation.y][(grid_element_designation.x + 1 + i) % GRID_WIDTH]) {
 			count++;
 		}
 	}
 	if (count >= LINE_NUM) {
 		return WIN;
 	}
+
+	// 斜めを見て、同じ図柄が3つ並んでいるか確認する。
 	count = 0;
 	for (int i = 0; i < LINE_NUM; i++) {
 		if (board_info_array[i][i] == board_info_array[i + 1][i + 1]) {

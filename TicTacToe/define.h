@@ -23,8 +23,8 @@ typedef enum {
 
 // ƒ^[ƒ“‚ğ¦‚·
 typedef enum {
-	O_TURN,
 	X_TURN,
+	O_TURN,
 } TURN;
 
 // ^‹U‚ğ¦‚·

@@ -49,3 +49,4 @@ void Output_Result(TURN current_turn, RESULT result_info)
 		printf("エラー：結果を判定できませんでした。\n");
 		break;
 	}
+}

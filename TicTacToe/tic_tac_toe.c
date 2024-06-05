@@ -12,11 +12,10 @@ int main(void)
   int     input_info  = 0;
   RESULT  win_info    = CONTINUE;
   int     turn_count  = 0;
-  int     turn_info   = 0;
-  char    input_array[INPUT_LEN] = "\0";
+  TURN    turn_info  = 0;
   // 配列の宣言
   char board_info_array[GRID_HEIGHT][GRID_WIDTH];
-  char symbol_array[PLAYER_NUM] = {'x','o'};
+  char input_array[INPUT_LEN] = "\0";
   // 構造体の宣言
   INDEX index = { 0,0 };
 
@@ -32,29 +31,29 @@ int main(void)
     turn_count++;
     turn_info = TURN_PLAYER(turn_count);
 
-    Output_Turn(symbol_array[turn_info]);
+    Output_Turn(turn_info);
     Output_Grid(board_info_array);
 
     // 入力に関数ループ(Bループ)
     BOOL is_open = FALSE;
     while (is_open == FALSE) {
-      Input(symbol_array[turn_info], input_array);
+      Input(turn_info, input_array);
       if (Judge_Input(input_array) == TRUE) {
         input_info = atoi(input_array);
         index = Search(input_info, board_info_array);
         if (index.x != ERROR) {
-          is_open = Judge_Grid(board_info_array[index.y][index.x], symbol_array);
+          is_open = Judge_Grid(board_info_array[index.y][index.x]);
         }
       }
     }
 
-    Insert(&board_info_array[index.y][index.x], symbol_array[turn_info]);
+    Insert(&board_info_array[index.y][index.x], turn_info);
 
-    win_info = Judge_Result(board_info_array, symbol_array[turn_info], index, turn_count);
+    win_info = Judge_Result(board_info_array, index, turn_count);
   }
 
   Output_Grid(board_info_array);
-  Output_Result(symbol_array[turn_info], win_info);
+  Output_Result(turn_info, win_info);
 
   return 0;
 }
