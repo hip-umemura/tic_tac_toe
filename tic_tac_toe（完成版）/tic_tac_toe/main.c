@@ -39,14 +39,12 @@ void print_result(RESULT result, PLAYER player) {
 // ゲーム終了後、再度ゲームをプレイするか否か
 int retry_game(void) {
 
-	char userInput;	// プレイヤーが入力した値
+	char userInput[2];	// プレイヤーが入力した値
 
 	printf("再プレイしますか(YES...1 / No...1以外):");
-	scanf_s("%c", &userInput, 1);
-	while (getchar() != '\n')
-	  ;
-
-	if (userInput == '1') {
+	scanf_s("%s", userInput, 2);
+	while (getchar() != '\n');
+	if (userInput[0] == '1'){
 		return TRUE;
 	}
 	else {
@@ -165,7 +163,7 @@ int main(void) {
 			else {
 				printf("後手のプレイヤー名を入力してください：");
 			}
-			scanf_s("%s", name[player_count], NAME_LEN);
+			scanf_s("%[^\n]s", name[player_count], NAME_LEN);
 			do {
 				if (((iswprint(name[player_count][name_array])) && (!iswcntrl(name[player_count][name_array])) &&
 				(!iswascii(name[player_count][name_array]))) || (iswpunct(name[player_count][name_array])) || ((name[player_count][name_array] == ' '))) {
