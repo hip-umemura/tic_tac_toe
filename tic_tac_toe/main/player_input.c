@@ -31,7 +31,7 @@ BOARD_XY Player_Input(const char* board) {
           printf("%c", flowed);
           is_flow = _kbhit();
         }
-        printf("\n\n入力エラー：もう一度入力してください\n");
+        printf("\n入力エラー：もう一度入力してください\n");
       }
       else {
         printf("\n");
@@ -53,7 +53,7 @@ BOARD_XY Player_Input(const char* board) {
           printf("%c", flowed);
           is_flow = _kbhit();
         }
-        printf("\n\n入力エラー：もう一度入力してください\n");
+        printf("\n入力エラー：もう一度入力してください\n");
       }
       else {
         printf("\n");
@@ -63,7 +63,7 @@ BOARD_XY Player_Input(const char* board) {
     }
 
     if (*(board + (input_xy.y * 3) + input_xy.x) != ' ') {
-      printf("\n入力エラー：すでに埋まっているマスです\n");
+      printf("入力エラー：すでに埋まっているマスです\n");
     }
     else {
       input_finish = TRUE;

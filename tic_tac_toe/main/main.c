@@ -17,9 +17,9 @@ typedef enum {
   TRUE
 } BOOL;
 
-void Print_Grid(const char* board_status);
+void Print_Grid(const char* board);
 BOARD_XY Player_Input(const char* board);
-RESULT Game_Judge(const int turn_count, const BOARD_XY board_xy, const char* board_status);
+RESULT Game_Judge(const int turn_count, const BOARD_XY board_xy, const char* board);
 
 int main(void) {
   int turn_count = 1;
@@ -79,7 +79,7 @@ int main(void) {
             printf("%c", flowed);
             is_flow = _kbhit();
           }
-          printf("\n\n入力エラー：YまたはNを入力してください\n");
+          printf("\n入力エラー：YまたはNを入力してください\n");
         }
         else if (retry_or_not == 'Y') {
           turn_count = 1;

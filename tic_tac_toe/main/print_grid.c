@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void Print_Grid(const char* board_status)
+void Print_Grid(const char* board)
 {
   int i, j;
   
@@ -9,9 +9,9 @@ void Print_Grid(const char* board_status)
     printf("---|---|---|---\n");
     printf(" %d |", i);
     for (j = 0; j <= 1; j++) {
-      printf(" %c |", *(board_status + (i * 3) + j));
+      printf(" %c |", *(board + (i * 3) + j));
     }
-    printf(" %c \n", *(board_status + (i * 3) + j));
+    printf(" %c \n", *(board + (i * 3) + j));
   }
   printf("---|---|---|---\n");
 }
