@@ -42,9 +42,9 @@ int retry_game(void) {
 	char userInput[2];	// プレイヤーが入力した値
 
 	printf("再プレイしますか(YES...1 / No...1以外):");
-	scanf_s("%s", userInput, 2);
+	scanf_s("%[^\n]s", userInput, 2);
 	while (getchar() != '\n');
-	if (userInput[0] == '1'){
+	if (userInput[0] == '1') {
 		return TRUE;
 	}
 	else {
@@ -133,7 +133,8 @@ void game_progress(char* name1, char* name2)
 
 int main(void) {
 
-	char start_tutorial;
+	char start_tutorial[2];
+	int int_start_tutorial = 0; 
     char name[MEMBERS][NAME_LEN];
 	int name_array;
 	int player_count = 0;
@@ -141,16 +142,14 @@ int main(void) {
 	printf("チュートリアルを見ますか(YES...1 / NO...1以外)：");
 	scanf_s("%[^\n]s", &start_tutorial,2);
 	while (getchar() != '\n');
-	if (start_tutorial == '1') {
-		start_tutorial = TRUE;
+	if ((start_tutorial == '1') && (start_tutorial[1] == '\0')) {
+		int_start_tutorial = TRUE;
 	}
 	// チュートリアルを表示する	
-	if (start_tutorial == TRUE) {
+	if (int_start_tutorial == TRUE) {
 		view_tutorial();
 	}
-	else {
 		printf("ゲーム開始！\n");
-	}
 
 	// プレイヤー名を入力
 	do {
