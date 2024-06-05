@@ -10,18 +10,18 @@ INDEX Search(int input_info, char board_info_array[3][3])
 	int x = 0;
 	int y = 0;
 	int count = 0;
-
-	// ループを抜ける条件
-	BOOL match = FALSE;
+	INDEX index = { ERROR, 0 };
 
 	for (y = GRID_HEIGHT - 1; y >= 0; y--) {
 		for (x = 0; x < GRID_WIDTH; x++) {
 			count++;
 			if (input_info == count) {
-				INDEX index = { x, y };
+				index.y = y;
+				index.x = x;
 				return index;
 			}
 		}
 	}
 	printf("エラー：入力をやり直してください。");
+	return index;
 }
