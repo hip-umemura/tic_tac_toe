@@ -83,7 +83,7 @@ RESULT Judge_Result(char board_info_array[GRID_HEIGHT][GRID_WIDTH], INDEX grid_e
 
 	// グリッド内がすべって埋まっている場合、DRAWを返す。
 	// ゲームの終了が判定されていない場合、CONTINUEを返す。
-	if (turn_count >= 9) {
+	if (turn_count >= GRID_WIDTH * GRID_HEIGHT) {
 		return DRAW;
 	}
 	else {

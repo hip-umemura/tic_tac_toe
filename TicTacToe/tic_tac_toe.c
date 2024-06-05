@@ -12,7 +12,7 @@ int main(void)
   int     input_info  = 0;
   RESULT  win_info    = CONTINUE;
   int     turn_count  = 0;
-  TURN    turn_info  = 0;
+  TURN    turn_info   = 0;
   // 配列の宣言
   char board_info_array[GRID_HEIGHT][GRID_WIDTH];
   char input_array[INPUT_LEN] = "\0";
@@ -34,7 +34,7 @@ int main(void)
     Output_Turn(turn_info);
     Output_Grid(board_info_array);
 
-    // 入力に関数ループ(Bループ)
+    // 入力に関するループ(Bループ)
     BOOL is_open = FALSE;
     while (is_open == FALSE) {
       Input(turn_info, input_array);
