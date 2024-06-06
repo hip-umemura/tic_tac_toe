@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "enum.h"
 #include "input.h"
+#include <assert.h>
 // 盤面の初期化
 void BoardInit(void) {
   int i;
@@ -26,25 +27,28 @@ void PlayerInput(int* row, int* column, TURN player_turn) {
       printf("番号を入力してください。\n");
       printf("番号：");
     }
-
-    scanf_s("%d", &player_input);
-    // 入力例外処理(入力値が数字以外の場合)
+    // キーボード入力
+    player_input = getchar();
+    // 入力例外処理
     if (getchar() != '\n') {
-      printf("入力が正しくないです。\n\n");
+      printf("入力が正しくないです。\n");
       while (getchar() != '\n');
       input_result = FALSE;
       continue;
     }
+    
+    player_input = player_input - '0';
+
+    if ((player_input < 1) && (player_input > (NUM * NUM))) {
+      printf("入力が正しくないです。\n");
+      input_result = FALSE;
+    }
     // 入力値から行と列を計算で算出
     *row = (player_input - 1) / NUM;
     *column = (player_input - 1) % NUM;
-    // 入力値の正誤判定
-    if ((player_input < 1) && (player_input > (NUM * NUM))) {
-      printf("入力が正しくないです。\n\n");
-      input_result = FALSE;
-    }
-    else if (g_board[*row][*column] != ' ') {
-      printf("入力が正しくないです。\n\n");
+    // 配列の中身を確認
+    if (g_board[*row][*column] != ' ') {
+      printf("入力が正しくないです。\n");
       input_result = FALSE;
     }
     else {
@@ -54,6 +58,9 @@ void PlayerInput(int* row, int* column, TURN player_turn) {
 }
 // 記号を格納
 void BoardUpdate(int row, int column, TURN player_turn) {
+  assert(row >= 0 && row <= 2);
+  assert(column >= 0 && column <= 2);
+  
   if (player_turn == TURN_PLAYER1) {
     g_board[row][column] = 'o';
   }

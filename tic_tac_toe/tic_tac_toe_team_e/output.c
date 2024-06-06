@@ -1,6 +1,7 @@
 #include "enum.h"
 #include <stdio.h>
 #include "output.h"
+#include "assert.h"
 // ”Õ–Ê•\¦
 void PrintBoard(void) {
 	int i;
@@ -26,13 +27,16 @@ void PrintBoard(void) {
 void PrintResult(RESULT result) {
 	switch (result) {
 	case PLAYER1_WIN:
-		printf("æU‚ÌŸ‚¿‚Å‚·\n");
+		printf("æU‚ÌŸ‚¿‚Å‚·B");
 		break;
 	case PLAYER2_WIN:
-		printf("ŒãU‚ÌŸ‚¿‚Å‚·\n");
+		printf("ŒãU‚ÌŸ‚¿‚Å‚·B");
 		break;
 	case DRAW:
-		printf("ˆø‚«•ª‚¯‚Å‚·\n");
+		printf("ˆø‚«•ª‚¯‚Å‚·B");
+		break;
+	case RESULT_NONE:
+	    assert(FALSE);
 		break;
 	}
 }
