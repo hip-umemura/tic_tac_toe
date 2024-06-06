@@ -14,19 +14,161 @@
 
 内容：
 
+(前回の指摘修正点)
+
+Q.BoardInitialize関数の引数が配列だと機能しない。
+A.引数を配列ポインタに変更する
+
+→ポインタの記述をしました。
+
+Q.画面構成の説明を記号何文字などの表記にしてほしい。もしくは図のように表示するの記載がほしい。
+A.要望のように変更する。
+
+→
+
+Q.矢印を使用して画面の遷移を記載してほしい。
+A.要望のように変更する。
+
+→遷移図を作成しました。
+
+ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
+(今回の指摘修正点)
+
 Q. PlayerInputを小分けにしてほしい
 A. 頑張ります
 
-Q. 入力は受け取るのは何文字ですか
-A. 1文字を想定しています
+→PlayerInputの処理を入力だけに変更、PlayerInputからPlayerInputGameに名前を変更
+
+→InputErrorGame関数を新たに追加、InputErrorBoard関数の機能を変更して元のPlayerInputの処理を小分けにしました。
 
 Q. ReslutJudgeのDRAWの条件の書き方について
 A. 修正します
 
+→ターン数が1～9以外だった場合は、assert関数でプログラムを終了するよう追記しました。(ありえない数値のため)
+
 Q. turnまわりの処理に違和感
 A. 何とかします
+
+→main関数の処理を変更。(ターン数の初期化を0、ターン数の増加タイミングを変更)
 
 Q. MAX_TURNはINDEX * INDEXでもいいのかなぁと
 A. します
 
-その他もろもろ調整します
+→マクロのMAX_TURNを削除。ResultJudgeの
+
+※その他もろもろ調整します
+(変更点)
+・関数を機能ごとにさらに小分けにしてます。
+　→main関数の処理が変更になっています。
+　→新たな関数が生じています。関数名が変わったものもあります。
+　→ファイル名と関数の内容に差が生じていたので、ソースファイル名と内容が変わってます。(関数が移動したりしてます)
+
+・Error.cの処理
+　→InputBoardError、InputErrorGame、InputErrorRetryでエラーメッセージの表示をするように変更しました。
+
+
+
+①
+main.c
+main
+
+input.c
+PlayerInputGame,PlayerInputRetry
+
+error.c
+InputErrorGame,InputErrorRetry,InputErrorBoard
+
+output.c
+BoardOutput,ResultOutput
+
+retryjudge.c
+RetryJudge
+
+gamejudge.c
+ResultJudge
+
+process.c
+PlayerChange,
+BoardUpdate,BoardInitialize
+
+
+①
+main.c
+main
+
+input.c
+PlayerInputGame,PlayerInputRetry
+
+error.c
+InputErrorGame,InputErrorRetry,InputErrorBoard
+
+retry.c
+Retry
+
+result.c
+ResultJudge,ResultOutput
+
+process.c
+PlayerChange
+
+board.c
+BoardUpdate,BoardInitialize,BoardOutput
+
+
+②
+main.c
+main
+
+input.c
+PlayerInputGame,PlayerInputRetry
+
+retry.c
+Retry
+
+error.c
+InputErrorGame,InputErrorBoard,InputErrorRetry
+
+output.c
+BoardOutput,ResultOutput
+
+Judge.c
+ResultJudge,
+
+process.c
+PlayerChange
+
+board.c
+BoardInitialize,BoardUpdate
+
+
+③
+main.c
+main
+
+input.c
+PlayerInputGame,PlayerInputRetry
+
+retry.c
+Retry
+
+error.c
+InputErrorGame,InputErrorBoard,InputErrorRetry
+
+output.c
+BoardOutput,ResultOutput
+
+Judge.c
+ResultJudge,
+
+process.c
+PlayerChange
+
+board.c
+BoardInitialize,BoardUpdate
+
+
+
+
+
+
