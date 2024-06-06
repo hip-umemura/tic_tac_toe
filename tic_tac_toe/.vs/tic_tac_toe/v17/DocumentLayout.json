@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:input_num.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:decision_count.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|solutionrelative:sanmoku.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{959D767F-3B4A-4132-9CB4-70043D202AD8}|tic_tac_toe.vcxproj|C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 218,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -51,8 +51,7 @@
               "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-24T06:20:46.501Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -88,38 +87,37 @@
               "RelativeToolTip": "sanmoku.h",
               "ViewState": "AQIAAAQAAAAAAAAAAAAAABoAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-03T04:55:17.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T04:55:17.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "decision_count.c",
               "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.c",
               "RelativeDocumentMoniker": "decision_count.c",
               "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\decision_count.c",
               "RelativeToolTip": "decision_count.c",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAAE0AAAAUAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAAIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-24T06:21:13.172Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "input_num.c",
               "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.c",
               "RelativeDocumentMoniker": "input_num.c",
               "ToolTip": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\input_num.c",
               "RelativeToolTip": "input_num.c",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAC8AAAAVAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-27T00:18:23.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "sanmoku.c",
               "DocumentMoniker": "C:\\Users\\y_sugitomo\\Desktop\\git_practice\\tic_tac_toe\\tic_tac_toe\\sanmoku.c",
               "RelativeDocumentMoniker": "sanmoku.c",
@@ -127,8 +125,7 @@
               "RelativeToolTip": "sanmoku.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-28T04:40:58.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T04:40:58.547Z"
             }
           ]
         }
