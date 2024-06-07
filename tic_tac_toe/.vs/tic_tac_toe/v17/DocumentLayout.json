@@ -51,8 +51,7 @@
               "ViewState": "AQIAAAYAAAAAAAAAAAAAACUAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-05-24T06:20:46.501Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "decision_count.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-03T05:20:40.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T05:20:40.778Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "sanmoku.h",
               "ViewState": "AQIAAAQAAAAAAAAAAAAAABoAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-03T04:55:17.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-03T04:55:17.031Z"
             },
             {
               "$type": "Document",
@@ -115,8 +112,7 @@
               "RelativeToolTip": "input_num.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-27T00:18:23.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-27T00:18:23.499Z"
             },
             {
               "$type": "Document",
@@ -128,8 +124,7 @@
               "RelativeToolTip": "sanmoku.c",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-28T04:40:58.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-28T04:40:58.547Z"
             }
           ]
         }
