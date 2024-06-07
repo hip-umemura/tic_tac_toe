@@ -1,3 +1,3 @@
-#pragma once
-//retry.c
-JUDGE Retry(void);
+#include "enum.h"
+
+RETRY_JUDGE Retry(char input);

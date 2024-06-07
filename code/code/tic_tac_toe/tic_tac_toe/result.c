@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <assert.h>
 #include "enum.h"
 #include "result.h"
-#include "board_output.h"
+#include "board.h"
 
-JUDGE ResultJudge(char board[][INDEX], PLAYER player, int turn)
+GAME_JUDGE ResultJudge(char board[INDEX][INDEX], PLAYER player, int turn)
 {
     int row_count;
     int col_count;
@@ -45,14 +46,14 @@ JUDGE ResultJudge(char board[][INDEX], PLAYER player, int turn)
         }
     }
 
-    if (turn == 9) {
+    if (turn == INDEX*INDEX) {
         return DRAW;
     }
 
     return CONTINUE;
 }
 
-void ResultOutput(JUDGE result)
+void ResultOutput(GAME_JUDGE result)
 {
     if (result == PLAYER1_WIN) {
         printf("プレイヤー１の勝利！\n");
@@ -60,5 +61,8 @@ void ResultOutput(JUDGE result)
         printf("プレイヤー２の勝利！\n");
     } else if (result == DRAW) {
         printf("引き分け\n");
+    }
+    else if (result == CONTINUE) {
+        assert(0);
     }
 }

@@ -127,18 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="board.c" />
     <ClCompile Include="input.c" />
-    <ClCompile Include="board_output.c" />
     <ClCompile Include="error.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="player_change.c" />
     <ClCompile Include="result.c" />
     <ClCompile Include="retry.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="board.h" />
     <ClInclude Include="input.h" />
-    <ClInclude Include="board_output.h" />
     <ClInclude Include="enum.h" />
     <ClInclude Include="error.h" />
+    <ClInclude Include="player_change.h" />
     <ClInclude Include="result.h" />
     <ClInclude Include="retry.h" />
   </ItemGroup>

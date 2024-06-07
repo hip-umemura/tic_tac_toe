@@ -1,26 +1,13 @@
 #include <stdio.h>
 #include "enum.h"
 #include "input.h"
-#include "board_output.h"
+#include "board.h"
 #include "error.h"
 
-void BoardInitialize(char board[][INDEX])
-{
-	char init_value[INDEX][INDEX] = {{'1', '2', '3'}, {'4', '5', '6'}, {'7', '8', '9'}};
-
-	for (int x = 0; x < INDEX; x++) {
-		for (int y = 0; y < INDEX; y++) {
-			board[x][y] = init_value[x][y];
-		}
-	}
-}
-
-
-int PlayerInput(char board[INDEX][INDEX], PLAYER player)
+char Input(PLAYER player)
 {
 	char input;
 	
-	do {
 		printf("1～9の数字を入力してください\n");
 
 		if (player == PLAYER1) {
@@ -28,34 +15,19 @@ int PlayerInput(char board[INDEX][INDEX], PLAYER player)
 		} else {
 			printf("プレイヤー２(x)　入力：");
 		}
-		scanf_s("%c", &input,2);
-		/*
-		if (getchar() != '\n') {
-		  while (getchar() != '\n');
-		}
-		*/
-	
-	} while (InputErrorBoard(input, board) == ERROR);
+
+		input = getchar();
+
 	return input;
 }
 
-void BoardUpdate(PLAYER player, int input, char board[][INDEX])
+char InputRetry(void)
 {
-  int i, j;
-  char mark;
+	char input;
 
-  if (player == PLAYER1) {
-	mark = 'o';
-  }
-  else {
-	mark = 'x';
-  }
+		printf("リトライ…１、終了…2\n");
+		printf("入力:");
+		input = getchar();
 
-  for (i = 0; i < INDEX; i++) {
-	for (j = 0; j < INDEX; j++) {
-	  if (input == board[i][j]) {
-		board[i][j]= mark;
-	  }
-	}
-  }
+		return input;
 }

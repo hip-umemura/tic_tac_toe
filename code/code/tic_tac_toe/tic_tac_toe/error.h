@@ -1,4 +1,5 @@
-#pragma once
-//error.c
-JUDGE InputErrorBoard(char input, char board[INDEX][INDEX]);
-JUDGE InputErrorRetry(char input);
+#include "enum.h"
+
+ERROR_JUDGE ErrorInput(char input);
+ERROR_JUDGE ErrorInputRetry(char input);
+ERROR_JUDGE ErrorBoardUpdate(char input, char board[INDEX][INDEX]);

@@ -1,5 +1,4 @@
-#pragma once
-//result_output.c
-JUDGE ResultJudge(char board[INDEX][INDEX], PLAYER player, int turn);
+#include "enum.h"
 
-void ResultOutput(JUDGE result);
+GAME_JUDGE ResultJudge(char board[INDEX][INDEX], PLAYER player, int turn);
+void ResultOutput(GAME_JUDGE result);
