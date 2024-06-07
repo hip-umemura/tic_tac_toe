@@ -14,10 +14,12 @@ char PushNum(TURN turn_symbol) {
 		printf("Z‚Ì”Ô‚Å‚·F");
 		input_num = getch();
 		printf("%c\n", input_num);
+
 	}else {
 		printf("~‚Ì”Ô‚Å‚·F");
 		input_num = getch();
 		printf("%c\n", input_num);
+
 	}
 	return input_num;
 }
@@ -37,17 +39,22 @@ void CountWin(JUDGE win_result, int* get_circle, int* get_cross) {
 
 RETRY PlayEnd(int get_circle,int get_cross) {
 	RETRY iscontinue = ERROR;
+
 	while (iscontinue == ERROR) {
 		char input_end = '0';
+
 		printf("ƒŠƒgƒ‰ƒC(T)orI—¹(Q):");
 		input_end = getch();
 		printf("%c\n", input_end);
+
 		if (input_end == 'T') {
 			iscontinue = TRY;
+
 		}else if (input_end == 'Q') {
 			iscontinue = QUIT;
 			printf("Z:%dŸ\n", get_circle);
 			printf("~:%dŸ\n", get_cross);
+
 		}else {
 			printf("T‚Ü‚½‚ÍQ‚Ì‚İ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");
 		}

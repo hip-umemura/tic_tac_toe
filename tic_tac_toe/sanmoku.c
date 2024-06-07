@@ -5,13 +5,13 @@
 #include "decision_count.h"
 
 int main(void) {
-	int turn_counter;
+	int turn_counter;	
+	char input_num;	
 	BOOL range;
 	BOOL ischeck;	
 	TURN  turn_symbol;	
 	JUDGE win_result;
 	JUDGE draw_result;	
-	char input_num;	
 	RETRY iscontinue = TRY;
 	int get_circle = 0;
 	int get_cross = 0;
@@ -28,11 +28,13 @@ int main(void) {
 		while (win_result == UNKNOWN && draw_result == UNKNOWN) {
 			range = FALSE;
 			ischeck = FALSE;	
+
 			turn_symbol =	CheckTurn(turn_counter);
 
 			while (range != TRUE || ischeck != TRUE) {
 				input_num = PushNum(turn_symbol);
 				range = RangeNum(input_num);
+
 				if (range == TRUE) {
 					ischeck = CheckNum(input_num, square);
 				}

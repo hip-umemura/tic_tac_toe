@@ -18,9 +18,11 @@ BOOL CheckNum(char input_num, char *square) {
 	int tmp = input_num - '0';
 	if (*(square + tmp - 1) == input_num) {
 		ischeck = TRUE;
+
 	}else {
 		printf("Šù‚É“ü—Í‚³‚ê‚Ä‚¢‚Ü‚·B\n");
 		ischeck = FALSE;
+
 	}
 	return ischeck;
 }
