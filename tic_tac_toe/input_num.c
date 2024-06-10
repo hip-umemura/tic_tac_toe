@@ -27,11 +27,11 @@ char PushNum(TURN turn_symbol) {
 void CountWin(JUDGE win_result, int* get_circle, int* get_cross) {
 
 	if (win_result == CIRCLE_WIN) {
-		printf("Z‚ÌŸ—˜\n");
+		printf("O‚ÌŸ—˜\n");
 		*get_circle += 1;
 		
 	}else {
-		printf("~‚ÌŸ—˜\n");
+		printf("X‚ÌŸ—˜\n");
 		*get_cross += 1;
 
 	}
@@ -52,8 +52,8 @@ RETRY PlayEnd(int get_circle,int get_cross) {
 
 		}else if (input_end == 'Q') {
 			iscontinue = QUIT;
-			printf("Z:%dŸ\n", get_circle);
-			printf("~:%dŸ\n", get_cross);
+			printf("O:%dŸ\n", get_circle);
+			printf("X:%dŸ\n", get_cross);
 
 		}else {
 			printf("T‚Ü‚½‚ÍQ‚Ì‚İ‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢B\n");

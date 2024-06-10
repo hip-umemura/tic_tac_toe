@@ -6,7 +6,7 @@ void ShowBoard(char square[ELEMENT]) {
 	printf(" -------------------- \n");
 	printf("|      |      |      |\n");
 	for (int i = 0; i < ELEMENT; i++) {
-		printf("|   %c  ", square[i]);
+		printf("|  %c   ", square[i]);
 
 		if (i == ELEMENT - 1) {
 			printf("| \n");
