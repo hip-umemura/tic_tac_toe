@@ -16,7 +16,8 @@ char Input(PLAYER player)
 			printf("プレイヤー２(x)　入力：");
 		}
 
-		input = getchar();
+		input = _getch();
+		printf("%c\n", input);
 
 	return input;
 }
@@ -27,7 +28,7 @@ char InputRetry(void)
 
 		printf("リトライ…１、終了…2\n");
 		printf("入力:");
-		input = getchar();
+		input = _getch();
 
 		return input;
 }
