@@ -51,15 +51,15 @@ void get_input_player_name(char* input_player_name, size_t size, int player_numb
 					character = getchar();
 				}
 			}
-			if (isHalf_width_alphanumeric(input_player_name) == FALSE) {
-				printf("名前は半角英数字で入力してください\n");
+			if (strlen(input_player_name) > PLAYER_NAME_LENGTH) {
+				printf("名前は15文字以内で入力してください\n");
 				is_input_name_flag = FALSE;
 #ifdef DEBUG
 				printf("FALSE\n");
 #endif // DEBUG
 			}
-			else if (strlen(input_player_name) > PLAYER_NAME_LENGTH) {
-				printf("名前は15文字以内で入力してください\n");
+			else if (isHalf_width_alphanumeric(input_player_name) == FALSE) {
+				printf("名前は半角英数字で入力してください\n");
 				is_input_name_flag = FALSE;
 #ifdef DEBUG
 				printf("FALSE\n");
