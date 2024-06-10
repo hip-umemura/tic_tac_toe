@@ -15,28 +15,33 @@ void BoardInit(void) {
 // 入力を求める
 void PlayerInput(int* row, int* column, TURN player_turn) {
   int player_input;
-  int input_result = TRUE;
+  int input_result;
   do {
-    if (player_turn == TURN_PLAYER1) {
-      printf("先行の番です。\n");
-      printf("番号を入力してください。\n");
-      printf("番号：");
-    }
-    else {
-      printf("後攻の番です。\n");
-      printf("番号を入力してください。\n");
-      printf("番号：");
-    }
-    // キーボード入力
-    player_input = getchar();
-    // 入力例外処理
-    if (getchar() != '\n') {
-      printf("入力が正しくないです。\n");
-      while (getchar() != '\n');
-      input_result = FALSE;
-      continue;
-    }
-    
+    do {
+      input_result = TRUE;
+      if (player_turn == TURN_PLAYER1) {
+        printf("先行の番です。\n");
+        printf("番号を入力してください。\n");
+        printf("番号：");
+      }
+      else {
+        printf("後攻の番です。\n");
+        printf("番号を入力してください。\n");
+        printf("番号：");
+      }
+      // キーボード入力
+      player_input = getchar();
+      // 入力例外処理
+      if ((char)player_input == '\n') {
+        printf("入力が正しくないです。\n");
+        input_result = FALSE;
+      }else if (getchar() != '\n') {
+        printf("入力が正しくないです。\n");
+        while (getchar() != '\n');
+        input_result = FALSE;
+      }
+    } while (input_result == FALSE);
+
     player_input = player_input - '0';
 
     if ((player_input < 1) && (player_input > (NUM * NUM))) {
