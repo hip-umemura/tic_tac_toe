@@ -7,6 +7,7 @@
 char Input(PLAYER player)
 {
 	char input;
+	char buffer = '\0';
 	
 		printf("1～9の数字を入力してください\n");
 
@@ -16,8 +17,10 @@ char Input(PLAYER player)
 			printf("プレイヤー２(x)　入力：");
 		}
 
-		input = _getch();
-		printf("%c\n", input);
+		input = getchar();
+		while (getchar() != '\n') {
+			input = '\0';
+		}
 
 	return input;
 }
@@ -25,10 +28,15 @@ char Input(PLAYER player)
 char InputRetry(void)
 {
 	char input;
+	char buffer = '\0';
 
 		printf("リトライ…１、終了…2\n");
 		printf("入力:");
-		input = _getch();
+
+		input = getchar();
+		while (getchar != '\n') {
+			input = '\0';
+		}
 
 		return input;
 }

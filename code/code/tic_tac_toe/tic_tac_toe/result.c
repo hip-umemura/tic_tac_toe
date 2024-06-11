@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include <stdlib.h>
 #include "enum.h"
 #include "result.h"
 #include "board.h"
@@ -11,6 +12,10 @@ GAME_JUDGE ResultJudge(char board[INDEX][INDEX], PLAYER player, int turn)
     int diag1_count;
     int diag2_count;
     char mark;
+
+    if (turn < 1 && turn > INDEX*INDEX) {
+        assert(0);
+    }
 
     if (player == PLAYER1) {
         mark = 'o';
@@ -50,8 +55,14 @@ GAME_JUDGE ResultJudge(char board[INDEX][INDEX], PLAYER player, int turn)
         return DRAW;
     }
 
+    if (player > 4 && player < 0) {
+        exit(1);
+    }
+
     return CONTINUE;
+
 }
+
 
 void ResultOutput(GAME_JUDGE result)
 {
