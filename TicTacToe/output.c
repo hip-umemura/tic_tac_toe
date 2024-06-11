@@ -21,11 +21,15 @@ void Output_Grid(char board_info_array[3][3])
 // 盤面とどちらのターンかを表示する関数
 void Output_Turn(TURN current_turn)
 {
-	if (current_turn == O_TURN) {
+	switch (current_turn) {
+	case O_TURN:
 		printf("%cのターンです。\n", O_MARK);
-	}
-	else {
+		break;
+	case X_TURN:
 		printf("%cのターンです。\n", X_MARK);
+		break;
+	default:
+		exit(ERROR);
 	}
 }
 
@@ -34,11 +38,15 @@ void Output_Result(TURN current_turn, RESULT result_info)
 {
 	switch (result_info) {
 	case WIN:
-		if (current_turn == O_TURN) {
+		switch (current_turn) {
+		case O_TURN:
 			printf("%c", O_MARK);
-		}
-		else {
+			break;
+		case X_TURN:
 			printf("%c", X_MARK);
+			break;
+		default:
+			exit(ERROR);
 		}
 		printf("の勝利です。\n");
 		break;
@@ -47,6 +55,6 @@ void Output_Result(TURN current_turn, RESULT result_info)
 		break;
 	default:
 		printf("エラー：結果を判定できませんでした。\n");
-		break;
+		exit(ERROR);
 	}
 }

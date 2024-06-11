@@ -34,7 +34,7 @@ RESULT Judge_Result(char board_info_array[GRID_HEIGHT][GRID_WIDTH], INDEX grid_e
 	// INDEXのメンバの値が、要素指定できない値の場合、強制終了させる
 	if (grid_element_designation.x < 0 || grid_element_designation.x >= GRID_WIDTH ||
 			grid_element_designation.y < 0 || grid_element_designation.y >= GRID_HEIGHT) {
-		abort();
+		exit(ERROR);
 	}
 
 	// 縦を見て、同じ図柄が3つ並んでいるか確認する。

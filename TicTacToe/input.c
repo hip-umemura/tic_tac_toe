@@ -7,11 +7,15 @@
 // 入力を受け付ける関数
 void Input(TURN turn, char input_info_array[INPUT_LEN])
 {
-	if (turn == O_TURN) {
+	switch (turn) {
+	case O_TURN:
 		printf("%c", O_MARK);
-	}
-	else {
+		break;
+	case X_TURN:
 		printf("%c", X_MARK);
+		break;
+	default:
+		exit(ERROR);
 	}
 	printf("を置くグリッドを選択してください。\n：");
 
