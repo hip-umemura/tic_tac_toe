@@ -1,6 +1,6 @@
 #define ELEMENT 9
-#define WIDE_GAP 3
-#define VERETICAL_GAP 3
+#define BOARD_LEN 3
+#define MATCH_COUNTER 2
 
 typedef enum{
 	TRUE,
@@ -10,7 +10,7 @@ typedef enum{
 typedef enum {
 	CIRCLE,
 	CROSS,
-}TURN;
+}JUDGE;
 
 
 
@@ -24,7 +24,6 @@ typedef enum {
 typedef enum {
 	TRY,
 	QUIT,
-	ERROR,
 }RETRY;
 
 

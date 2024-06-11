@@ -2,11 +2,11 @@
 #include "sanmoku.h"
 #include "board.h"
 
-void ShowBoard(char square[ELEMENT]) {
+void ShowBoard(char board[ELEMENT]) {
 	printf(" -------------------- \n");
 	printf("|      |      |      |\n");
 	for (int i = 0; i < ELEMENT; i++) {
-		printf("|  %c   ", square[i]);
+		printf("|   %c  ", board[i]);
 
 		if (i == ELEMENT - 1) {
 			printf("| \n");
@@ -22,21 +22,21 @@ void ShowBoard(char square[ELEMENT]) {
 	}
 }
 
-TURN CheckTurn(int turn_counter) {
-	TURN turn_symbol;
-	if (turn_counter % 2 == 0) {
-		turn_symbol = CIRCLE;
+JUDGE CheckTurn(int turn) {
+
+	if (turn % 2 == 0) {
+		return CIRCLE;
 	}else {
-		turn_symbol = CROSS;
+		return CROSS;
 	}
-	return turn_symbol;
 }
 
-void ChangeState(char input_num,char *square,TURN turn_symbol) {
-		int tmp = input_num - '0';
-		if (turn_symbol == CIRCLE) {
-			*(square + tmp - 1) = 'o';
-		}else {
-			*(square + tmp - 1) = 'x';
-		}
+
+
+void DisplayNum(JUDGE now_turn) {
+	if (now_turn == CIRCLE) {
+		printf("o‚Ì”Ô‚Å‚·F");
+	}else {
+		printf("x‚Ì”Ô‚Å‚·F");
+	}
 }

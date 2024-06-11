@@ -2,81 +2,93 @@
 #include "sanmoku.h"
 #include "input_num.h"
 
-BOOL RangeNum(char input_num) {
-	BOOL range;
-	if (input_num >= '1' && input_num <= '9') {
-		range = TRUE;
+BOOL RangeNum(char player_input) {
+
+	if (player_input >= '1' && player_input <= '9') {
+
+		return TRUE;
 	}else {
-		range = FALSE;
+
 		printf("範囲内の値を入力してください。\n");
+		return FALSE;
 	}
-	return range;
 }
 
-BOOL CheckNum(char input_num, char *square) {
-	BOOL ischeck;
-	int tmp = input_num - '0';
-	if (*(square + tmp - 1) == input_num) {
-		ischeck = TRUE;
+BOOL CheckNum(char player_input, char board[ELEMENT]) {
 
+	int tmp = player_input - '0';
+	if (board[tmp - 1] == player_input) {
+		return TRUE;
 	}else {
+
 		printf("既に入力されています。\n");
-		ischeck = FALSE;
-
+		return FALSE;
 	}
-	return ischeck;
 }
 
-JUDGE CheckWin(char square[ELEMENT], TURN turn_symbol) {
-	JUDGE win_result= UNKNOWN;
+JUDGE CheckWin(char board[ELEMENT], JUDGE now_turn, int count_turn) {
+	JUDGE result = UNKNOWN;
+	int same_mark_count;
 
-	if (turn_symbol == CIRCLE) {
-		for (int i=0; i < WIDE_GAP; i++) {//横のライン
-			if (square[(i * WIDE_GAP)] == square[(i * WIDE_GAP) + 1] && square[(i * WIDE_GAP) + 1] == square[(i * WIDE_GAP) + 2]) {
-				win_result = CIRCLE_WIN;
+	for (int i = 0; i <= (2 * BOARD_LEN); i += BOARD_LEN) {//横のライン
+		same_mark_count = 0;
+		for (int j = 0; j < MATCH_COUNTER; j++) {
+			if (board[i + j] == board[i + j + 1]) {
+				same_mark_count++;
 			}
 		}
-		for (int j = 0; j < VERETICAL_GAP; j++) {//縦のライン
-			if (square[j] == square[j + VERETICAL_GAP] && square[j + VERETICAL_GAP] == square[j + (2 * VERETICAL_GAP)]) {
-				win_result = CIRCLE_WIN;
-			}
-		}
-		if (square[0] == square[4] && square[4] == square[8]) {//左上から右下のライン
-			win_result = CIRCLE_WIN;
-		}
-
-		if (square[2] == square[4] && square[4] == square[6]) {//右上から左下のライン
-			win_result = CIRCLE_WIN;
+	
+		if (same_mark_count >= MATCH_COUNTER) {
+			return result = (now_turn == CIRCLE) ? CIRCLE_WIN : CROSS_WIN;
 		}
 	}
-	if (turn_symbol == CROSS) {
-		for (int i = 0; i < WIDE_GAP; i++) {
-			if (square[(i * WIDE_GAP)] == square[(i * WIDE_GAP) + 1] && square[(i * WIDE_GAP) + 1] == square[(i * WIDE_GAP) + 2]) {
-				win_result = CROSS_WIN;
-			}
-		}
-		for (int j = 0; j < VERETICAL_GAP; j++) {
-			if (square[j] == square[j + VERETICAL_GAP] && square[j + VERETICAL_GAP] == square[j + (2 * VERETICAL_GAP)]) {
-				win_result = CROSS_WIN;
-			}
-		}
-		if (square[0] == square[4] && square[4] == square[8]) {
-			win_result = CROSS_WIN;
-		}
-		if (square[2] == square[4] && square[4] == square[6]) {
-			win_result = CROSS_WIN;
-		}
-	}
-	return win_result;
-}
 
-JUDGE CheckDraw(int turn_counter) {
-	JUDGE draw_result;
-	if (turn_counter == ELEMENT-1) {
-		draw_result = DROW;
-	}else {
-		draw_result = UNKNOWN;
+
+	for (int i = 0; i < BOARD_LEN; i++) {//縦のライン
+		same_mark_count = 0;
+		for (int j = 0; j <= (2 * BOARD_LEN); j += BOARD_LEN) {
+			if (board[i + j] == board[i + j + BOARD_LEN]) {
+				same_mark_count++;
+
+			}
+		}
+		
+		if (same_mark_count >= MATCH_COUNTER) {
+			return result = (now_turn == CIRCLE) ? CIRCLE_WIN : CROSS_WIN;
+		}
 	}
-	return draw_result;
+
+	same_mark_count = 0;
+	for (int i = 0; i <= (BOARD_LEN + 1); i += (BOARD_LEN + 1)) {//左上から右下
+		
+		if (board[i] == board[i + BOARD_LEN + 1]) {
+			same_mark_count++;
+
+		}
+	}
+	if (same_mark_count >= MATCH_COUNTER) {
+			return result = (now_turn == CIRCLE) ? CIRCLE_WIN : CROSS_WIN;
+		}
+
+	same_mark_count = 0;
+	for (int i = (BOARD_LEN - 1); i <= 2 * (BOARD_LEN - 1); i += (BOARD_LEN - 1)) {//右上から左下
+
+		if (board[i] == board[i + BOARD_LEN - 1]) {
+			same_mark_count++;
+
+		}
+	}
+	if (same_mark_count >= MATCH_COUNTER) {
+			return result = (now_turn == CIRCLE) ? CIRCLE_WIN : CROSS_WIN;
+		}
+	if (result == UNKNOWN) {
+		if (count_turn == ELEMENT - 1) {
+			result = DROW;
+		}
+		else {
+
+			return result;
+		}
+	}
 }
 

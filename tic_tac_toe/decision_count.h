@@ -1,9 +1,8 @@
 #pragma once
 
-BOOL RangeNum(char input_num);
+BOOL RangeNum(char player_input);
 
-BOOL CheckNum(char input_num, char* square);
+BOOL CheckNum(char player_input, char board[ELEMENT]);
 
-JUDGE CheckWin(char square[ELEMENT], TURN turn_symbol);
+JUDGE CheckWin(char board[ELEMENT], JUDGE now_turn, int count_turn);
 
-JUDGE CheckDraw(int turn_counter);
